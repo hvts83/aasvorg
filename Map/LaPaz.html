@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. LA PAZ</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                   
+                    <ul>
+                        <h4>MUNICIPIO CUYULTITÁN GRUPOS REPORTADOS—01</h4>
+
+                        <li><span>1026</span><strong>RENACIMIENTO.</strong> — 07 de Junio de 1970. Dirección: Calle Principal, Barrio San Isidro. Cuyultitán. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+
+                        <h4>MUNICIPIO DE EL ROSARIO GRUPOS REPORTADOS—07</h4>
+
+
+
+                        <li><span>1027</span><strong>ASUNCIÓN AMATEPEC.</strong> — 01 de Abril de 1973. Dirección: Cantón Asunción  Amatepec, Rosario  La Paz.  Días  y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  </li>
+                        <li><span>1028</span><strong>NUEVA  VIDA  26   DE  OCTUBRE.</strong> — 29  de   Octubre  de   2005. Dirección:  Calle Principal, Rosario La Paz. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1029</span><strong>NUEVO RENACER.</strong> — 01 de Mayo de 2009. Dirección:  Colonia San Francisco,  El Pedregal, Rosario  La Paz. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>1030</span><strong>UN  RENACER EN  LA  ESPERANZA.</strong> —  01  de   Julio   de   2006. Dirección:   Barrio  La Esperanza, Rosario  La Paz.  Días  y horas   de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  </li>
+                        <li><span>1031</span><strong>UN  RENACER EN  LA PAZ.</strong> —  15  de  Mayo  de  1973.  Dirección: Barrio San José, Rosario La Paz. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>1032</span><strong>UNA  LUZ EN LA PROVIDENCIA.</strong> — 01  de  Noviembre de  2001. Dirección:  Colonia  La Divina Providencia, Desvío  Las Isletas  Calle a La Herradura, Rosario  La Paz. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>1033</span><strong>21  DE OCTUBRE SANTA CRUZ EL TUNAL.</strong> — 21 de  Octubre de 1977. Dirección:  Km. 40 a Rosario La Paz. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE OLOCUILTA GRUPOS REPORTADOS—07</h4>
+
+
+
+                        <li><span>1034</span><strong>BUENA ESPERANZA.</strong> — 20 de Febrero de 1972. Dirección: Cantón La Esperanza, Antigua Carretera a Zacatecoluca Km. 19 ½, Olocuilta. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>1035</span><strong>CENTRAL OLOCUILTENSE.</strong> —  26  de  Marzo  de  1982.  Dirección: Calle Principal, Barrio San José, Olocuilta. Días y horas de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+                        <li><span>1036</span><strong>MARAVILLA  DEL SIGLO XX.</strong> — 25  de  Junio  de  1988.  Dirección: Barrio  El  Carmen,  Calle   Vía  Tejera   Olocuilta.  Días  y  horas   de reuniones: De  Lunes  a  Domingo de  7:30  a  9:30  p.m. </li>
+                        <li><span>1037</span><strong>NUEVO AMANECER.</strong> — 01 de Agosto de 2007. Dirección: Avenida Principal,   4ª  Calle  Tihuapa,  Colonia   Montelimar,  Olocuilta.  Días y horas  de  reuniones: De  Lunes  a Sábado de  7:00  a 9:00  p.m.  y Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1038</span><strong>15  DE  MAYO.</strong> —  15  de  Mayo  de  1982.  Dirección:  Cantón Valle Nuevo, Olocuilta. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1039</span><strong>RESURGIMIENTO.</strong> — 19  de  Junio   de  1970.  Dirección:   Barrio  El Calvario,  Calle  Principal  Olocuilta. Días  y horas  de  reuniones: De Lunes  a  Domingo de   7:00  a  9:00  p.m.   </li>
+                        <li><span>1040</span><strong>POR UN MILAGRO DE DIOS.</strong> — 10 de Agosto de 1983. Dirección: El Cimarrón  Cantón El Chilamate, Olocuilta. Días y horas de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+
+
+                        <h4>MUNICIPIO PARAÍSO DE OSORIO GRUPOS REPORTADOS—02</h4>
+
+
+
+                        <li><span>1041</span><strong>FE Y ESPERANZA 31 DE DICIEMBRE.</strong> — 31 de Diciembre de 1977. Dirección:  Calle Marcelino  Durán,  Barrio El Centro Nº 2, Paraíso  de Osorio.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1042</span><strong>UNA LUZ EN MI CALVARIO.</strong> — 29 de Octubre de 1985.  Dirección: Paraíso  de  Osorio.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+                        <h4>MUNICIPIO DE SAN ANTONIO MASAHUAT GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1043</span><strong>28  DE AGOSTO.</strong> — 28 de  Agosto de  1996.  Dirección:  Colonia  El Mangal  Cantón El Socorro, San  Antonio  Masahuat. Días  y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+                        <li><span>1044</span><strong>PRIMERA TRADICIÓN.</strong> — 01 de Junio  de 1980. Dirección:  Barrio El Centro, San Antonio Masahuat. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1045</span><strong>UN  RENACER EN LA INSTANCIA.</strong> — 01  de  Diciembre de  1999. Dirección:  Cantón San  José La Instancia, San  Antonio  Masahuat. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>1046</span><strong>UNA  LUZ DE  DIOS  EN  LA PALMA.</strong> —  17  de   Abril  de   1977. Dirección:  Cantón San  Antonio  La Loma,  San  Antonio  Masahuat. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+                        <h4>MUNICIPIO DE SAN EMIGDIO GRUPOS REPORTADOS—02</h4>
+
+
+
+                        <li><span>1047</span><strong>BENDICIÓN DE DIOS.</strong> — 01 de Febrero de 2003.  Dirección:  Barrio El Centro, San  Emigdio.   Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1048</span><strong>SIGNO DE VIDA.</strong> — 08 de  Febrero de  2013.  Dirección:  Calle a La Cancha, Barrio El Centro. Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO SAN FRANCISCO CHINAMECA GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1050</span><strong>22  DE DICIEMBRE.</strong> — 22 de  Diciembre de  2003.  Dirección:  Barrio El Rosario,  San  Francisco  Chinameca. Días  y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  </li>
+                        <li><span>1051</span><strong>3ª TRADICIÓN.</strong> — 30 de  Marzo de  1973.  Dirección:  Calle Principal. Barrio San Francisco. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>1052</span><strong>FE Y ESPERANZA.</strong> —  14  de  Junio   de  2009.   Dirección:   Cantón Candelaria, San  Francisco  Chinameca. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>1053</span><strong>LUZ Y  ESPERANZA.</strong> —  27  de   Septiembre de   2003.   Dirección: Cantón Los  Planes   Concepción, San  Francisco   Chinameca.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+
+                        <h4>MUNICIPIO SAN JUAN NONUALCO GRUPOS REPORTADOS—09</h4>
+
+
+                        <li><span>1054</span><strong>03 DE ABRIL.</strong> — 03 de Marzo de 1982.  Dirección:  Barrio El Calvario San Juan Nonualco. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>1055</span><strong>03  DE  SEPTIEMBRE.</strong> — 03  de  Septiembre de  1981.   Dirección: Barrio Santa  Rita. San  Juan  Nonualco. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.  </li>
+                        <li><span>1056</span><strong>13  DE MARZO.</strong> — 13  de  Marzo  de  2004.  Dirección:  Caserío  Los Ortices, 1  Cuadra al Sur de  La Ermita,  San  Juan  Nonualco.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. </li>
+                        <li><span>1057</span><strong>17 DE ENERO.</strong> — 17 de Enero de 2014. Dirección: Cantón Santiago de  Chile, San Juan  Nonualco. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1058</span><strong>DIOS  HACE MARAVILLAS.</strong> —  13  de  Mayo  de  2011.   Dirección: Cantón Tierra Colorada 3 Km. al Norte  de San Juan  Nonualco. Días y horas  de  reuniones: De  Lunes  a Sábado de  6:00  a 8:00  p.m.  y Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>1059</span><strong>HAY UNA SOLUCIÓN.</strong> — 29 de  Marzo de  2006.  Dirección:  Cantón Tehuista Abajo,  al Sur de  (C.E.), San  Juan  Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1060</span><strong>NUEVO  RENACER 20  DE  DICIEMBRE.</strong> — 20  de  Diciembre de 2008.   Dirección:   Colonia   Nuevo   San  Antonio,   La Laguneta,  San Juan  Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>1061</span><strong>SANGRE DE CRISTO.</strong> — 22 de  Enero  de  1976.  Dirección:  Barrio El Centro, San Juan  Nonualco. Días y horas  de  reuniones: De Lunes a Domingo de  6:30  a 8:30  p.m. </li>
+                        <li><span>1062</span><strong>UN  DESPERTAR 07  DE  FEBRERO.</strong> — 07  de  Febrero de  1989. Dirección:  Cantón Las Piedronas al Sur de  La Carretera Autopista, San Juan Nonualco. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+
+                        <h4>MUNICIPIO SAN JUAN TALPA GRUPOS REPORTADOS—03</h4>
+
+
+
+                        <li><span>1063</span><strong>24 HORAS DE SOBRIEDAD.</strong> — 29 de Diciembre de 2012. Dirección: Desvío de Comalapa. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1064</span><strong>FE Y SOBRIEDAD.</strong> — 01  de  Enero  de  1992.  Dirección:  Barrio  El Centro San  Juan   Talpa.  Días  y horas   de  reuniones: De  Lunes  a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>1065</span><strong>RENACER  04   DE  JULIO.</strong> —  04   de   Julio   de   2014.   Dirección: Comunidad  Almendarez Cantón  Veracruz,  San  Juan   Talpa.   Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. </li>
+
+                        <h4>MUNICIPIO SAN JUAN TEPEZONTES GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1066</span><strong>DIVINA LUZ.</strong> — 13  de  Diciembre  de  2007.   Dirección:   Barrio  El Centro, San Juan  Tepezontes. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1067</span><strong>RENACER 99.</strong> —  05 de  Julio de  1999.  Dirección:  Cantón La Espe- ranza  al Sur de  San  Juan  Tepezontes.  Días  y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1068</span><strong>UN MILAGRO EN EL 82.</strong> — 13 de Junio de 1982. Dirección: Cantón al Sur de San Juan  Tepezontes. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1069</span><strong>UNA  LUZ EN MI CALVARIO.</strong> — 02 de  Enero  de  2001.  Dirección: Barrio El Calvario San Juan  Tepezontes. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE SAN LUIS LA HERRADURA GRUPOS REPORTADOS—09</h4>
+
+
+
+                        <li><span>1070</span><strong>AMISTAD CALVAREÑO.</strong> — 29 de Abril de 1992. Dirección: Barrio El Calvario, San Luis La Herradura. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1071</span><strong>JALTEPEC  HERRADUREÑO.</strong> — 17  de  Junio  de  1972.  Dirección: Barrio El Centro, frente  a La Fuerza  Naval,  San Luis La Herradura. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+                        <li><span>1072</span><strong>NUEVO  AMANECER.</strong> —  21  de   Diciembre  de   2011.   Dirección: Isla La Colorada San Luis La Herradura. Días y horas  de  reuniones: De  Lunes  a Domingo de  4:00  a 6:00  p.m. </li>
+                        <li><span>1073</span><strong>RENACER 04  DE  ENERO.</strong> —  04  de  Enero   de  1988.   Dirección: Cantón El Llano, San Luis La Herradura. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+                        <li><span>1074</span><strong>RENOVACIÓN EL PACÍFICO.</strong> — 23 de  Enero  de  1987.  Dirección: Cantón Guadalupe La Zorra,  San  Luis La Herradura. Días  y horas de  reuniones: De Lunes a Domingo de  5:30 a 7:30 p.m. </li>
+                        <li><span>1075</span><strong>UN  NUEVO  CAMINO.</strong> — 17  de  Abril de  1976.  Dirección:  Barrio El Centro, Calle a La Finca San Luis La Herradura. Días y horas  de reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. </li>
+                        <li><span>1076</span><strong>UN  NUEVO  VIVIR EN  EL CHINGO.</strong> —  03  de  Enero   de  1990. Dirección:  Cantón San Sebastián El Chingo, San Luis La Herradura. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+                        <li><span>1077</span><strong>UNA  LUZ EN EL BUEN SAMARITANO.</strong> — 20  de  Abril de  2006. Dirección:  Colonia  El Buen  Samaritano, Cantón Costa  del  Sol, San Luis La Herradura. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>1078</span><strong>UNA LUZ EN LOS ÁNGELES.</strong> — 23 de Agosto de 2012.  Dirección: Colonia   Los  Ángeles,  San  Luis  La  Herradura.  Días  y  horas   de reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. </li>
+
+                        <h4>MUNICIPIO SAN LUIS TALPA GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1079</span><strong>DIECISIETE  DE JULIO SANTA  CLARA.</strong> — 17  de  Julio  de  1982. Dirección:  Cooperativa Santa  Clara,  San  Luis Talpa.  Días  y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1080</span><strong>FE Y ACCIÓN.</strong> — 15  de  Septiembre de  1989.  Dirección:  Cantón Tecualuya, San  Luis Talpa.  Días y horas  de  reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>1081</span><strong>NUEVO  RENACER EN COMALAPA.</strong> — 03  de  Octubre de  1994. Dirección:  Lotificación  Comalapa, San  Luis Talpa.  Días y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+                        <li><span>1082</span><strong>SAN  LUIS.</strong> — 27  de  Noviembre de  1969.  Dirección:  Colonia  Las Brisas, Calle al Puerto de  La Libertad, San Luis Talpa.  Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+
+                        <h4>MUNICIPIO DE SAN MIGUEL TEPEZONTES GRUPOS REPORTADOS—03</h4>
+
+
+
+                        <li><span>1083</span><strong>07  DE FEBRERO.</strong> — 07  de  Febrero de  1965.  Dirección:  Barrio El Rosario, San Miguel Tepezontes. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+                        <li><span>1084</span><strong>DESPERTAR 82.</strong> —  08 de  Agosto de  1982.  Dirección:  San Miguel Tepezontes.  Días  y horas  de  reuniones: De  Lunes  a  Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1085</span><strong>LO MEJOR DE BILL.</strong> — 15 de Septiembre de 1993. Dirección: Barrio El Carmen, San Miguel  Tepezontes. Días y horas  de  reuniones: De Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+
+
+                        <h4>MUNICIPIO DE SAN PEDRO MASAHUAT GRUPOS REPORTADOS—18</h4>
+
+
+
+                        <li><span>1086</span><strong>19   DE  OCTUBRE.</strong> — 19  de   Octubre de   1998.   Dirección:   Calle Principal, contiguo al Cementerio, Cantón San José Las Isletas,  San Pedro Masahuat. Días y horas  de  reuniones: De Lunes  a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>1087</span><strong>24  DE AGOSTO.</strong> — 24 de  Agosto de  1987.  Dirección:  Lotificación Miraflores  Nº  1, San  Pedro Masahuat. Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  </li>
+                        <li><span>1088</span><strong>27   DE  MAYO.</strong> —  27  de   Mayo  de   2002.   Dirección:   Cantón  El Carmen, San Pedro Masahuat. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1089</span><strong>DULCE SOBRIEDAD.</strong> — 20  de  Mayo  de  1995.  Dirección:  CantónDulce Nombre. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>1090</span><strong>LA BUENA FE.</strong> — 02 de  Noviembre de  1993.  Dirección:  Cantón El Carmen, San Pedro Masahuat. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1091</span><strong>LA GRACIA DE DIOS.</strong> —  16  de  Noviembre de  2010.  Dirección: Caserío Los Ranchos,  Cantón Las Isletas,  San Pedro Masahuat. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. </li>
+                        <li><span>1092</span><strong>LIBERACIÓN.</strong> — 01 de  Septiembre de  2005.  Dirección:  Cantón Las Isletas, San Pedro Masahuat. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>1093</span><strong>LUZ DE ESPERANZA.</strong> — 17  de  Septiembre de  1982.  Dirección: Hacienda Astorias,  Cantón Las Flores,  San  Pedro Masahuat. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.</li>
+                        <li><span>1094</span><strong>MI SALVACIÓN.</strong> —  29  de   Abril  de   2006.   Dirección:   Caserío El Castaño, San Pedro Masahuat. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>1095</span><strong>NADA PODEMOS SOLOS.</strong> — 23 de Noviembre de 2005. Dirección: Lotificación  Miraflores,  Cantón El Carmen, San  Pedro Masahuat. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1096</span><strong>NUEVA VIDA.</strong> — 02 de Febrero de 1974.  Dirección:  San Marcelino, Calle  La Bocana, Rancho  Teyo,  San Pedro Masahuat. Días y horas de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m. </li>
+                        <li><span>1097</span><strong>SENDERO DE VIDA.</strong> — 28 de  Febrero de  2012.  Dirección:  Cantón San Felipe,  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>1098</span><strong>UN MILAGRO EN EL ICACO.</strong> — 23 de Agosto de 2010.  Dirección: Colonia  El Icaco,  Barrio El Calvario.  Días y horas  de  reuniones: De Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>1099</span><strong>UNA LUZ EN BARAHONA.</strong> — 14 de Septiembre de 1975. Dirección: Cantón Barahona, San Pedro Masahuat. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+                        <li><span>1100</span><strong>UNA LUZ EN VILLA PALESTINA.</strong> — 18 de Abril de 2004. Dirección: Colonia Villa Palestina, Polígono 6, contiguo al Instituto Católico, San Pedro Masahuat. Días y horas  de  reuniones: De Lunes  a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>1101</span><strong>UNA  MIRADA AL CIELO.</strong> — 17  de  Octubre de  2005.  Dirección: Cantón El Carmen, Caserío El Cabral,  San  Pedro Masahuat. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>1102</span><strong>UNIDOS.</strong> — 01 de Febrero de 1980.  Dirección:  Avenida  Darío Luna, Barrio El Centro, San Pedro Masahuat. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+                        <li><span>1103</span><strong>VIDA, FE Y ESPERANZA.</strong> — 27 de Julio de 1975. Dirección: Cantón Las Isletas, San Pedro Masahuat. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE SAN PEDRO NONUALCO GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1104</span><strong>EL OASIS.</strong> — 24 de  Agosto de  1970.  Dirección:  Barrio El Calvario. San Pedro Nonualco. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>1105</span><strong>LA BARCA.</strong> — 22 de  Julio  de  2001.  Dirección:  Barrio Concepción. San Pedro Nonualco. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 8:30 p.m.  </li>
+                        <li><span>1106</span><strong>MENSAJE   DE   LIBERACIÓN.</strong> — 09   de   Septiembre  de   2004. Dirección:  Cantón San  Ramón,  San  Pedro Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1107</span><strong>UN MILAGRO EN EL CERRO.</strong> — 27 de  Marzo de  2014.  Dirección: Cantón San Juan  Nahuistepeque, San Pedro Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE SAN RAFAEL OBRAJUELO GRUPOS REPORTADOS—04</h4>
+
+
+
+                        <li><span>1108</span><strong>10  DE JUNIO.</strong> — 10 de  Junio  de  2001.  Dirección:  4ª Calle Oriente Barrio Concepción, San Rafael Obrajuelo. Días y horas de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>1109</span><strong>LA PAZ.</strong> — 08  de  Octubre de  1974.  Dirección:  2ª  Calle  Oriente, Colonia   San   Antonio,   San   Rafael   Obrajuelo.  Días   y  horas   de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. </li>
+                        <li><span>1110</span><strong>SAN  RAFAEL.</strong> — 27  de  Noviembre de  2010.  Dirección:  Final 10ª Avenida  Sur Barrio  San  José, San  Rafael  Obrajuelo. Días  y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. </li>
+                        <li><span>1111</span><strong>UNA  LUZ EN  EL CAMINO.</strong> — 15  de  Enero  de  1998.  Dirección: Cantón San  Pedro Mártir,  al Norte  de  San  Rafael  Obrajuelo.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.</li>
+
+                        <h4>MUNICIPIO DE SANTA MARÍA OSTUMA GRUPOS REPORTADOS—02</h4>
+
+
+
+                        <li><span>1112</span><strong>13   DE  AGOSTO.</strong> —  13  de   Agosto  de   1981.   Dirección:   Barrio Candelaria. Santa  María  Ostuma. Días  y horas  de  reuniones: De Lunes  a  Domingo de   6:00  a  8:00  p.m.   </li>
+                        <li><span>1113</span><strong>MENSAJE   DE   SALVACIÓN.</strong> —   05   de   Septiembre  de   1999. Dirección: Santa María Ostuma. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+                        <h4>MUNICIPIO SANTIAGO NONUALCO GRUPOS REPORTADOS—25</h4>
+
+
+
+                        <li><span>1114</span><strong>17 DE MARZO.</strong> — 17 de Marzo de 1974.  Dirección:  Carretera hacia San Pedro Nonualco, Cantón Santa  Teresa  Santiago Nonualco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>1115</span><strong>BENDICIÓN DE DIOS.</strong> — 01 de  Marzo de  2006.  Dirección:  Cantón San Antonio  Arriba Santiago Nonualco. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1116</span><strong>BENDITA LIBERACIÓN.</strong> — 03 de  Abril de  2002.  Dirección:  Cantón San Antonio  Abajo  Santiago Nonualco. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>1117</span><strong>DÁDIVA DE DIOS.</strong> — 01 de Enero de 2007. Dirección: Calle Hermogenes Alvarado  Padre Nº  34,  Barrio  El Calvario,  Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>1118</span><strong>DESPERTAR 04 DE JULIO.</strong> — 04 de Julio de 1982.  Dirección:  Calle Anastasio Aquino,  Barrio La Palma, Santiago Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1119</span><strong>DESPERTAR 04  DE MARZO.</strong> — 04 de  Marzo  de  1980.  Dirección: Carretera a La Herradura, Desvío  Tres Puertas, Tihuilocoyo,  Cantón Las Guarumas. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>1120</span><strong>EL BUEN CAMINO.</strong> — 01 de  Febrero de  2009.  Dirección:  Cantón Jalponguita, Santiago Nonualco. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1121</span><strong>EL BUEN PASTOR.</strong> — 31 de  Julio de  2014.  Dirección:  Caserío Los Cocos  Cantón San José Obrajito, Santiago Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1122</span><strong>ESFUERZO  06   DE  OCTUBRE.</strong> — 06  de   Noviembre  de   1978. Dirección:  Cantón San José Arriba Santiago Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1123</span><strong>MANO  AMIGA.</strong> —  13  de   Junio   de   2012.   Dirección:   Cantón El Carmen, San  José Orajito,   Santiago Nonualco. Días  y horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>1124</span><strong>MENSAJE DE SOBRIEDAD.</strong> — 05 de Abril de 1991. Dirección: Barrio El Ángel  Nº  1, contiguo a paso a La Laguna,  Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1125</span><strong>MI ÚLTIMA ESPERANZA.</strong> — 14 de Noviembre de 1993.  Dirección: Concepción Jalponga, Calle hacia la Hoja de Sal, Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>1126</span><strong>MI ÚLTIMA ESPERANZA.</strong> — 23 de Noviembre de 2004.  Dirección: Colonia  CIDECO, Calle Principal, Polígono K, Casa Nº 15, camino  a San Luis La Herradura, Santiago Nonualco. Días y horas de reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.</li>
+                        <li><span>1127</span><strong>NUEVO  DESPERTAR 13  DE  ENERO.</strong> —  13  de  Enero  de  2002. Dirección:  Cantón San José Abajo Santiago Nonualco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1128</span><strong>NUEVO  DESPERTAR.</strong> — 05  de   Noviembre  de   2010.   Dirección: Caserío Ojo de Agua, Santiago Nonualco. Días y horas de reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>1129</span><strong>NUNCA  ES TARDE PARA SER FELIZ.</strong> — 21 de  Febrero de  2014. Dirección:   Cantón  Santa   Teresa,  Caserío  La  Palmera, Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1130</span><strong>PORFIADEÑO.</strong> —  15  de  Agosto de  2006.   Dirección:   Cantón El Porfiadeño, Calle a San Luis La Herradura, Santiago Nonualco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>1131</span><strong>REGALO DE DIOS.</strong> — 27 de Septiembre de 2004. Dirección: Cantón San  Jose Obrajito Santiago Nonualco. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>1132</span><strong>RENACER 05 DE OCTUBRE.</strong> — 05 de Octubre de 2011.  Dirección: Cantón Amulunco, Santiago Nonualco. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>1133</span><strong>UN MILAGRO 04 DE MARZO.</strong> — 04 de Marzo de 1980.  Dirección: Cantón Los Guarumos, Calle al Cantón Santa  Rita, Hacienda Tihuilocoyo Santiago Nonualco. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>1134</span><strong>UN MILAGRO EN LA FLECHA.</strong> — 10 de  Abril de  1978.  Dirección: Caserío Desvío  La Flecha,   Santiago  Nonualco. Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+                        <li><span>1135</span><strong>UN MILAGRO SAN FRANCISCO HACIENDA.</strong> — 30 de Agosto de 2003. Dirección: Calle Principal hacia San Pedro Nonualco, Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>1136</span><strong>UNA   LUZ EN  EL PORFIADO.</strong> —  01  de   Septiembre  de   2008. Dirección: Desvío El Porfiado, Calle a San Luis La Herradura Santiago Nonualco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1137</span><strong>UNA LUZ EN MI CALVARIO.</strong> — 25 de Octubre de 1972.  Dirección: Colonia   Las  Mercedes.  Días  y  horas   de   reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>1138</span><strong>VIDA NUEVA.</strong> —  29  de   Junio   de   2003.   Dirección:   Carretera  al Litoral,  Desvío  a  San  Pedro  Nonualco,  Santiago  Nonualco.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. </li>
+
+                        <h4>MUNICIPIO DE TAPALHUACA GRUPOS REPORTADOS—02</h4>
+
+
+
+                        <li><span>1139</span><strong>ADELANTE.</strong> — 23 de  Abril de  1967.  Dirección:  Barrio El Centro 1 Cuadra a parque Tapalhuaca. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>1140</span><strong>UNA  LUZ DE  DIOS  EN  LA PALMA.</strong> —  17  de   Abril  de   1977. Dirección:  Cantón San  Pedro La Palma.  Tapalhuaca. Días  y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE ZACATECOLUCA GRUPOS REPORTADOS—17</h4>
+
+
+
+                        <li><span>1141</span><strong>03 DE OCTUBRE.</strong> — 03 de Octubre de 1959.  Dirección:  6a  Avenida y 4a  Calle Poniente 3 Cuadras al Sur del Cuartel  Militar. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m. </li>
+                        <li><span>1142</span><strong>15   DE  NOVIEMBRE.</strong> — 15  de   Noviembre  de   1988.   Dirección: Colonia  Ana  Bella,  Calle  Principal,  Zacatecoluca. Días  y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. </li>
+                        <li><span>1143</span><strong>20  DE  MARZO.</strong> — 20  de  Marzo  de  1971.  Dirección:   Barrio  Los Remedios, 3ª  Calle  Poniente, Nº  2 Zacatecoluca. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+                        <li><span>1144</span><strong>21  DE JULIO.</strong> — 21 de  Julio de  2003.  Dirección:  7ª Avenida  Norte y Calle  Litoral, Zacatecoluca. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>1145</span><strong>28  DE  AGOSTO.</strong> —  28  de  Agosto de  2003.   Dirección:   Colonia San  Carlos,  Zacatecoluca. Días  y horas  de  reuniones: De  Lunes  a Domingo de  6:30 a 8:30 p.m. </li>
+                        <li><span>1146</span><strong>DOS DE JUNIO.</strong> — 02 de  Junio  de  1971.  Dirección:  Barrio Analco, Pasaje  Angúlo  Nº  3, Zacatecoluca. Días y horas  de  reuniones: De Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+                        <li><span>1147</span><strong>MI   ÚLTIMA    ESPERANZA.</strong> —   02    de    Septiembre   de    1983. Dirección:  Colonia  La Esperanza Calle Principal, Rafael Osorio  final, Zacatecoluca. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1148</span><strong>NUEVO DESPERTAR EN BRISAS DE LA PAZ.</strong> — 05 de  Marzo de 2008. Dirección:  Urbanización Brisas de La Paz, Calle Principal, Casa Nº 2, Carretera autopista Zacatecoluca. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.</li>
+                        <li><span>1149</span><strong>PRIMERA TRADICIÓN.</strong> — 21 de Enero de 1987.  Dirección:  6ª Calle Oriente, No   14,  Barrio Santa  Lucía. Zacatecoluca. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  </li>
+                        <li><span>1150</span><strong>RESCATANDO VIDAS.</strong> — 09  de  Noviembre de  2010.  Dirección: Carretera al litoral,  Km 56 ½ frente  al Biggest, Zacatecoluca. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. </li>
+                        <li><span>1151</span><strong>SANTA LUCÍA.</strong> — 22 de Junio de 1977. Dirección: 10ª Avenida Norte y 1ª  Calle  Oriente, Barrio  Santa  Lucía Zacatecoluca. Días  y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. </li>
+                        <li><span>1152</span><strong>UN  MILAGRO DE DIOS.</strong> — 06  de  Mayo  de  1972.  Dirección:  12 Calle Poniente, Nº 9. Barrio El Calvario,  Zacatecoluca. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  y Domingo de 10:00 a.m. a 12:00 m.d.</li>
+                        <li><span>1153</span><strong>UN MILAGRO EN SANTA ROSA.</strong> — 09 de Enero de 1986. Dirección: Cantón Santa  Rosa, Calle Principal 4 Cuadras abajo de La Carretera al  litoral,  Zacatecoluca. Días  y  horas   de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1154</span><strong>UN  OASIS  EN  ANALCO.</strong> —  04  de  Febrero de  2002.  Dirección: 6ª  Calle  Poniente, Barrio  Analco,  Zacatecoluca. Días  y horas   de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.</li>
+                        <li><span>1155</span><strong>UNA LUZ EN EL SOCORRO.</strong> — 21 de Octubre de 1977.  Dirección: Cantón El Socorro, Carretera  Litoral,  Zacatecoluca. Días  y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 17 Hombres.</li>
+                        <li><span>1156</span><strong>UNA  LUZ EN  LA LUCHA.</strong> — 10  de  Agosto de  2003.  Dirección: Cantón La Lucha, Caserío El Chaparral, Calle Principal,  Carretera al litoral, Zacatecoluca. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>1157</span><strong>UNA LUZ EN MI CALVARIO.</strong> — 22 de Febrero de 1999.  Dirección: Avenida  Juan  Manuel  Rodríguez, Barrio El Calvario,  Zacatecoluca. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 20 Hombres.</li>
+                               
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/lapaz.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

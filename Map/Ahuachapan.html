@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. AHUACHAPÁN</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    <h4>MUNICIPIO DE AHUACHAPAN</h4>
+                    <ul>
+                        <li><span>1</span> <strong>LOS AUSOLES.</strong>— 20 de Octubre de 1959. Dirección: 1ª Avenida
+                                            Sur No 3-4 Barrio San José. Días y horas de reuniones: De Lunes a
+                                            Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>2</span> SANTA MARÍA.— 26 de Noviembre de 1965. Dirección: 1ª Avenida
+                                            Norte y 6ª Calle Poniente Nº 3- 6, parque Bernardino Zamora, Barrio
+                                            El Calvario. Días y horas de reuniones: De Lunes a Domingo de 7:00
+                                            a 9:00 p.m. </li>
+                        <li><span>3</span>EL ESPINO.— 11 de Junio de 1968. Dirección: Final 1ª Calle Poniente
+                                            frente 3-3 Calle al Rastro Municipal. Días y horas de reuniones:
+                                            De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>4</span> EL FRONTERIZO.— 22 de Mayo de 1973. Dirección: Cantón El
+                                            Junquillo. Días y horas de reuniones: De Lunes a Domingo de 7:00
+                                            a 9:00 p.m. </li>
+                        <li><span>5</span>FUENTE DE FORTALEZA.— 09 de Agosto de 1986. Dirección: Calle
+                        Central, Colonia Las Palmeras, Cantón Chancullo. Días y horas
+                        de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>6</span> VIDA NUEVA.— 01 de Abril de 1995. Dirección: Calle Principal,
+                        Colonia Las Viñas, Lote Nº 2. Días y horas de reuniones: De Lunes
+                        a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>7</span> EL IVU.— 19 de Junio de 1995. Dirección: Calle San Francisco, Colonia
+                        Cítalia. Días y horas de reuniones: Lunes, Jueves, Viernes, Sábado
+                        y Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>8</span> UNA LUZ EN EL DIAMANTE.— 07 de Febrero de 2011. Dirección:
+                        Colonia El Diamante, Cantón Junquillo. Días y horas de reuniones:
+                        De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                         <h4>MUNICIPIO DE APANECA</h4>
+                        <li><span>9</span> PAZ EN LA ANGUSTIA.— 08 de Marzo de 1961. Dirección: 3ª Avenida
+                        Norte, Barrio San José. Días y horas de reuniones: De Lunes a
+                        Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>10</span> ATIQUIZAYA.— 22 de Junio de 1964. Dirección: Avenida Central
+                        Norte y 6ª Calle Oriente, Nº 2-47, Barrio Las Salinas. Días y horas
+                        de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>11</span> UN MILAGRO DE DIOS.— 21 de Julio de 2010. Dirección: 2ª Calle
+                        Oriente Nº 2-89, Local Nº 1 Barrio Las Salinas. Días y horas de reuniones:
+                        De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>12</span> FE Y ESPERANZA.— 16 de Junio de 2011. Dirección: 4ª Calle
+                        Oriente Nº 2-161, Barrio Las Salinas. Días y horas de reuniones:
+                        De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>13</span>NUEVO AMANECER.— 09 de Agosto de 2011. Dirección: 2ª Calle
+                        Oriente, Nº 2-93, Barrio Las Salinas. Días y horas de reuniones:
+                        De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <h4>MUNICIPIO DE CONCEPCIÓN DE ATACO</h4>
+                        <li><span>14</span>DIOS CON NOSOTROS.— 01 de Septiembre de 1976. Dirección:
+                        6ª Avenida Norte y 1ª Calle Oriente, Barrio El Centro. Días y horas
+                        de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <h4>MUNICIPIO DE GUAYMANGO</h4>
+                        <li><span>15</span>UN MILAGRO.— 27 de Septiembre de 1990. Dirección: 2ª Avenida
+                        Sur, Barrio El Centro, atrás del complejo Educativo. Días y horas de
+                        reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <h4>MUNICIPIO DE JUJUTLA</h4>
+                        <li><span>16</span>02 DE JULIO.— 02 de Julio de 1977. Dirección: Barrio Las Flores,
+                        Villa Jujutla. Días y horas de reuniones: De Lunes a Domingo de
+                        6:00 a 8:00 p.m.</li>
+                        <li><span>17</span>UN CAMINO DE ESPERANZA.— 08 de Diciembre de 1974. Dirección:
+                        Colonia Nueva Guayapa, Cantón Guayapa Abajo. Días y horas
+                        de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>18</span>UNA LUZ EN LA ISLA.— 14 de Mayo de 1975. Dirección: Calle
+                        Principal, Barra de Santiago, contiguo al estero. Días y horas de
+                        reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                         <li><span>19</span>UNA LUZ EN CATARINA.— 23 de Mayo de 1976. Dirección: Carretera
+                        El Litoral Km. 105 Cantón Guayapa, Caserío Catarina. Días y
+                        horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                         <li><span>20</span>SENDERO DE VIDA.— 21 de Enero de 1994. Dirección: Avenida
+                        Armando Vallejo, Barrio Las Flores. Días y horas de reuniones:
+                        De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <h4>MUNICIPIO DE SAN FRANCISCO MENÉNDEZ</h4>
+                        <li><span>21</span>07 DE JUNIO.— 07 de Junio de 1972. Dirección:3ª Avenida Norte
+                        Nº 24, Barrio San Martín, Cara Sucia. Días y horas de reuniones:
+                        De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>22</span>07 DE MARZO.— 07 de Marzo de 2012. Dirección: Calle Principal
+                        La Bocana, Cantón Garita Palmera, Caserío La Playa. Días y horas
+                        de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>23</span>09 DE AGOSTO.— 09 de Agosto de 2014. Dirección: Caserío El
+                        Palmo, Cantón La Hachadura. Días y horas de reuniones: De Lunes
+                        a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>24</span>23 DE AGOSTO.— 23 de Agosto de 2004. Dirección: Caserío El
+                        Castaño, Calle Principal, Cantón La Hachadura. Días y horas de reuniones:
+                        De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>25</span>LA MEJOR TERTULIA.— 08 de Septiembre de 1978. Dirección:Colonia
+                        Silva, Cantón Jocotillo, Puente Arce. Días y horas de reuniones:
+                        De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>26</span>NUEVO RENACER SANTA RITA.— 30 de Julio de 1980. Dirección:
+                        Colonia Menéndez, Cantón La Ceiba, Santa Rita. Días y horas
+                        de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>27</span>REVELACIÓN.— 25 de Agosto de 1982. Dirección: 3ª Avenida Sur
+                        Nº 2, frente al Parque Municipal, Barrio San Martín, Cantón Cara Sucia.
+                        Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00
+                        p.m.</li>
+                        <h4>MUNICIPIO DE SAN PEDRO PUXTLA</h4>
+                        <li><span>28</span>PENSANDOLO BIEN.— 06 de Marzo de 1986. Dirección: Calle
+                        Principal, Barrio El Centro. Días y horas de reuniones: De Lunes a
+                        Domingo de 7:00 a 9:00 p.m</li>
+                        <li><span>29</span>ALEGRÍA DE VIVIR.— 03 de Mayo de 2011. Dirección: Calle Principal,
+                        2ª Calle Oriente, Barrio El Centro. Días y horas de reuniones:
+                        Martes, Jueves, Sábado y Domingo de 7:00 a 9:00 p.m.</li>
+                        <h4>MUNICIPIO DE TACUBA</h4>
+                        <li><span>30</span>DIOS NOS ILUMINÓ LA MENTE.— 10 de Marzo de 1990. Dirección:
+                        Cooperativa El Progreso, Casa roja Cantón Pandiatura. Días y
+                        horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <h4>MUNICIPIO DE TURÍN</h4>
+                        <li><span>31</span>UN NUEVO AMANECER EN TURÍN.— 24 de Octubre de 2011.
+                        Dirección: ½ Cuadra al Poniente de La Unidad de Salud. Días y horas
+                        de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <li><span>32</span>UNIDOS POR DIOS EN A.A.— 20 de Abril de 2014. Dirección: Calle
+                        Poniente del Parque, entrada a La Ex — línea férrea. Días y horas
+                        de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Ahuachapan.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

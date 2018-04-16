@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                  
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. SAN VICENTE</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                   
+                    <ul>
+                    <h4>MUNICIPIO DE APASTEPEQUE</h4>
+                        <li>
+                            <span>1158</span>
+                            <strong>CAMINO DE ESPERANZA.</strong> — 27 de Diciembre de 1962. Dirección: 4ª  Avenida  Norte  Barrio Los Ángeles. Días  y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1159</span>
+                            <strong>UNA  LUZ EN  EL CAMINO.</strong> — . Dirección:  San  Juan  De  Merino Apastepeque. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.
+                        </li>
+                        <li>
+                            <span>1160</span>
+                            <strong>UNA  LUZ EN  EL DESVÍO.</strong> —  12  de  Mayo  de  1996.   Dirección: Colonia  Divina Providencia No  1, Desvío  de  Apastepeque Cantón Las Minas. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1161</span>
+                            <strong>UNA LUZ EN LA LOMA.</strong> — 18 de  Septiembre de  2011.  Dirección: Calle  Principal  Caserío La Loma  Cantón Calderas Apastepeque. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1162</span>
+                            <strong>VERDAD HACIA LA PAZ.</strong> — 13 de  Noviembre de  1973.  Dirección: 2ª Calle Oriente 12 Barrio San Francisco.  Días y horas  de reuniones: De Lunes a Domingo de  4:30 a 6:30 p.m. 
+                        </li>
+                        <li>
+                            <span>1163</span>
+                            <strong>VOLVER A NACER.</strong> — 05  de  Marzo  de  1983.  Dirección:  1ª  Calle Oriente 14-79  Barrio San Francisco  Casa  de  esquina. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE GUADALUPE</h4>
+                        <li>
+                            <span>1164</span>
+                            <strong>15  DE OCTUBRE.</strong> — 15  de  Octubre de  1978.  Dirección:  Cantón San Emigdio  Municipio  de  Guadalupe. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1165</span>
+                            <strong>DE LAS TINIEBLAS A LA LUZ.</strong> — Diciembre de  2012.  Dirección: Calle Principal 50 metros al Sur de La Iglesia Católica  San Francisco Agua  Agría.  Días  y horas  de  reuniones: De  Lunes  a Domingo de 5:00 a 7:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1166</span>
+                            <strong>DIOS CON NOSOTROS.</strong> — 18 de  Noviembre de  1978.  Dirección: 13ª  Calle,  El Calvario,  Guadalupe. Días  y horas  de  reuniones: De Lunes  a  Domingo de  7:00  a  9:00  p.m.
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN CAYETANO ISTEPEQUE</h4>
+                        <li>
+                            <span>1167</span>
+                            <strong>DESPERTAR 05   DE  JULIO.</strong> — 05  de   Julio  de   1994.   Dirección: Cantón  San  José Cerro   Grande  San  Cayetano  Istepeque.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. 
+                        </li>
+                        <li>
+                            <span>1168</span>
+                            <strong>NUEVO  AMANECER.</strong> — 16  de  Abril de  1977.  Dirección:  Colonia La Entrevista  San Cayetano Istepeque. Días y horas  de  reuniones: De Lunes a Domingo de  4:00 a 6:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1169</span>
+                            <strong>UNA  LUZ EN  EL CAMINO.</strong> —  17  de  Junio  de  2002.  Dirección: Entrada a San Cayetano, al costado izquierdo Calle Principal  Nº 1. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. 
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN ESTEBAN CATARINA</h4>
+                        <li>
+                            <span>1170</span>
+                            <strong>NUEVA  VIDA.</strong> — 25  de  Abril  de  2005.   Dirección:   Calle  Central Domingo Santas  Cerro Delicias. Días y horas de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m. 
+                        </li>
+
+                        <h4>MUNICIPIO DE SAN ILDEFONSO</h4>
+                        <li>
+                            <span>1171</span>
+                            <strong>LUZ DE VIDA.</strong> — 06 de Mayo de 1974. Dirección: 1 Cuadra al Norte del parque Central  Barrio Cadelaria. Días y horas  de  reuniones: De Lunes  a  Domingo de  5:00  a  7:00  p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN LORENZO</h4>
+                        <li>
+                            <span>1172</span>
+                            <strong>DIVINA PROVIDENCIA.</strong> — 27 de Junio de 2007. Dirección: Caserío Las Puertas, Santa  Lucía, Municipio  San  Lorenzo.  Días y horas  de reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. 
+                        </li>
+                        <li>
+                            <span>1173</span>
+                            <strong>FUENTE DE AGUA VIVA.</strong> — 15  de  Octubre de  2001.  Dirección: Cantón Santa  Lucía,  2  Cuadras abajo del  Centro Escolar  por  El Conacaste. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1174</span>
+                            <strong>LOS CUBÍAS.</strong> — 12 de  Noviembre de  1998.  Dirección:  Cantón La Cruz, Caserío Los Cubías  San Lorenzo.  Días y horas  de  reuniones: De  Lunes  a Domingo de  5:00  a 7:00  p.m.  
+                        </li>
+                        <li>
+                            <span>1175</span>
+                            <strong>NUEVA FELICIDAD.</strong> — 12 de  febrero de  1984.  Dirección:  2ª Calle Poniente Barrio San Antonio, San Lorenzo. Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN SEBASTIÁN</h4>
+                        <li>
+                            <span>1176</span>
+                            <strong>14 DE JUNIO.</strong> — 14 de Junio  de 1998.  Dirección:  Cantón Las Rosas San Sebastián. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.
+                        </li>
+                        <li>
+                            <span>1177</span>
+                            <strong>15  DE FEBRERO.</strong> — 15 de  Febrero de  1985.  Dirección:  Desvío  El Nance, Cantón Aguacayo, San Sebastián . Días y horas de reuniones: De  Lunes  a Sábado de  5:00  a 7:00  p.m.  
+                        </li>
+                        <li>
+                            <span>1178</span>
+                            <strong>BATANECO.</strong> — 09  de  Agosto de  1972.  Dirección:  3ª  Avenida  Sur Barrio San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1179</span>
+                            <strong>FUENTE DE FORTALEZA.</strong> — 25 de  Diciembre de  1965.  Dirección: Final  Calle   Francisco   Miranda   San  Sebastián.  Días  y  horas   de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  
+                        </li>
+                        <li>
+                            <span>1180</span>
+                            <strong>GENTE RENACIDA EN A.A.</strong> — 15 de  Agosto de  1999.  Dirección: Cantón San José La Labor El Centro, a un costado de Casa Comunal. Días y horas  de  reuniones: De Lunes a Sábado de  5:00 a 7:00 p.m. y Domingo de  8:00 a 10:00  a.m.  
+                        </li>
+                        <li>
+                            <span>1181</span>
+                            <strong>LA NUEVA  ESPERANZA.</strong> — 08  de  Octubre de  1995.  Dirección: Cantón La Esperanza una Cuadra antes de  La Cancha. Días y horas de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1182</span>
+                            <strong>NUEVO HORIZONTE.</strong> — 26 de  Marzo de  1986.  Dirección:  Cantón El Porvenir  Aguacayo, Caserío Los  Domínguez. Días  y horas   de reuniones: De Lunes a Viernes de 6:00 a 8:00 p.m. y Sábado de 4:00 a 6:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1183</span>
+                            <strong>PARAÍSO EN RECUPERACIÓN.</strong> — 03 de Junio  de 1999. Dirección: Cantón El Paraíso San Sebastián. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN VICENTE</h4>
+                        <li>
+                            <span>1184</span>
+                            <strong>15 DE SEPTIEMBRE.</strong> — 15 de Septiembre de 2009. Dirección: Calle Principal  Barrio Concepción contiguo a La Iglesia  de  Concepción. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1185</span>
+                            <strong>26  DE  SEPTIEMBRE.</strong> — 26  de  Septiembre de  2009.   Dirección: Centro Penal  de San Vicente. 
+                        </li>
+                        <li>
+                            <span>1186</span>
+                            <strong>AMAPULAPA.</strong> — 04  de  Junio  de  2004.  Dirección:  Comunidad y Avenida  Lozano  San Jacinto. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1187</span>
+                            <strong>CENTRAL VICENTINO.</strong> — 30 de Septiembre del 1977. Dirección: 6a Calle Oriente 3-32 Barrio San Francisco.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.  
+                        </li>
+                        <li>
+                            <span>1188</span>
+                            <strong>EL REFUGIO.</strong> — 18 de Febrero de 1982. Dirección: 2ª Calle Poniente Casa N° 75 Barrio Concepción. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1189</span>
+                            <strong>EL SANTUARIO.</strong> —  04  de  Abril  de  1966.  Dirección:   4ª  Avenida Norte  Nº 22, Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  
+                        </li>
+                        <li>
+                            <span>1190</span>
+                            <strong>LUZ Y ESPERANZA.</strong> — 03  de  Abril de  2014.  Dirección:  5ª  Calle Oriente Casa Nº 12. Días y horas  de  reuniones: De Lunes a Sábado de  6:30  a 8:30  y Domingo de  10:00  a.m.  a 12:00  m.d. 
+                        </li>
+                        <li>
+                            <span>1191</span>
+                            <strong>MARAVILLAS DEL 2002.</strong> — 18 de Mayo de 2002. Dirección: Centro Penal de San Vicente. Miembros asistentes: 25 Hombres  
+                        </li>
+                        <li>
+                            <span>1192</span>
+                            <strong>NAVE DE SALVACIÓN.</strong> — 30 de Agosto de 1974. Dirección: 8ª Calle Poniente Nº 20, Barrio San Juan  de Dios. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1193</span>
+                            <strong>NUEVA VIDA.</strong> — . Dirección:  10ª Calle Poniente Nº 26, Barrio San Juan  de  Dios. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1194</span>
+                            <strong>RENACER EN  PRIMAVERA.</strong> — 14  de  Abril de  2013.  Dirección: Calle  Principal  Colonia  Primavera  local Nº 4 Polígono 16 S.V. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  7:30  p.m. 
+                        </li>
+                        <li>
+                            <span>1195</span>
+                            <strong>RENOVACIÓN.</strong> — 04 de Febrero de 1961.  Dirección:  Avenida Crescencio Miranda Casa Nº 45. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE SANTA CLARA</h4>
+                        <li>
+                            <span>1196</span>
+                            <strong>ILUMINACIÓN SANTA  CLARA.</strong> — 28  de   Septiembre de   2008. Dirección:  Calle  Principal,  frente  a Casa  Comunal. Días y horas  de reuniones: De  Lunes  a  Domingo de  4:00  a  6:00  p.m.  
+                        </li>
+                        <li>
+                            <span>1197</span>
+                            <strong>UNA LUZ EN LA JOYA HONDA.</strong> — 04 de Junio de 2014. Dirección: Cantón El Tortuguero, Santa  Clara.  Días y horas  de  reuniones: De Lunes  a  Domingo de  5:00  a  7:00  p.m. 
+                        </li>
+
+                    <h4>MUNICIPIO DE SANTO DOMINGO</h4>
+                        <li>
+                            <span>1198</span>
+                            <strong>AHORA SOY FELIZ.</strong> — 07 de  Septiembre de  1977.  Dirección:  Una Cuadra Abajo  al Oriente del parque, Barrio El Centro. Días y horas de reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m. y Domingo de 5:00 a 7:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1199</span>
+                            <strong>MANANTIAL DE SOBRIEDAD.</strong> — 15 de  Noviembre de  1975. Dirección:  Calle  hacia  línea  férrea,  Barrio La Cruz. Días y horas  de reuniones: De Lunes a Sábado de  6:00  a 8:00  p.m.  y Domingo de 4:00 a 6:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1200</span>
+                            <strong>SANTO  DOMINGO.</strong> —   25  de   Septiembre  de   1962.   Dirección: Avenida  15 de  Septiembre Barrio San José, Santo  Domingo. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. 
+                        </li>
+                        <li>
+                            <span>1201</span>
+                            <strong>SOL DE ORIENTE.</strong> — 28  de  Marzo  de  2007.  Dirección:  Carretera Panamericana Km. 47  Caserío Los  Manantiales. Días  y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE TECOLUCA</h4>
+                        <li>
+                            <span>1202</span>
+                            <strong>MI NUEVA  VIDA.</strong> — 20  de  Noviembre de  1991.  Dirección:  Calle Principal  San  Nicolás  Lempas  a 200  metros de  gasolinera Texaco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. 
+                        </li>
+                        <li>
+                            <span>1203</span>
+                            <strong>RENACIMIENTO.</strong> — 04 de  Febrero de  2006.  Dirección:  3ª Avenida Sur Nº  3 Barrio El Calvario,  Tecoluca. Días  y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1204</span>
+                            <strong>UN  MILAGRO EN  SANTA  TERESA.</strong> — 20  de  Octubre de  2013. Dirección:   El  Playón   Santa   Teresa,  Tecoluca.  Días   y  horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE TEPETITÁN</h4>
+                        <li>
+                            <span>1205</span>
+                            <strong>BUENA  VOLUNTAD.</strong> — 25  Junio  de  1970.  Dirección:  3a  Avenida Sur, Barrio El Centro Nueva  Tepetitán.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1206</span>
+                            <strong>DESPERTAR 51.</strong> — 25 de Junio  de 1983. Dirección:  Km. 51, Cantón La Virgen  Municipio  de  Tepetitán. Días  y horas  de  reuniones: De Lunes  a  Domingo de  4:00  a  6:00  p.m.  
+                        </li>
+                        <li>
+                            <span>1207</span>
+                            <strong>RENACER EN  UNA  NUEVA  LUZ.</strong> — 28  de   Agosto  del  2002. Dirección:  Concepción Cañas,  Tepetitán. Días y horas  de reuniones: De  Lunes  a Domingo de  5:00  a 7:00  p.m.  
+                        </li>
+
+                    <h4>MUNICIPIO DE VERAPAZ</h4>
+                        <li>
+                            <span>1208</span>
+                            <strong>02 DE ABRIL.</strong> — 02 de Abril de 1989.  Dirección:  Cantón El Carmen de Verapaz. Días y horas de reuniones: Miércoles, Sábado y Domingo de 5:00 a 7:00 p.m.  
+                        </li>
+                        <li>
+                            <span>1209</span>
+                            <strong>NUEVO   RENACER  11   DE  MAYO.</strong> —  11   de   Mayo   de   2002. Dirección: Barrio Mercedes, ½ Cuadra atrás de La Iglesia Evangélica. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:00 p.m.
+                        </li>
+                        <li>
+                            <span>1210</span>
+                            <strong>VOLVÍ A NACER EN  A.A.</strong> —  16  de  Mayo  de  1992.  Dirección:  3 Cuadras abajo de  La línea férrea  Colonia  Santa  María C/ Molinero. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. 
+                        </li>
+
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/San_Vicente.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

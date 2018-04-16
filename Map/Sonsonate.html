@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+               <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                	<h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. SONSONATE</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    <h4>MUNICIPIO DE ACAJUTLA</h4>
+                    <ul>
+                        <li>
+                            <span>102</span>
+                            <strong>06 DE OCTUBRE UN MILAGRO EN BUENOS AIRES. </strong>— 06 de Octubre de 2014. Dirección: Colonia Buenos Aires, Cantón Metalío, Acajutla. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 5 Hombres.
+                        </li>
+						<li>
+							<span>103</span>
+							<strong>15 DE SEPTIEMBRE </strong>— 15 de  Septiembre de  1971.  Dirección:  Calle Principal  Nº  47,  Colonia  El Boulevard, Cantón Metalío,  Acajutla. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 24 Hombres.
+						</li>
+						<li>
+						<span>104</span>
+						<strong>16 DE ENERO. </strong>— 16 de Enero de 1964.  Dirección:  Colonia  Acaxual Nº  1,  Calle  Principal,  frente  a  oficina  de  Correos de  El Salvador, Acajutla. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>105</span>
+						<strong>1º DE DICIEMBRE. </strong>— 01 de Diciembre de 1977.  Dirección:  Colonia Mesa Verde, Caserío Kilo 5, Cantón San Julián, Acajutla. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 6 Hombres.
+						</li>
+						<li>
+						<span>106</span>
+						<strong>24 DE MARZO UNA LUZ EN EL MORA. </strong>— 24 de  Marzo de  2012. Dirección:  Caserío El Mora,  frente  a  La Cancha, Cantón Metalío, Acajutla. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 7 Hombres.
+						</li>
+						<li>
+						<span>107</span>
+						<strong>DESPERTAR 74 </strong>.—  06 de  Noviembre de  1974.  Dirección:  Colonia Acaxual  Nº  2,  Avenida  B, Casa  Nº  33,  Acajutla.  Días  y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 6 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>108</span>
+						<strong>FE EN LA VIDA. </strong>— 17 de Julio de 1989.  Dirección:  Zona Industrial, C.E.P.A., Acajutla. Días y horas  de reuniones: De Lunes a Viernes de 12:00 a 1:00 p.m.  Miembros asistentes: 6 Hombres.
+						</li>
+						<li>
+						<span>109</span>
+						<strong>LOS AMIGOS. </strong>.—  29  de  Noviembre de  2005.  Dirección:  Colonia Acaxual  Nº  2,  Calle  Principal  Nº  54,  Acajutla.   Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes: 12 Hombres y 2 Mujeres.
+						</li>
+						<li>
+						<span>110</span>
+						<strong>RENACER 09 DE OCTUBRE. </strong>— 09 de Octubre de 2000.  Dirección: Colonia   Magdalena  Nº  2  Block  F  contiguo  a  Iglesia   Nazareth, Acajutla. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 19 Hombres.
+						</li>
+						<li>
+						<span>111</span>
+						<strong>UNA LUZ EN LAS ATARRAYAS. </strong>— 24 de Enero de 1994. Dirección: Comunidad San Roque, Barrio Las Atarrayas,  50 metros al Norte  de La antigua estación del  ferrocarril  sobre línea  férrea.  Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 7 Hombres y 3 Mujeres.
+						</li>
+						
+						<h4>MUNICIPIO DE ARMENIA</h4>
+						<li>
+						<span>112</span>
+						<strong>ARMENIA. </strong>—  17   de   Septiembre  de   1969.   Dirección:   4ª   Calle Poniente Nº 33, Barrio La Cruz, Armenia.  Días y horas  de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 10 Hombres.
+						</li>
+						<li>
+						<span>113</span>
+						<strong>EL ÚNICO REQUISITO </strong>— 25 de  Enero  de  1998.  Dirección:  Pasaje El Estote Nº  2  entre 6ª  y 7ª  Calle  Oriente, Barrio  Santa  Teresa, Armenia.  Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 10 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>114</span>
+						<strong>FE QUE OBRA. </strong>— 16 de  Agosto de  1982.  Dirección:  Calle  Arturo Araujo Nº 5 y 7ª Avenida  Sur, Barrio La Cruz, Armenia.  Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 7 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>115</span>
+						<strong>MARAVILLA DEL 70. </strong>— 16 de Mayo de 1971. Dirección: 1ª Avenida Sur Nº  17,  Barrio Nuevo, Armenia.  Días y horas  de  reuniones: De Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes:  10 Hombres.
+						</li>
+						<li>
+						<span>116</span>
+						<strong>PROVIDENCIA 21 DE ENERO. </strong>— 21 de Enero  de 1983.  Dirección: 5ª Calle Poniente Nº 27, Colonia  Divina Providencia, Armenia.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. Miembros asistentes: 3 Hombres.
+						</li>
+						<li>
+						<span>117</span>
+						<strong>PUERTA DE SALVACIÓN. </strong>— 01 de Septiembre de 2001.  Dirección: Cantón La Puerta 2ª  Zona,  Caserío Puente  Seco,   Armenia.   Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. Miembros asistentes: 6 Hombres
+						</li>
+						<li>
+						<span>118</span>
+						<strong>RENOVACIÓN   07   DE  AGOSTO </strong>—   07   de   Agosto  de   1979. Dirección:  Calle Lito Barrientos por La 5ª Calle Oriente, Barrio Santa Teresa, Armenia.  Días y horas  de  reuniones: De Lunes  a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 18 Hombres y 2 Mujeres.
+						</li>
+						<li>
+						<span>119</span>
+						<strong>UN  MILAGRO EN  LAS CRUCITAS. </strong>— 19  de   Agosto de   2000. Dirección:  Cantón Las Crucitas  1ª Zona,  Armenia.  Días y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes: 7 Hombres.
+						</li>
+						<li>
+						<span>120</span>
+						<strong>UNA  LUZ EN LA PUERTA </strong>— 10  de  Agosto de  2010.  Dirección: Cantón La Puerta, 1ª  Zona  frente  a  Iglesia  Católica  Santa  Ursula, Armenia.  Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 7 Hombres.
+						</li>
+						<li>
+						<span>121</span>
+						<strong>UNIDOS  22  DE AGOSTO. </strong>—  22  de  Agosto de  2002.  Dirección: 2ª  Calle  Oriente, Barrio  San  Sebastián, Armenia.  Días  y horas  de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						
+						<h4>MUNICIPIO DE CUISNAHUAT</h4>
+
+						<li>
+						<span>122</span>
+						<strong>BUSCANDO  LA LUZ EN SAN  LUCAS. </strong>— 10  de  Marzo  de  2013. Dirección:  Cantón y Caserío San Lucas, entre El Centro Escolar y La Iglesia  Católica, Cuisnahuat. Días y horas  de  reuniones: De  Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE IZALCO</h4>
+						
+						<li>
+						<span>123</span>
+						<strong>ASUNCIÓN. </strong>— 12 de Junio  de 1972. Dirección:  2ª Avenida Sur Nº 2 y 4ª Calle Oriente, Barrio Asunción, Izalco. Días y horas de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+						</li>
+						<li>
+						<span>124</span>
+						<strong>CHISPAZO  DIVINO. </strong>—  09  de   Septiembre  de   2011.   Dirección: Caserío La Santa  Sión,  sobre La Calle  Cantonal Principal,  Cantón Piedras   Pachas,  Izalco.  Días  y  horas   de   reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>125</span>
+						<strong>FARO DE SALVACIÓN. </strong>—  19  de  Diciembre de  1976.  Dirección: 1ª Calle Oriente Nº 3, Barrio San Sebastián Izalco. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 15 Hombres.
+						</li>
+						<li>
+						<span>126</span>
+						<strong>MI ÚNICO CAMINO. </strong>— 08 de Marzo de 1990.  Dirección:  Hacienda Las  Trincheras, Cantón  Piedras   Pachas,  Izalco.  Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes: 13 Hombres.
+						</li>
+						<li>
+						<span>127</span>
+						<strong>RECUPERACIÓN 2003. </strong>— 23  de  Noviembre de  2003.  Dirección: 8ª Calle Poniente, entre 1ª Avenida  Sur y Avenida  “Atlacatl”, Barrio “Asunción”, Izalco. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>128</span>
+						<strong>RENACER 08 DE OCTUBRE. </strong>— 08 de Octubre de 1982.  Dirección: Cantón El Zunza,  Izalco.  Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 18 Hombres.
+						</li>
+						<li>
+						<span>129</span>
+						<strong>RENOVACIÓN 07  DE JUNIO. </strong>— 07 de  Junio  de  2007.  Dirección: 2 Cuadras al Norte  de  La Iglesia  Católica, Cantón El Zunza, Izalco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 5 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE JUAYUA</h4>
+						<li>
+						<span>130</span>
+						<strong>ÉSTE ES MI CAMINO. </strong>— 06 de Agosto de 1974. Dirección: Carretera entre Juayúa y Los Naranjos, Cantón San José La Majada, Juayúa. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 20 Hombres.
+						</li>
+						<li>
+						<span>131</span>
+						<strong>EL PROGRESO. </strong>— 02  de  Junio  de  1963.  Dirección:  Colonia  IVU, Pasaje  Nº 1 Casa No 1, Juayúa. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 5 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE NAHUIZALCO</h4>
+
+						<li>
+						<span>132</span>
+						<strong>02  DE OCTUBRE. </strong>— 02  de  Octubre de  1996.  Dirección:  Cantón El Carrizal, Zona Abajo,  Nahuizalco. Días y horas  de  reuniones: De Lunes  a  Domingo de  6:00  a  8:00  p.m.  Miembros asistentes:  24 Hombres.
+						</li>
+						<li>
+						<span>133</span>
+						<strong>10  DE JUNIO. </strong>— 10 de  Junio  de  1980.  Dirección:  Calle El Paraíso por  La Avenida  El Calvario,  Barrio Las Mercedes,  Nahuizalco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 17 Hombres.
+						</li>
+						<li>
+						<span>134</span>
+						<strong>11  DE  SEPTIEMBRE. </strong>— 11  de  Septiembre de  2010.   Dirección: Cantón Sabána Grande, Zona  Centro frente  a  Cancha de  fútbol, Nahuizalco. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+						</li>
+						<li>
+						<span>135</span>
+						<strong>CAMBIO DE VIDA. </strong>— 03 de  Marzo de  1992.  Dirección:  Cantón El Carrizal,  Zona  Arriba,  Caserío Sabanita, Nahuizalco. Días  y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+						</li>
+						<li>
+						<span>136</span>
+						<strong>CON PASO FIRME 05 DE ABRIL. </strong>— 05 de Abril de 2011. Dirección: Villa San  Antonio,   sobre 3ª  Calle  Oriente Barrio  Las  Mercedes, Nahuizalco. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+						</li>
+						<li>
+						<span>137</span>
+						<strong>LIMPIEZA INTERIOR. </strong>—  07  de  Abril de  2012.  Dirección:  Cantón Sabána  Grande,  Zona   Centro,  Nahuizalco, entre  La  1ª   Iglesia Bautista y La canchita de fútbol. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>138</span>
+						<strong>RENACER EN EL SIGLO XXI. </strong>— 27 de  Enero  de  2008.  Dirección: Cantón El Carrizal, Zona Sur, Nahuizalco. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 24 Hombres.
+						</li>
+						<li>
+						<span>139</span>
+						<strong>SALVEMOS UNA VIDA. </strong>— 01 de  Julio de  1993.  Dirección:  Cantón El Carrizal,  Nahuizalco. Días  y  horas   de   reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 3 Hombres.
+						</li>
+						<li>
+						<span>140</span>
+						<strong>SAN  JUAN  BAUTISTA. </strong>— 02  de  Noviembre de  1964.  Dirección: 3ª  Avenida   Sur,  Barrio  El Calvario,  Nahuizalco. Días  y  horas   de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 12 Hombres.
+						</li>
+						<li>
+						<span>141</span>
+						<strong>SERENIDAD. </strong>— 06 de  Agosto de  1976.  Dirección:  Cantón Pushtan Zona  Centro, Nahuizalco. Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres.
+						</li>
+						<li>
+						<span>142</span>
+						<strong>UN MILAGRO EN EL CERRITO. </strong>—  13 de Enero de 2007. Dirección: Carretera a  Ahuachapán, Km. 70  Colonia  El Cerrito,  Nahuizalco. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 6 Hombres.
+						</li>
+						<li>
+						<span>143</span>
+						<strong>UN  MILAGRO EN  LAS  MERCEDES. </strong>— 24  de   Julio   de   1981. Dirección:  5ª  Avenida  Norte, Barrio  La Trinidad,  Nahuizalco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 13 Hombres.
+						</li>
+						<li>
+						<span>144</span>
+						<strong>UNA  LUZ ENTRE LOS JÓVENES. </strong>— 20 de  Septiembre de  2010. Dirección:  Cantón El Carrizal, Zona Centro, Nahuizalco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 5 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE NAHULINGO</h4>
+						<li>
+						<span>145</span>
+						<strong>UN MILAGRO DE DIOS. </strong>— 01 de Julio de 1992. Dirección: Avenida 23  de  Noviembre,  Barrio  Santiago,  Nahulingo. Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m.  Miembros asistentes: 17 Hombres y 2 Mujeres.
+						</li>
+
+						<h4>MUNICIPIO DE SALCOATITAN</h4>
+						<li>
+						<span>146</span>
+						<strong>RESURRECCIÓN </strong>.— 06 de  Agosto de  1965.  Dirección:  1ª Avenida Sur,  50  metros al Sur de  La Alcaldía  Municipal,  Barrio  El Rosario Salcoatitán. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 5 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SAN ANTONIO DEL MONTE</h4>
+						<li>
+						<span>147</span>
+						<strong>NUESTRO PODER SUPERIOR </strong>.— 15 de  Junio  de  1978.  Dirección: Cantón San  Ramón,   Zona  Arriba,  San  Antonio   del  Monte.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. Miembros asistentes: 12 Hombres.
+						</li>
+						<li>
+						<span>148</span>
+						<strong>UN MILAGRO 13 DE MARZO. </strong>— 13 de Marzo de 2004.  Dirección: Cantón San  Ramón,   Zona  Abajo,   San  Antonio   del  Monte.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. Miembros asistentes: 10 Hombres.
+						</li>
+						<li>
+						<span>149</span>
+						<strong>UNA LUZ EN LAS TINIEBLAS </strong>.— 20 de  Marzo de  2012.  Dirección: Cantón San  Ramón,   Zona  Arriba,  San  Antonio   del  Monte.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. Miembros asistentes: 5 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SAN JULIAN</h4>
+						<li>
+						<span>150</span>
+						<strong>29  DE MAYO. </strong>— 29  de  Mayo  de  2006.  Dirección:  Caserío Casco de  La Hacienda, Cantón Los Lagartos, San Julián.  Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  Miembros asistentes: 9 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SANTA CATARINA MASAHUAT</h4>
+						<li>
+						<span>151</span>
+						<strong>LA FE DE HOY. </strong>— 28 de  Octubre de  1976.  Dirección:  4ª Avenida Norte, Barrio El Rosario,  Santa  Catarina Masahuat. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 15 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SANTA ISABEL ISHUATAN</h4>
+						<li>
+						<span>152</span>
+						<strong>DESPERTAR DEL HOMBRE. </strong>— 16  de  Marzo  de  2004.  Dirección: Cantón Atiluya, Carretera entre Ishuatán y San Julián,  Santa  Isabel Ishuatán. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 5 Hombres.
+						</li>
+						<li>
+						<span>153</span>
+						<strong>LUZ Y ESPERANZA. </strong>— 01 de  Febrero de  2012.  Dirección:  Colonia La Sabána, Cantón Apancoyo, Santa  Isabel  Ishuatán. Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 6 Hombres.
+						</li>
+						<li>
+						<span>154</span>
+						<strong>SOLO DIOS CONMIGO. </strong>—  13  de  Diciembre de  2011.  Dirección: Carretera Litoral,  Caserío Linda  Vista,  Cantón Las Piedras, Santa Isabel Ishuatán. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+						</li>
+						<li>
+						<span>155</span>
+						<strong>UN  NUEVO  AMANECER. </strong>— 22  de  Agosto de  1981.  Dirección: Avenida  Gerardo Barrios, Barrio El Calvario,  Santa  Isabel  Ishuatán. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 13 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SANTO DOMINGO DE GUZMAN</h4>
+						<li>
+						<span>156</span>
+						<strong>MI ÚNICA ESPERANZA </strong>01 de  Mayo de  1974.  Dirección:  Calle al Cantón El Zope,  50 metros al Sur del Desvío  de  Santo  Domingo de  Guzmán. Días y horas  de  reuniones: De  Lunes  a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+
+						<h4>MUNICIPIO DE SONSONATE</h4>
+						<li>
+						<span>157</span>
+						<strong>AMANECER 1º DE AGOSTO. </strong>— 01 de Agosto de 1988.  Dirección: Lote  Nº 51, Block H, Colonia  EL Mirador,  San Antonio  del  Monte. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 3 Hombres.
+						</li>
+						<li>
+						<span>158</span>
+						<strong>ANGÉLICA. </strong>— 25 de  Mayo de  1976.  Dirección:  20ª Avenida  Norte Nº 1-5 por  La 1ª Calle Oriente, Colonia  Angélica, Sonsonate.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 10 Hombres.
+						</li>
+						<li>
+						<span>159</span>
+						<strong>ATONALT. </strong>— 05  de  Marzo  de  1982.  Dirección:  Final  3ª  Avenida Norte  Nº 6-3, Jicalapita, Barrio Mejicanos, Sonsonate. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 4 Hombres.
+						</li>
+						<li>
+						<span>160</span>
+						<strong>CENTRAL COLONIA  14. </strong>—   15  de   Agosto de   1986.   Dirección: Avenida Fabián Mucci Nº 9-2, esquina opuesta a La 15ª Calle Oriente, Colonia  14  de  Diciembre, Sonsonate. Días  y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+						</li>
+						<li>
+						<span>161</span>
+						<strong>CUENTO  CONTIGO. </strong>—  28  de   Octubre  de   2003.   Dirección:   1ª Avenida  Norte  Nº 51 Colonia  San Genaro, Sonsonate. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>162</span>
+						<strong>EL ÁNGEL. </strong>— 13 de  Febrero de  1963.  Dirección:  6ª Avenida  Norte Nº 2-3 Barrio El Ángel,  Sonsonate. Días y horas  de  reuniones: De Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes:  12 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>163</span>
+						<strong>FE EN LA ACCIÓN. </strong>— 15 de  Febrero de  1972.  Dirección:  8ª Calle Poniente Nº 4-2, Colonia  San Antonio,  Sonsonate. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>164</span>
+						<strong>LA NUEVA VIDA LA ENCONTRÉ EN A.A. </strong>— 02 de Mayo de 1981. Dirección:   Caserío  Medina  Luna,  Cantón  EL Presídio,   Carretera Litoral, Sonsonate. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 7 Hombres.
+						</li>
+						<li>
+						<span>165</span>
+						<strong>LAS 24  HORAS. </strong>—  16  de  Octubre de  1958.  Dirección:  Avenida Carlos  Sandoval Langenegger (5ª Avenida  Norte)  Nº 3-9, Barrio El Pilar, Sonsonate. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>166</span>
+						<strong>NUEVA VIDA (INSTITUCIONAL). </strong>— 30 de Mayo de 1978. Dirección: 6ª Avenida Sur Nº 3—1, Barrio El Ángel, Sonsonate, Centro Penal de Sonsonate. Días y horas de reuniones: Todos Los días en Los recintos A, B y C, de 1:30 a 3:30 p.m.  Miembros asistentes: 38 Hombres
+						</li>
+						<li>
+						<span>167</span>
+						<strong>NUEVO RENACER EN TAWÍLL, 1º DE AGOSTO. </strong>— 01 de  Agosto de  1990.  Dirección:  Cooperativa San  Luis Tawill, Carretera  Litoral, Cantón Tonalá,  Sonsonate. Días y horas  de  reuniones: De Lunes  a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres.
+						</li>
+						<li>
+						<span>168</span>
+						<strong>MOVIMIENTO ANTI—ALCOHÓLICO. </strong>— 12 de  Octubre de  2013. Dirección:  1ª  Calle  Oriente por  La 18ª  Avenida  Norte, comercial Génesis local  No  5 Colonia  Angélica, Sonsonate.  Días  y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 15 Hombres.
+						</li>
+						<li>
+						<span>169</span>
+						<strong>REHABILITACIÓN 03 DE JULIO (INSTITUCIONAL). </strong>— 03 de Julio de  2014.  Dirección:  Hospital  Nacional  Dr. Jorge Mazzini Villacorta, Calle  Masferrer  Poniente Nº  3-1  Barrio San  Francisco,  Sonsonate. Días  y horas  de  reuniones: Jueves y Viernes  de  2:00  a 4:00  p.m. Miembros asistentes: 20 Hombres.
+						</li>
+						<li>
+						<span>170</span>
+						<strong>SENDERO DE VIDA </strong>.— 27  de  Julio  de  1977.  Dirección:  1ª  Calle Poniente Nº 5-1, Barrio San Francisco,  Sonsonate. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>171</span>
+						<strong>SENSUNAPÁN. </strong>—  26  de   Septiembre de   1977.   Dirección:   Calle Acaxual Casa Nº 56, Colonia  Sensunapán I, Sonsonate. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+						</li>
+						<li>
+						<span>172</span>
+						<strong>UN PILAR DE SALVACIÓN. </strong>— 21 de  Mayo de  1974.  Dirección:  7ª Calle  Poniente Nº  4-9  Bis., esquina opuesta a  La Avenida  Carlos Sandoval Langenegger, Barrio El Pilar, Sonsonate. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 15 Hombres y 1 Mujer.
+						</li>
+						<li>
+						<span>173</span>
+						<strong>ZENZONTLATH. </strong>— 06 de  Septiembre de  1975.  Dirección:  2ª Calle Oriente Nº 1-13,  Colonia  Santa  Marta,  Sonsonate. Días y horas  de reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes: 18 Hombres.
+						</li>
+
+
+						<h4>MUNICIPIO DE SONZACATE</h4>
+						<li>
+						<span>174</span>
+						<strong>12  DE OCTUBRE. </strong>— 12 de  Octubre de  1964.  Dirección:  Local Nº 2, 2ª planta, Calle Principal frente  a Oficina Parroquial de  La Iglesia Católica, Sonzacate. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+						</li>
+
+
+
+
+
+
+
+
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+               
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Sonsonate.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

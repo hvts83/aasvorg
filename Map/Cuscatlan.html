@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+               <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. CUSCATLÁN</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    <h4>MUNICIPIO DE CANDELARIA</h4>
+                    <ul>
+                        <li>
+                            <span>175</span>
+                            <strong>24 DE JULIO.</strong>— 24 de Julio de 1974. Dirección: Calle Manuel Díaz,
+                            Pasaje Pérez Nº 1. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 15Hombres.
+                        </li>
+                        <li>
+                            <span>176</span>
+                            <strong>25 DE FEBRERO.</strong>— 25 de Febrero de 1975. Dirección: Cantón San
+                            Juan Miraflores Arriba, Pasaje Los Pérez. Días y horas de reuniones:
+                            De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 29
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>177</span>
+                            <strong>29 DE AGOSTO.</strong>— 29 de Agosto de 1979. Dirección: Cantón Miraflores
+                            Abajo. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>178</span>
+                            <strong>CORAZONES FELICES.</strong>— 27 de Agosto de 1979. Dirección: Cantón
+                            Concepción frente a La Escuela. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros
+                            asistentes:28Hombres.
+                        </li>
+                        <li>
+                            <span>179</span>
+                            <strong>NUEVA VIDA 11 DE ABRIL.</strong>— 11 de Abril de 2005. Dirección: Cantón
+                            San Antonio. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>180</span>
+                            <strong>RENACER 05 DE JULIO.</strong>— 05 de Julio de 2004. Dirección: Cantón
+                            San José La Ceiba. Días y horas de reuniones: De Lunes a Domingo 
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 19 Hombres.
+                        </li>
+                        <li>
+                            <span>181</span>
+                            <strong>UNA LUZ EN SAN RAFAEL.</strong>— 18 de Abril de 2010. Dirección:
+                            Cantón San Rafael La Loma. Días y horas de reuniones: De Lunes
+                            a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 16 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE COJUTEPEQUE</h4>
+                        <li>
+                            <span>182</span>
+                            <strong>1° DE JULIO</strong>— 01 de Julio de 1984. Dirección: Colonia Cuscatlán,
+                            Desvío a Monte San Juan. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 13 Hombres y
+                            1 Mujer.
+                        </li>
+                        <li>
+                            <span>183</span>
+                            <strong>20 DE JULIO.</strong>— 20 de Julio de 1981. Dirección: Colonia Jardínes
+                            de Las Pavas, N° 9, Calle a San Ramón. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 18
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>184</span>
+                            <strong>20 DE MAYO.</strong>— 20 de Mayo de 1975. Dirección: Barrio San José 2ª
+                            Avenida Sur y 8ª Calle Oriente Casa N 113. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 30 Hombres 1 Mujer.
+                        </li>
+                        <li>
+                            <span>185</span>
+                            <strong>EL CALVARIO.</strong>— 04 de Agosto de 1978. Dirección: Barrio El Calvario,
+                            2ª Calle Poniente N° 73. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 24 Hombres
+                            1 Mujer.
+                        </li>
+                        <li>
+                            <span>186</span>
+                            <strong>UNIDOS.</strong>— 17 de Enero de 1960. Dirección: Costado Norte del
+                            Parque Francisco Menéndez (Parque Viejo). Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 26 Hombres. 
+                        </li>
+                        <li>
+                            <span>187</span>
+                            <strong>DESPERTAR 20 DE OCTUBRE.</strong>— 20 de Octubre de 2013. Dirección:
+                            Colonia  San Antonio 1, Km. 30 Carretera Panamericana. Días
+                            y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. 
+                            Miembros asistentes: 7 Hombres.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE EL CARMEN</h4>    
+                        <li>
+                            <span>188</span>
+                            <strong>13 DE MAYO.</strong>— 13 de Mayo de 1986. Dirección: Cantón San Antonio
+                            2 Cuadras al Oriente de La Ermita. Días y horas de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m. 
+                            Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>189</span>
+                            <strong>17 DE OCTUBRE.</strong>— 17 de febrero de 2011. Dirección: Calle Briosco,
+                            Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>190</span>
+                            <strong>UNA LUZ EN MI CAMINO.</strong>— 10 de Junio de 1983. Dirección: Cantón
+                            El Carmen. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros
+                            asistentes: 15 Hombres y 1 Mujer.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE EL ROSARIO</h4>
+                        <li>
+                            <span>191</span>
+                            <strong>CAMINO DE SALVACIÓN.</strong>— 07 de Mayo de 1976. Dirección: Barrio
+                            El Centro. Días y horas de reuniones: De Lunes a Domingo de 
+                            4:30 a 6:30 p.m. Miembros asistentes: 20 Hombres.
+                        </li>
+
+                    <H4>MUNICIPIO DE MONTE SAN JUAN</H4>    
+                        <li>
+                            <span>192</span>
+                            <strong>FELIZ MENSAJE.</strong>— 18 de Noviembre de 1980. Dirección: Barrio
+                            El Centro, contiguo a Juzgado de Paz. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 13 
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>193</span>
+                            <strong>HAY UNA LUZ EN SAN MARTÍN.</strong>— 03 de Junio de 1991. Dirección:
+                            Cantón San Martín Calle Principal, 1 Cuadra después de La
+                            Ermita Católica. Días y horas de reuniones: De Lunes a Domingo de 
+                            6:00 a 8:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>194</span>
+                            <strong>LLEVANDO EL MENSAJE.</strong>— 07 Septiembre de 2006. Dirección:
+                            Cantón San José, Calle Principal. Días y horas de reuniones: De Lunes
+                            a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>195</span>
+                            <strong>NUEVO RENACER 27 DE JUNIO UNA LUZ EN SOLEDAD.</strong>— 27 
+                            de Junio de 1995. Dirección: Cantón. Soledad, contiguo a Ermita
+                            Católica. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>196</span>
+                            <strong>SAGRADO DE DIOS.</strong>— 01 de Enero de 2004. Dirección: Cantón.
+                            El Rosario, una Cuadra después de La Ermita Católica. Días y horas
+                            de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 9 Hombres.
+                        </li>
+
+                    <H4>MUNICIPIO DE ORATORIO DE CONCEPCIÓN</H4>
+                        <li>
+                            <span>197</span>
+                            <strong>PALACIO CON PUERTAS ABIERTAS.</strong>— 03 de Mayo de 2009. Dirección:
+                            Cantón Palacios. Días y horas de reuniones: De Lunes a
+                            Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+
+                        <H4>MUNICIPIO DE SAN BARTOLOME PERULAPÍA</H4>
+                        <li>
+                            <span>198</span>
+                            <strong>06 DE AGOSTO.</strong>— 06 de Agosto de 1962. Dirección: Avenida Morazán
+                            Nº 13, Barrio El Centro. Días y horas de reuniones: De Lunes
+                            a Domingo de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>199</span>
+                            <strong>UNA LUZ EN EL BOSQUE.</strong>— 06 de Octubre de 1999. Dirección: 
+                            Comunidad Bosque de Perulapía Carretera Suchitoto. Días y horas
+                            de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 13 Hombres y 1 Mujer.
+                        </li>
+
+                    <H4>MUNICIPIO DE SAN CRISTÓBAL</H4>
+                        <li>
+                            <span>200</span>
+                            <strong>NUEVO RENACER MILAGRO DE DIOS..</strong>— 19 de Diciembre de 
+                            2001. Dirección: Cantón San Francisco, Calle Principal Caserío Los 
+                            Mangos. Días y horas de reuniones: De Lunes a Domingo de 5:30 a
+                            7:30 p.m. Miembros asistentes: 12 Hombres
+                        </li>
+                        <li>
+                            <span>201</span>
+                            <strong>QUINTA TRADICIÓN.</strong>— 16 de Mayo de 1969. Dirección: Barrio El
+                            Centro. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 35 Hombres.
+                        </li>
+                        
+                    <H4>MUNICIPIO DE SAN JOSÉ GUAYABAL</H4>        
+                        <li>
+                            <span>202</span>
+                            <strong>NAO SAN JOSÉ.</strong>— 18 de Enero de 2011. Dirección: Cantón Ánimas,
+                            Km 9. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 15 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>203</span>
+                            <strong>NUEVO DESPERTAR SAN JOSÉ GUAYABAL.</strong>— 15 de Octubre
+                            de 2008. Dirección: Barrio San Agustín, salida a Cantón Meléndez.
+                            Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.
+                            Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>204</span>
+                            <strong>SAN JOSÉ.</strong>— 18 de Mayo de 1972. Dirección: 1ª Avenida Sur y 3ª
+                            Calle Poniente frente a Unidad de Salud. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 25
+                            Hombres.
+                        </li>
+
+                    <H4>MUNICIPIO DE SAN PEDRO PERULAPÁN</H4>
+                        <li>
+                            <span>205</span>
+                            <strong>29 DE JUNIO.</strong>— 29 de Junio de 1980. Dirección: Cantón San José
+                            El Espinal, lotificación La Granja, Km 23 C.A. Días y horas de reunio-
+                            nes: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 
+                            12 Hombres.
+                        </li>
+                        <li>
+                            <span>206</span>
+                            <strong>BUENA ACCIÓN.</strong>— 30 de Noviembre de 1977. Dirección: Cantón
+                            Huiziltepeque. Días y horas de reuniones: De Lunes a Domingo de
+                            5:00 a 7:00 p.m. Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>207</span>
+                            <strong>DESPERTAR 23 DE JUNIO.</strong>— 23 de Junio de 1974. Dirección:
+                            Cantón La Loma Carretera Panamericana. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 7 Hombres
+                        </li>
+                        <li>
+                            <span>208</span>
+                            <strong>FE 03 DE ABRIL.</strong>— 03 de Abril de 1984. Dirección: Cantón La
+                            Loma, Carretera Panamericana Km. 22, Calle al Paraíso. Días y horas
+                            de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros
+                            asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>209</span>
+                            <strong>FE Y ACCIÓN.</strong>— 01 de Agosto de 2009. Dirección: Cantón Miraflores,
+                            2 Cuadras antes de La Iglesia. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 10
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>210</span>
+                            <strong>LA LUZ DEL 03 DE ENERO.</strong>— 03 de Enero de 1975. Dirección:
+                            Cantón San Agustín, Calle Principal. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 19
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>211</span>
+                            <strong>LA LLAVE DE LA BUENA VOLUNTAD.</strong>— 06 de Agosto de 1975.
+                            Dirección: Carretera Panamericana, Km. 22. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 25 Hombres y 1 Mujer
+                        </li>
+                        <li>
+                            <span>212</span>
+                            <strong>NUEVA DIMENSIÓN.</strong>— 21 de Noviembre de 1970. Dirección: Cantón
+                            El Espino, Calle Principal. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>213</span>
+                            <strong>NUEVO DESPERTAR 18 DE JULIO.</strong>— 18 de Julio de 1977. Dirección:
+                            Cantón Istagua, Lotificación Brisas del Rio Carretera a Suchitoto
+                            Km 26 ½. Días y horas de reuniones: De Lunes a Domingo de 
+                            6:00 a 8:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>214</span>
+                            <strong>PRIMERO DE SEPTIEMBRE.— 01 de Septiembre de 1979. Dirección:
+                            Cantón San José El Espino. Días y horas de reuniones: De
+                            Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes:
+                            13 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>215</span>
+                            <strong>RENACER 06 DE JULIO 2013.— 06 de Julio de 2013. Dirección: 
+                            Cantón El Paraíso Abajo. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 13 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>216</span>
+                            <strong>RENACER EN EL VALLE.— 04 de Mayo de 1975. Dirección: Cantón
+                            Miraflores, 2 Cuadras después de La Calle al Cementerio.
+                            Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.
+                            Miembros asistentes: 7 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>217</span>
+                            <strong>RESURRECCIÓN 03 DE ABRIL.— 03 de Abril de 1976. Dirección:
+                            Cantón Tecoluco Arriba. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:30 a 8:30 p.m. Miembros
+                            asistentes: 26 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>218</span>
+                            <strong>TERCERA TRADICIÓN.— 15 de Septiembre de 1969. Dirección:
+                            Cantón El Carmen, Carretera antigua Panamericana. Días y horas
+                            de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros
+                            asistentes: 12 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>219</span>
+                            <strong>UNA BENDICIÓN DE DIOS.— 24 de Junio de 1995. Dirección:
+                            Cantón Tecomatepe, Carretera a Suchitoto Km. 31 ½ Caserío Los
+                            Pérez. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 11 Hombres.</strong>
+                        </li>
+                        <li>
+                            <span>220</span>
+                            <strong>UNA LUZ EN LA ESPERANZA.— 16 de Mayo de 1986. Dirección:
+                            Cantón La Esperanza, en Zona Nº 2, 2ª Cantarera. Días y horas de
+                            reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes:
+                            6 Hombres.</strong>
+                        </li>
+
+                    <H4>MUNICIPIO DE SAN RAFAEL CEDROS</H4>
+                        <li>
+                            <span>221</span>
+                            <strong>17 DE JUNIO.</strong>— 17 de Junio de 1972. Dirección: 1ª Avenida Sur,
+                            Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de
+                            5:00 a 7:00 p.m. Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>222</span>
+                            <strong>27 DE MAYO.</strong>— 27 de Mayo de 1981. Dirección: Calle a Rosario
+                            Cuscatlán, frente a Subsectoría Eléctrica Atachin. Días y horas de
+                            reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asistentes:
+                            30 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>223</span>
+                            <strong>DEPERTAR 06 DE NOVIEMBRE.</strong>— 06 de Noviembre de 1983. Dirección:
+                            Cantón Cerro Colorado, Carretera a Ilobasco, Km. 44.
+                            Días y horas de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.
+                            Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>224</span>
+                            <strong>DESPERTAR LO MEJOR DE BILL.</strong>— 10 de Mayo de 1999. Dirección:
+                            Cantón Cerro Colorado, Carretera
+                            Ilobasco Km 45. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 35 Hombres.
+                        </li>
+                        <li>
+                            <span>225</span>
+                            <strong>DIOS CON NOSOTROS.</strong>— 04 de Abril de 1980. Dirección: Cantón
+                            Copinol Calle al beneficio, cruzadilla línea férrea. Días y horas de
+                            reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asistentes:
+                            6 Hombres.
+                        </li>
+                        <li>
+                            <span>226</span>
+                            <strong>DIVINA PROVIDENCIA.</strong>— 25 de Febrero de 1975. Dirección: Cantón
+                            Soledad. Días y horas de reuniones: De Lunes a Domingo de
+                            5:00 a 7:00 p.m. Miembros asistentes: 76 Hombres.
+                        </li>
+                        <li>
+                            <span>227</span>
+                            <strong>NUEVA VIDA.</strong>— 28 de Febrero de 1964. Dirección: Calle Antigua
+                            a San Sebastián, contiguo a Casa Comunal. Días y horas de reuniones:
+                            De Lunes a Viernes de 5:00 a 7:00 p.m. Sábado y Domingo
+                            de 4.00 a 6:00 p.m. Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>228</span>
+                            <strong>PRIMERO DE JUNIO.</strong>— 01 de Junio de 1993. Dirección: Cantón El
+                            Espinal. Días y horas de reuniones: De Lunes a Domingo de 5:00 a
+                            7:00 p.m. Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>229</span>
+                            <strong>PRIMERO DE MAYO.</strong>— 01 de Mayo de 1971. Dirección: Calle Antigua
+                            a Ilobasco. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 20 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>230</span>
+                            <strong>UN MILAGRO DE DIOS.</strong>— 25 de Abril de 1979. Dirección: Cantón
+                            Soledad, 4 Cuadras después de La vueltona. Días y horas de reuniones:
+                            De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>231</span>
+                            <strong>UNA LUZ EN LA SOMBRA.</strong>— 28 de Mayo de 1975. Dirección:
+                            Cantón Palacios. Días y horas de reuniones: De Lunes a Sábado de
+                            6:00 a 8:00 p.m. y Domingo de 4:00 a 6:00 p.m. Miembros asistentes:
+                            8 Hombres.
+                        </li>
+                    <h4>MUNICIPIO DE SAN RAMÓN</h4>
+                        <li>
+                            <span>232</span>
+                            <strong>LOS REMEDIOS.</strong>— 13 de Enero de 1974. Dirección: Calle Principal
+                            Barrio Sangre de Cristo. Días y horas de reuniones: De Lunes a Domingo
+                            de 5:00 a 7:00 p.m. Miembros
+                            asistentes: 25 Hombres.
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SANTA CRUZ ANALQUITO</h4>    
+                        <li>
+                            <span>233</span>
+                            <strong>HAY UNA LUZ EN MI CAMINO.</strong>— Dirección: Final Calle Principal,
+                            Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de
+                            6:30 a 8:30 p.m. Miembros asistentes: 5 Hombres.
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SANTA CRUZ MICHAPA</h4>    
+                        <li>
+                            <span>234</span>
+                            <strong>1° DE AGOSTO.</strong>— 01 de Agosto de 1975. Dirección: Santa Clara,
+                            Calle Luis de La O. Días y horas de reuniones: De Lunes a Domingo 
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 20 Hombres
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SUCHITOTO</h4>    
+                        <li>
+                            <span>235</span>
+                            <strong>EL ROBLE 14 DE OCTUBRE.</strong>— 14 de Octubre de 2006.  Dirección: Cantón El Roble, La Colonia. Días y horas  de reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m.  Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>236</span>
+                            <strong>NUEVO PRIMAVERA.</strong>— 01 de Agosto de 2011.  Dirección:  Cantón La Bermuda Caserío Primavera, Parada El Morro hacia  El Poniente. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>237</span>
+                            <strong>RENACER 08  DE AGOSTO.</strong>— 08 de  Agosto de  2010.  Dirección: Barrio  La Cruz,  frente  al Cementerio. Días  y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>238</span>
+                            <strong>SANTA LUCIA.</strong>— 14 de  Febrero de  1984.  Dirección:  Avenida  5 de Noviembre, Casa  N° 25-B. Días y horas  de  reuniones: De Lunes  a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE TENANCINGO</h4>
+                        <li>
+                            <span>239</span>
+                            <strong>10  DE OCTUBRE.</strong>— 10  de  Octubre de  2002.  Dirección:  Cantón Santa  Anita Tenancingo. Días y horas  de reuniones: De Lunes a Do- mingo  de 5:00 a 7:00 p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>240</span>
+                            <strong>A.A. EN TUS MANOS.</strong>— 03 de  Marzo de  2002.  Dirección:  Cantón Rosario  Tablón,  Calle Principal Tenancingo. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes:
+                            8 Hombres.
+                        </li>
+                        <li>
+                            <span>241</span>
+                            <strong>BUENA ESPERANZA.</strong>— 23 de  Marzo de  2012.  Dirección:  Hacien- da  Nueva  de  Tenancingo. Días y horas  de  reuniones: De  Lunes  a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>242</span>
+                            <strong>DESPERTAR 21  DE DICIEMBRE.</strong>— 21 de  Diciembre de  1998.  Di- rección:  5ª Avenida  Sur Barrio Las Delicias 25 metros al Sur del juz- gado de  Paz. Días y horas  de  reuniones: De Lunes  a Domingo de
+                            6:00 a 8:00 p.m.  Miembros asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>243</span>
+                            <strong>RENACER A LA FELICIDAD.</strong>— 10 de  Septiembre de  2009.  Direc- ción: Colonia  Jardínes, Calle Principal,  Polígono N° 9, Casa  N° 11. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>244</span>
+                            <strong>UN  AMANECER FELIZ  EN  EL LLANO.</strong>— 10  de  Abril de  2004. Dirección:  Caserío El Llano. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Cuscatlan.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

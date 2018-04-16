@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                 
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. SANTA ANA</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    
+                    <ul>
+                        <h4>MUNICIPIO DE CANDELARIA DE LA FRONTERA </h4>
+                        <li><span>245</span><strong>CANDELARIA</strong> .— 18 de  Agosto de  1971.  Dirección:  Avenida  José Domingo Peñate Barrio San  Antonio  ½ Cuadra al Sur de  Alcaldía Municipal. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>246</span><strong>FE EN DIOS</strong> .— 24 de  Enero  de  1973.  Dirección:  Cantón La Parada a 20 metros de La Escuela  Bartolomé Bolaños  Calle Principal. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>247</span><strong>MI ÚNICO CAMINO</strong> .— 04  de  Abril de  1981.  Dirección:  1ª  Calle Oriente, Candelaria de  La Frontera. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>248</span><strong>NUEVA VIDA</strong> .— 15 de Agosto de 1985. Dirección:  2ª Avenida Nor- te y Calle 2 de Febrero Barrio Las Ánimas, Candelaria de La Fronte- ra. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>249</span><strong>NUEVO RENACER 20 DE ABRIL.</strong> — 20 de Abril de 2008. Dirección: Cantón Tierra Blanca  Colonia  Las Ánimas.  Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>250</span><strong>VIDA NUEVA.</strong> —  15 de  Octubre de  2001.  Dirección:  Una Cuadra Abajo del Templo Aposento Alto, Cantón Monte Verde. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+                        <li><span>251</span><strong>VOLVER A NACER.</strong> — 17 de  Febrero de  2008.  Dirección:  San Cris- tóbal  La Frontera. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <h4>MUNICIPIO DE COATEPEQUE GRUPOS REPORTADOS—11</h4>
+                        <li><span>252</span><strong>07  DE ABRIL.</strong> — 07  de  Abril de  1974.  Dirección:  Una  Cuadra  al Oriente de  La Iglesia  Católica   Cantón San  Jacinto, Coatepeque. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>253</span><strong>CAMINO A LA FELICIDAD.</strong> — 15  de  Enero  de  1984.  Dirección: Salida  a San  Miguelito, frente  a La Iglesia  Evangélica Cantón San Jacinto. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a</li>
+                        <li><span>254</span><strong>MILAGROSO.</strong> — 07 de  Junio  de  1972.  Dirección:  Avenida  Gerardo Barrios 1-6 Coatepeque Santa  Ana. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>255</span><strong>NO ESTAMOS SOLOS.</strong> — 23 de  Diciembre de  1996.  Dirección:  2ª Avenida  Sur y 6ª Calle Oriente Nº 41, Coatepeque. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>256</span><strong>NUEVA LUZ.</strong> — 24 de  Febrero de  1995.  Dirección:  Cantón 7 Prín- cipes,  Calle a Lago de  Coatepeque. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>257</span><strong>NUEVA VIDA.</strong> — 12 de  Abril de  1988.  Dirección:  Cantón El Resba- ladero Caserío Planta Vieja Carretera de Santa Ana a Tacachico, una Cuadra al Oriente del Centro Educativo, Coatepeque. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>258</span><strong>NUEVO DESPERTAR.</strong> — 31 de  Julio de  2005.  Dirección:  Cantón El Resbaladero frente  a Iglesia  Católica  Carretera de  Santa  Ana a Ta- cachico. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a</li>
+                        <li><span>259</span><strong>NUEVO MILAGRO 24 DE MARZO.</strong> — 24 de Marzo de 1995. Direc- ción: Calle Roosevelt Oriente frente  a pasarela, Coatepeque. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>260</span><strong>NUEVO RENACER 13  DE OCTUBRE.</strong> — 13 de  Octubre de  2012. Dirección:  Cantón San Jacinto Caserío Las Lomas.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>261</span><strong>NUEVO  RENACER.</strong> — 06  de  Agosto de  2008.  Dirección:  Cantón Las Piletas  Caserío Los Planes  ½ Cuadra al Sur de  Centro Escolar Coatepeque. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>262</span><strong>UNA MANO AMIGA.</strong> — 16 de Noviembre de 2007. Dirección: Can- tón El Cerro  entrada al Caserío Luisiana a La par de La Iglesia Cató- lica, Coatepeque. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+                        <h4>MUNICIPIO DE CHALCHUAPA GRUPOS REPORTADOS—08</h4>
+                        <li><span>263</span><strong>BRISAS DE LA LAGUNA.</strong> — 20  de  Mayo  de  1985.  Dirección:  1ª Calle Barrio Apaneca, Final Calle Oriente callejón  a La Joya  Nº 39.Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>264</span><strong>LA HUMILDAD.</strong> — 08 de  Agosto de  2009.  Dirección:  Calle Ramón Flores  Nº 5, entre 5ª y 7ª Avenida  Sur Barrio Las Ánimas, 2ª Planta. Días y horas  de reuniones: De Lunes a Domingo de 7:30 a 9:00 p.m.</li>
+                        <li><span>265</span><strong>MENSAJEROS DE BILL.</strong> — 01 de  Agosto de  2001.  Dirección:  10ª Avenida  Sur y 7ª Calle Poniente. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>266</span><strong>MI ESPERANZA.</strong> — 03 de  Septiembre de  1978.  Dirección:  Cantón El Arado.  Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>267</span><strong>NUEVO RENACIMIENTO BUENOS AIRES.</strong> — 08 de Diciembre de 2006.  Dirección:  Cantón Buenos  Aires ½ Cuadra Abajo  de  La Casa Comunal. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. </li>
+                        <li><span>268</span><strong>SANTA CRUZ.</strong> — 10 de Noviembre de 1971.  Dirección:  6ª Calle Po- niente Barrio  Santa  Cruz.  Días  y horas  de  reuniones: De  Lunes  a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>269</span><strong>SOMOS FELICES.</strong> — 08 de Febrero de 1973.  Dirección:  1ª Avenida Sur entre 5ª  y 7ª  Calle  Oriente Nº  9 Chalchuapa. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>270</span><strong>TAZUMAL.</strong> — 24  de  Febrero de  1960.  Dirección:  6ª  Avenida  Sur entre 3ª y 5ª Calle Poniente. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <h4>MUNICIPIO DE EL CONGO GRUPOS REPORTADOS—07</h4>
+                        <li><span>271</span><strong>24 HORAS FE EN DIOS.</strong> — 20 de Agosto de 2002.  Dirección:  Ave- nida  San  Carlos  Nº  28  Colonia  Esmeralda Barrio  San  Antonio,  El Congo. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+                        <li><span>272</span><strong>AMANECER EN SOBRIEDAD.</strong> — 25 de Abril 2007.  Dirección:  Ex— Casa pastoral Pasaje  Nº 1 Comunidad San José Cantón El Guineo El Congo, Santa  Ana. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>273</span><strong>DESPERTAR ESPIRITUAL.</strong> —  18  de  Octubre de  1980.  Dirección: Barrio San Antonio  y Calle 5 de Noviembre. Días y horas  de reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>274</span><strong>JÓVENES Y VETERANOS EN ACCIÓN.</strong> — 27 de Julio de 2011. Di- rección:  Colonia  Las Brisas Avenida  Los Pinos Calle La Floresta Polí- gono Nº 8 Casa Nº 1 El Congo. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>275</span><strong>NUEVA VIDA 07  DE FEBRERO.</strong> — 07 de  Febrero de  1981.  Direc- ción: Cantón San José Las Flores, El Congo. Días y horas  de reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>276</span><strong>NUEVO AMANECER.</strong> — 29 de  Enero  de  1992.  Dirección:  Calle 12 de  Octubre frente  a Casa  Comunal. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>277</span><strong>RENACER 20  DE NOVIEMBRE.</strong> — 20 de  Noviembre de  1997.  Di- rección:  Calle Principal a La Bendición, Lago de Coatepeque, frente a Quinta  Macaran. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <h4>MUNICIPIO DE MASAHUAT GRUPOS REPORTADOS—01</h4>
+                        <li><span>278</span><strong>UN REGALO DE DIOS EN SAN NICOLÁS.</strong> — 03 de Mayo de 2000. Dirección: Cantón San Nicolás 3er Pasaje  al fondo contiguo a Iglesia Evangélica Rio Guajollo.  Días y horas  de reuniones: De Lunes a Domingo  de 6:30 a 8:30 p.m.  </li>
+                        <h4>MUNICIPIO DE METAPÁN GRUPOS REPORTADOS—21</h4>
+                        <li><span>279</span><strong>AMOR Y FE.</strong> — 29 de Julio 2008.  Dirección:  Cantón La Isla, Caserío El Ahogado. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>280</span><strong>AMOR Y PAZ EN SANTA RITA.</strong> — 21 de  Septiembre de  2014.  Di- rección:  Calle Principal ½ Cuadra al Sur de  La Escuela.  Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>281</span><strong>BIENESTAR EN  LA FAMILIA.</strong> — 24  de  Julio  de  2011.  Dirección: Cantón San Antonio  La Junta, Caserío La Bolsa ubicado atrás  de La Iglesia Católica. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m. </li>
+                        <li><span>282</span><strong>BRISAS DE GUADALUPE.</strong> — 30  de  Mayo  de  1975.  Dirección:  1ª Calle Oriente y 2ª Avenida.  Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>283</span><strong>DESPERTAR 18  DE NOVIEMBRE.</strong> — 18  de  Noviembre de  1996. Dirección:  Calle El Rosario Colonia  Capulín.  Días y horas  de  reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>284</span><strong>DESPERTAR FELIZ.</strong> — 30 de  Octubre de  2004.  Dirección:  Cantón La Ceibita, Caserío Las Flores.  Días y horas  de reuniones: Miércoles y Sábado de 5:00 a 7:00 p.m.</li>
+                        <li><span>285</span><strong>LOS HÉROES.</strong> — 05 de  Agosto de  1982.  Dirección:  Puente Pacheco,  Metapán. Días y horas  de  reuniones: De Lunes  a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>286</span><strong>LUZ Y ESPERANZA.</strong> — 13  de  Marzo  de  2012.  Dirección:  Cantón Belén  Güijat,  una  Cuadra Arriba de  CEL Guajoyo, Carretera inter- nacional sobre Calle  a Lago  de  Güija.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>287</span><strong>MIRAMUNDO.</strong> — 18 de Febrero de 1964. Dirección: 15 metros cos- tado Norte  del  parque Central  Calle  al Calvario,  Metapán. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>288</span><strong>NUEVA  VIDA (INSTITUCIONAL).</strong> — 14  de  Julio  de  2000.  Direc- ción: Centro penal de  Metapán. Días y horas  de  reuniones de  1:00 a 3:00 p.m.  </li>
+                        <li><span>289</span><strong>NUEVA VIDA 13  DE MAYO.</strong> — 13  de  Mayo  de  2012.  Dirección: Cantón Tecomapa Caserío Agua Fría Metapán. Días y horas  de reu- niones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>290</span><strong>NUEVO AMANECER EN SAN JOSÉ INGENIO.</strong> — 27 de  Junio  de 2014.  Dirección:  Cantón San  José Ingenio Metapán. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>291</span><strong>NUEVO AMANECER SANTA RITA.</strong> — 26 de Marzo de 1996. Direc- ción: Cantón Santa  Rita, Caserío El Tablón.  Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>292</span><strong>NUEVO  DESPERTAR CONCHAGUA.</strong> —  31  de  Agosto de  1974. Dirección:  Caserío Conchagua frente  a Iglesia  Católica, Metapán. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>293</span><strong>RENACER 26 DE SEPTIEMBRE.</strong> — 26 de  Septiembre de  2002.  Di- rección:  5ª Calle Oriente, Barrio Nuevo. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>294</span><strong>UN MILAGRO EN EL DESAGÜE.</strong> — 25 de  Enero  de  1995.  Direc- ción: Cantón Belén  Güijat,  Caserío El Desagüe, entre estación del tren y La Parroquia El desagüé. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>295</span><strong>UN  MILAGRO EN HACIENDA SAN  FRANCISCO.</strong> — 10 de  Julio de  2014.  Dirección:  Cantón Belén Güijat, Metapán. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>296</span><strong>UN MILAGRO EN HACIENDA VIEJA.</strong> — 03 de  Octubre de  1982. Dirección:  Cantón Capulín  Caserío Hacienda Vieja, Carretera Me- tapán-Citalá. Días y horas  de  reuniones: Martes  y Jueves de  5:00 a 6:30  p.m.  y Domingo de  3:00  a 5:00  p.m. </li>
+                        <li><span>297</span><strong>UN  REGALO DE DIOS.</strong> — 12 de  Septiembre de  1998.  Dirección: Urbanización Las Américas  Nº 1 polígono G No 9-A Pasaje  México. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>298</span><strong>UNA LUZ EN EL SITIO.</strong> —  10 de  Junio  de  1994.  Dirección:  Cantón Las Piedras  Caserío El Sitio, Carretera internacional a Metapán. Días y horas  de  reuniones: De  Lunes  a  Domingo de  4:00  a  6:00  p.m. </li>
+                        <li><span>299</span><strong>UNA LUZ EN LA ISLA.</strong> — 21 de Julio de 1984. Dirección: Cantón La Isla, Metapán. Días y horas  de  reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.  </li>
+                        <h4>MUNICIPIO DE SAN ANTONIO PAJONAL GRUPOS REPORTADOS—01</h4>
+                        <li><span>300</span><strong>PAJONALEÑO.</strong> — 29 de Julio de 1971.  Dirección:  Barrio El Centro, San Antonio  Pajonal.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <h4>MUNICIPIO DE SANTA ANA GRUPOS REPORTADOS—28</h4>
+                        <li><span>301</span><strong>07 DE MARZO.</strong> — 07 de Marzo de 1963. Dirección: 7ª Avenida Nor- te entre 10ª y 12ª Calle Oriente. Días y horas  de  reuniones: Martes, Jueves y Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>302</span><strong>27  DE FEBRERO.</strong> — 27  de  Febrero de  1966.  Dirección:  Avenida Moraga 13 Calle y Avenida  Fray Felipe  de Jesús Moraga Sur, frente a Súper  Selectos Colón.  Días y horas  de  reuniones: De Lunes a Domingo  de 7:00 a 9:00 p.m.</li>
+                        <li><span>303</span><strong>A.A. LLEGA A SU MAYOR EDAD.</strong> — 26 de  Octubre de  1978.  Di- rección:  8ª Avenida  Norte  6/8  Calle Poniente Nº 2, Santa  Ana. Días y horas  de  reuniones: De  Lunes  a Sábado de  6:30  a 8:00  p.m.  y Domingo de 10:00 a 11:30 a.m.</li>
+                        <li><span>304</span><strong>EL MILAGRO  DE DIOS.</strong> — 22 de  Febrero de  1996.  Dirección:  Cantón San Juan  Buena  Vista Colonia  Las Colinas  Polígono 18 Casa  Nº 6. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. </li>
+                        <li><span>305</span><strong>EL MORA 17 DE OCTUBRE.</strong> — 17 de  Octubre de  1976.  Dirección: Avenida  Molino de  arroz Colonia  Mora.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.  </li>
+                        <li><span>306</span><strong>EL PODER DE LA 5ª  TRADICIÓN.</strong> — 28 de  Julio  de  1991.  Direc- ción: 15 Calle Poniente entre 18 y 20 Avenida  Sur Nº 6 Colonia  Ma- gaña Santa Ana. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>307</span><strong>ESPAÑA  24  DE MAYO.</strong> — 24 de  Mayo  de  1987.  Dirección:  Final 30 Avenida  Sur entre 47 y 49 Calle Poniente Colonia  España. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>308</span><strong>ESPERANZA 23  DE JUNIO (INSTITUCIONAL).</strong> — 23 de  Junio  de 2012. Dirección: Centro Penal de Apanteos Recinto No 11. Carretera salida a Metapán. Reuniones de 1:30 a 3:30 p.m. </li>
+                        <li><span>309</span><strong>LA NUEVA ESPERANZA LOS RIVAS.</strong> — 17 de  Febrero de  1974. Dirección:  Cantón Nancintepeque  Caserío Los Rivas. Días y horas de  reuniones: Martes, Jueves y Sábado de  3:00 a 5:00 p.m.,</li>
+                        <li><span>310</span><strong>LA SALIDA.</strong> — 09  de  Abril de  2011.  Dirección:  11  Calle  Oriente entre Avenida  Independencia y 3ª Avenida  Sur. Días y horas  de reu- niones: De Lunes a Sábado de 6:00 a 8:00 p.m.  y Domingo de 4:00 a 6:00 p.m. </li>
+                        <li><span>311</span><strong>LIBERACIÓN 2012.</strong> — 14 de  Febrero de  2012.  Dirección:  6ª Avenida Norte  y 16 Calle Poniente Casa Nº 2-A, Reparto IVU Los 44 frente a Iglesia Virgen de Guadalupe. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>312</span><strong>LOS AMIGOS.</strong> — 10 de  Agosto de  1982.  Dirección:  Sector  La Flo- resta  Colonia  IVU Santa  Ana. Días y horas  de  reuniones: Martes  y Viernes de 8:00 a 10:00 p.m. </li>
+                        <li><span>313</span><strong>LUIS MARIO.</strong> — 11 de  Abril de  1965.  Dirección:  6ª Avenida  Norte Nº 71 y Pasaje  5 Poniente Colonia  IVU Santa  Ana. Días y horas  de reuniones: Lunes, Miércoles  y Viernes de 7:00 a 9:00 p.m.</li>
+                        <li><span>314</span><strong>NACIMIENTO 27 DE MARZO.</strong> — 27 de Marzo de 1983.  Dirección: Avenida  Brasil Poniente No 99 entre Calle Bolivia y Calle Colombia, Colonia  Los Pinos. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:00 p.m.  </li>
+                        <li><span>315</span><strong>NUEVA VIDA 15  DE AGOSTO.</strong> — 15 de  Agosto de  1984.  Direc- ción: A 2 Km. de Ceiba  Preñada, 3 Cuadras Abajo de Escuela Rafael Paz Fuentes Cantón Primavera, Caserío Primavera. Días y horas  de reuniones: Martes  y Jueves de  7:00 a 8:30 p.m. </li>
+                        <li><span>316</span><strong>NUEVA VIDA 25 DE JULIO.</strong> — 25 de Julio de 1979. Dirección: Can- tón  El Portezuelo, Colonia  Panades Nº 12. Días y horas  de  reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <li><span>317</span><strong>NUEVO COPINOLITO 11  DE SEPTIEMBRE.</strong> — 11 de  Septiembre de  1989.  Dirección:  Calle Principal, Caserío Copinolito, Cantón Pri- mavera, Colonia  Los Olivos contiguo a Iglesia Católica. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+                        <li><span>318</span><strong>NUEVO  RENACER 22  DE  DICIEMBRE.</strong> —  22  de  Diciembre de 1978.  Dirección:  Carretera Antigua  a San Salvador  Km. 62 ½ a 950 metros de  ASAPROSAR. Colonia  El Mora Cantón Primavera. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:00 p.m. </li>
+                        <li><span>319</span><strong>NUEVO RENACER 04 DE JULIO.</strong> — 04 de Julio de 1999. Dirección: Colonia  Santo  Tomás,  Cantón Primavera. Días y horas  de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  </li>
+                        <li><span>320</span><strong>PERSEVERANCIA 10  DE JUNIO.</strong> — 10 de  Junio  de  1986.  Direc- ción:  Colonia  Lomas  del  Tecana, Block H Nº  4 atrás  de  Terminal de  buses Ruta Nº 6 Cantón Natividad. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.</li>
+                        <li><span>321</span><strong>REDENCIÓN  Y ESPERANZA (INSTITUCIONAL).</strong> — 03  de  Sep- tiembre de 1968.  Dirección:  Centro Penal de Occidente. Reuniones Sábado de 4:00 a 5:00 p.m. </li>
+                        <li><span>322</span><strong>RENACER 2000.</strong> — 11 de Marzo de 2000. Dirección:  Cantón Prima- vera Caserío Primaverita  Nº 2 Sector  Nº 6. Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>323</span><strong>RÍO ZARCO 28  DE MAYO.</strong> — 28 de  Mayo de  1985.  Dirección:  1a Etapa  grupo 16, acceso Nº 1, Rio Zarco. Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  </li>
+                        <li><span>324</span><strong>SALVACIÓN  12  DE  MAYO.</strong> —  12  de  Mayo  de  1979.  Dirección: Cantón Nancintepeque Caserío Los Ayala. Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>325</span><strong>SAN  RAFAEL.</strong> — 17  de  Septiembre de  1965.  Dirección:  9ª  Calle Oriente entre 21  y 23  Avenida  Sur Barrio  San  Rafael,  Santa  Ana. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+                        <li><span>326</span><strong>SANTANECO.</strong> — 02 de Junio  de 1959.  Dirección:  10ª Calle Oriente entre Avenida  Independencia y 1ª Avenida  Norte, mesón pinalito, Barrio San Lorenzo. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. y Domingo de 10:00 a:m a 1:00 p.m.</li>
+                        <li><span>327</span><strong>SOLO POR HOY (INSTITUCIONAL).</strong> — 17 de  Agosto de  2011.  Di- rección:  Centro Penal  de  Apanteos Recinto  Nº 9, Carretera salida  a Metapán. Días y horas  de reuniones: De 1:30 a 3:30 p.m.</li>
+                        <li><span>328</span><strong>UNIVERSAL CENTRAL.</strong> — 21  de  Diciembre de  2013.  Dirección: Avenida  Independencia 2 Cuadras al Norte  de  La Alcaldía.  Días y horas  de  reuniones: De  Lunes  a Domingo de  10:00  a 12:00  p.m. </li>
+                        <h4>MUNICIPIO DE SANTA ROSA GUACHIPILÍN GRUPOS REPORTADOS—02</h4>
+                        <li><span>329</span><strong>EL MILAGRO.</strong> —  17 de  Mayo de  1975.  Dirección:  Barrio El Centro, Santa  Rosa Guachipilín.  Días y horas  de  reuniones: De Lunes a Do- mingo  de 5:00 a 7:00 p.m.  </li>
+                        <li><span>330</span><strong>LA NUEVA ESPERANZA.</strong> — 17 de  Mayo de  1975.  Dirección:  Can- tón El Despoblado, Santa  Rosa Guachipilín.  Días y horas  de  reunio- nes: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+                        <h4>MUNICIPIO DE SANTIAGO DE LA FRONTERA GRUPOS REPORTADOS—02</h4>
+                        <li><span>331</span><strong>DIOS PRIMERO.</strong> — 19 de  Noviembre de  1973.  Dirección:  Barrio El Centro Costado Norte  de  Iglesia  Católica. Días y horas  de  reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m.</li>
+                        <li><span>332</span><strong>MISTERIO DE DIOS.</strong> — 01 de  Enero  de  1990.  Dirección:  Santiago de  La Frontera, ½ Cuadra de  La Caja  de  crédito. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+                        <h4>MUNICIPIO DE TEXISTEPEQUE GRUPOS REPORTADOS—04</h4>
+                        <li><span>333</span><strong>26 DE FEBRERO.</strong> — 26 de Febrero de 2005. Dirección: Avenida Be- lén Sur Calle Principal de  Texistepeque. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>334</span><strong>LA BUENA NUEVA.</strong> — 24 de  Julio de  1971.  Dirección:  Calle Prin- cipal  Texistepeque,  Cantón El Paraíso.  Días y horas  de  reuniones: De  Lunes  a Domingo de  5:00  a 7:00  p.m.  </li>
+                        <li><span>335</span><strong>LOS CERRITOS.</strong> — 21 de  Septiembre de  2013.  Dirección:  Cantón Costa  Rica Caserío Los Cerritos, Texistepeque, Días y horas  de  reu- niones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+                        <li><span>336</span><strong>RESURRECCIÓN 10  DE ABRIL.</strong> — 10 de  Abril de  1977.  Dirección: Calle Libertad Poniente ½ Cuadra al Poniente de La Alcaldía, Texis- tepeque. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/SantaAna.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

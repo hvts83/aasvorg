@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                 
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. SAN SALVADOR</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    <h4>MUNICIPIOS DE AGUILARES</h4>
+                    <ul>
+                        <li>
+                            <span>475</span>
+                            <strong>12  TRADICIONES.</strong> 02 Agosto de  2000.  Dirección:  1ª  Calle  Poniente Nº 17 Aguilares.  Días y horas  de  reuniones: De Lunes a Do- mingo  de 6:00 a 8:00 p.m.  Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>476</span>
+                            <strong>AMOR Y COMPRENSIÓN.</strong>— 02 de Octubre de 1973, Dirección:  8a Calle Poniente, Barrio El Centro. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10 Hom- bres  y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>477</span>
+                            <strong>BUENA FE.</strong>— 13 de  Enero  de  1979.  Dirección:  Calle Principal Co- lonia Los Mangos, Pasaje  8 Casa  N° 181 Aguilares,  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 20 de Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>478</span>
+                            <strong>CENTRAL DE AGUILARES.</strong>— 23  de  Agosto de  1988,  Dirección: Colonia  Romero  Calle  Principal  N° 44.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>479</span>
+                            <strong>FELICIDAD 1° DE JUNIO.</strong> – 01 de Junio  de 1967.  Dirección:  Barrio El Centro, Nº 5, Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p. m. Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>480</span>
+                            <strong>GENERACIÓN 21.</strong>— 10 de Enero de 2010, Dirección: Urbanización San Rafael Avenida  Central  Norte, Block 25, Casa  Nº 12. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros  asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>481</span>
+                            <strong>RENACER 28 DE ENERO.</strong>— 28 de Enero de 2005.  Dirección:  Can- tón  y Hacienda Los Mango. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 8 Hombres.</li>
+                        <li>
+                            <span>482</span>
+                            <strong>SENDERO DE VIDA</strong>.— 12 de Noviembre de 1993. Dirección:  Calle Central  Colonia  Las Pampitas Pasaje  No 32, Casa N° 22. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>483</span>
+                            <strong>UNA  SOLUCIÓN EN  EL CAMINO.</strong>— 14  de  Abril del  2009,  Di- rección:  Colonia  Palacios,  Pasaje  N° 8, Casa  N° 1. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>484</span>
+                            <strong>UNIDOS 09 DE JULIO.</strong>— 09 de  Julio de  1994.  Dirección:  Avenida Ferrocarril, frente  a ex estación, Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE APOPA</h4>        
+                        <li>
+                            <span>485</span>
+                            <strong>01 DE JULIO.</strong>— 01 de Julio del 2005.  Dirección:  3a  Avenida  Sur, Nº 6 Apopa. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 17 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>486</span>
+                            <strong>20  DE FEBRERO.</strong>—20 de  Febrero de  2007.  Dirección:  Calle  a La Cabañita 2 Cuadras Arriba del Niño Perdido. Días y horas de reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>487</span>
+                            <strong>24  DE FEBRERO VIDA NUEVA.</strong>— 24 de  Febrero de  1984.  Direc- ción: Carretera Troncal del Norte, Km. 12, frente  a Peri-plaza  Apopa. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 19 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>488</span>
+                            <strong>ALFA Y OMEGA.</strong>— 13 de Junio  de 1983.  Dirección:  Colonia  La Er- mita Nº 2 Polígono Q, Pasaje  9-A Nº 21 “D”. Días y horas de reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>489</span>
+                            <strong>AMIGOS EN A.A.  07  DE MAYO.</strong>— 07 de  Mayo  de  1993.  Direc- ción: Urbanización Popotlán 1 Pasaje  Masahuat, Casa  Nº 10. frente al mercadito, Días y horas  de  reuniones: De Lunes  a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 13 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>490</span>
+                            <strong>APOPLÁN.</strong>— 07 de Julio de 1963.  Dirección:  Carretera Troncal del Norte, Km. 13 ½. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 30 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>491</span>
+                            <strong>CONSEJO  DE UNA  MADRE.</strong>— 02 de  Diciembre de  1972.  Direc- ción: Parcelación El Ángel,  Calle Nº 3 lote  al final. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 21 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>492</span>
+                            <strong>DESPERTAR 17  DE ABRIL.</strong>— 17 de  Abril de  1978.  Dirección:  Km. 15 Carretera Troncal del Norte  Calle Principal Colonia  Las Cañas  N° 4. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>493</span>
+                            <strong>GRACIAS A DIOS.</strong>— 30 de  Noviembre de  1999.  Dirección:  Carre- tera Troncal del Norte, Km. 11, Colonia San Antonio,  Calle Principal, Nº 3 Bis. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 23 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>494</span>
+                            <strong>HAY UNA SOLUCIÓN.</strong>— 09 de  Abril de  1995.  Dirección:  Calle al Tikal, Colonia  San Leonardo Block “1”  Nº 13. Días y horas  de  reu- niones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asisten- tes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>495</span>
+                            <strong>LA BUENA ESPERANZA.</strong>—08 de  Diciembre de  1980.  Dirección: Calle  a  La Cabañita, urbanización Pandora, block  “E”,  lote  Nº  2. Días y horas  de  reuniones: de  Lunes a Sábado de  7:00 a 9:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>496</span>
+                            <strong>LA PONDEROSA.—</strong>11   de  Abril de  1982.  Dirección:   Colonia  La Ponderosa Polígono “H” Nº 15, Calle Circunvalación. Días y horas de reuniones: De Lunes a Sábado de 7:00 a 9:00 p.m. y Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>497</span>
+                            <strong>LA SALIDA.</strong>— 09 de Marzo de 1977. Dirección: 6ª Calle, Oriente Nº 1 Apopa. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m.  Miembros asistentes: 25 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>498</span>
+                            <strong>LIBERADOS HOY.</strong>— 12 de Octubre de 1972. Dirección:  4ª Avenida Norte, Nº 11, Barrio El Calvario, Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 8 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>499</span>
+                            <strong>LUZ QUE VUELVE.</strong>— 27 de  Agosto de  1983.  Dirección:  Avenida Quirino Chávez  Nº 57 A. Días y horas  de reuniones: De Lunes a Do- mingo  de 5:30 a 7:30 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>500</span>
+                            <strong>RENACER AMOR Y SALVACIÓN.</strong>— 07 de  Marzo de  2010.  Direc- ción: Cantón Joya  Grande Caserío La Loma,  S/N.  Días y Horas  de reuniones De Domingo a Viernes de  6:00 a 8:00 p.m.  y Sábado de 5:00 a 7:00 pm. Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>501</span>
+                            <strong>RENACER 03 DE MARZO.</strong>— 03 de Marzo de 2008.  Dirección:  Co- lonia  Los Naranjos, Pasaje  “E”,  N° 21.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>502</span>
+                            <strong>RENACER 06 DE JULIO.</strong>— 06 de Julio de 1988. Dirección:  Colonia Popotlán Nº 1, Pasaje  Quezalapa, Equipo  47, Acceso  4, Casa  Nº 6. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 13 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>503</span>
+                            <strong>RENACER 28 DE OCTUBRE.</strong>— 28 de Octubre de 1996.  Dirección: 2a  Calle Poniente N° 24 Apopa. Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>504</span>
+                            <strong>RENACER EN CHINTUC.</strong>— 12 de Mayo de 1985.  Dirección:  Colonia Chintuc  N° 2 Calle Principal, entrada a Pasaje  Guazapa Casa  Nº  2. Días y horas de reuniones: De Lunes a Sábado de 7:30 a 9:00 p.m. y Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>505</span>
+                            <strong>RENOVACIÓN 26  DE JUNIO.</strong>— 26 de  Junio  de  2014.  Dirección: Colonia  Popotlán Nº 1 Calle  antigua a Tonacatepeque, equipo 13 acceso Nº 2 Casa  Nº 51, Colonia  Popotlán. Días y horas  de  reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 10 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>506</span>
+                            <strong>SALVACIÓN  86.</strong>—  20  de  Julio  de  1986.  Dirección:  Colonia  Ma- dre  Tierra Nº 1 Block “E”  Casa  Nº 27.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 17 Hombres.
+                        </li>
+                        <li>
+                            <span>507</span>
+                            <strong>UN DÍA DE VICTORIA.</strong>— 16 de  Julio de  1989.  Dirección:  Avenida Amasatepeq local talleres vocacionales, Popotlán Nº 2. Días y horas de reuniones: De Lunes a Sábado de 7:00 a 9:00 p.m. y Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>508</span>
+                            <strong>UN MILAGRO EN POPOTLÁN.</strong>— 02 de Enero de 1986. Dirección: Prolongación Pasaje  Majucla Acceso  4 Colonia  Popotlán. Días y ho- ras de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miem- bros  asistentes: 15 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>509</span>
+                            <strong>UN  PUENTE HACIA LA LUZ.</strong>— 10 de  Junio  de  2003.  Dirección: Km. 11 Carretera Troncal  del  Norte, Calle Real Madrid,  Casa  Nº 1, Colonia  San Antonio  contiguo al puente. Días y horas  de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>510</span>
+                            <strong>UNA LUZ EN CONCEPCIÓN.</strong>— 20 de  Enero  de  1980.  Dirección: Cantón San Nicolás Calle antigua a La Ponderosa Casa N° 1. Días y horas  de reuniones: De Lunes a Viernes de 6:00 a 8:00 p.m. Sábado y Domingo de 5:30 a 7:30 p.m.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>511</span>
+                            <strong>UNA  LUZ EN VALLE VERDE.</strong>— 10  de  Septiembre de  1996.  Di- rección:  Urbanización Valle Verde N° 2 Polígono 29, Pasaje  “O”  Sur Casa  Nº 17. Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00  p.m.  y Domingo de  5:00  a 7: 00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>512</span>
+                            <strong>VIVIR EN SOBRIEDAD.</strong>— 02 de  Mayo  de  1991.  Dirección:  Calle Real Lotificación Los Ricos, Pasaje  Los Ricos, Lote Nº 2, 40 metros Al Poniente del  Cementerio de  La Colonia  Nueva  Apopa. Días  y horas  de reuniones: De Lunes a Viernes de 6:30 a 8:30 p.m. Sábado y Domingo de 5:30 a 7:30 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE AYUTUXTEPEQUE</h4>    
+                        <li>
+                            <span>513</span>
+                            <strong>LA CLAVE DE LA SOBRIEDAD.</strong>— 01 de  Octubre de  1998.  Direc- ción: Colonia  Belga  Latea,  Calle  a Los Llanitos Casa  Nº 51. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:00 pm. Miem- bros  asistentes: 7 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>514</span>
+                            <strong>NACER 15 DE SEPTIEMBRE.</strong>— 15 de  Septiembre de  2011.  Dirección: Calle Principal a Los Llanitos, Colonia  San Alfonso, Casa  N° 2 Ayutuxtepeque. Días y horas  de  reuniones: De Lunes a Sábado de 6:30 a 8:30 p.m.  y Domingo de  5:00 a 7:00 p.m.
+                        </li>
+                        <li>
+                            <span>515</span>
+                            <strong>UNIDAD Y ESPERANZA.</strong>— 01 de  Diciembre de  1988.  Dirección: 2ª Calle Poniente, N° 6 frente  a tienda El mono, por La Despensa de Don Juan.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 8:30 p.m.  Miembros asistentes: 17 Hombres y 1 Mujer.
+                        </li>
+
+                    <H4>MUNICIPIO DE CUSCATANCINGO</H4>
+                        <li>
+                            <span>516</span>
+                            <strong>10 DE JUNIO.</strong>— 10 de Junio  de 1996.  Dirección:  Avenida  Las Mar- garitas  Casa  Nº  12-A  Cuscatancingo. Días  y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>517</span>
+                            <strong>AMOR  Y BONDAD.</strong>—  14  de  Abril de  1973.  Dirección:  Colonia Santa  Rosa, Avenida  Insurgentes Nº 16. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 11 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>518</span>
+                            <strong>CUSCATANCINGO.</strong>— 15 de Septiembre de 1981. Dirección: 3ª Ca- lle Oriente, Casa  Nº 12 Cuscatancingo. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 16 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>519</span>
+                            <strong>LUZ Y ESPERANZA.</strong>— 13  de  Mayo  de  1963.  Dirección:  Colonia Juanita Pasaje  Roosevelt Nº 13. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 pm. Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>520</span>
+                            <strong>MILAGRO DEL SIGLO XX.</strong>— 18  de  Agosto de  1966.  Dirección: Calle Santa  Rosa Nº 1-B. Días y horas  de reuniones: De Lunes a Do- mingo  de 6:30 a 8:00 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>521</span>
+                            <strong>RECUPERACIÓN AMIGOS DE EFRAÍN C.</strong>—15 de  Julio de  2009. Dirección:  Final Calle  Central  (Parroquia  Inmaculada Concepción). Días y horas  de  reuniones: De Lunes a Sábado de  06.00  a 08.00  p. m. y Domingo de  5:00  a 7:00  p.m.  Miembros asistentes: 12 Hom- bres.
+                        </li>
+                        <li>
+                            <span>522</span>
+                            <strong>SALVADOR.</strong>— 20 de  Agosto de  1960.  Dirección.  Calle Central  Nº 7. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>523</span>
+                            <strong>SANTA FE.</strong>— 19 de  Enero  de  1969.  Dirección:  Calle María Auxilia- dora  y Colonia  María Auxiliadora  Casa N° 2. Días y horas  de reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 8 Hombres y 1 Mujer.
+                        </li>
+
+                    <h4>MUNICIPIO DE CIUDAD DELGADO</h4>
+                        <li>
+                            <span>524</span>
+                            <strong>11 DE ENERO.</strong>— 11 de Enero de 1967. Dirección: Cantón San José Cortez,  punto de  buses Ruta Nº 19. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00pm. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>525</span>
+                            <strong>11 DE MAYO.</strong>— 11 de Mayo de 1966.  Dirección:  Final Avenida  Paleca Nº 117 Ruta 4. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 25 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>526</span>
+                            <strong>20 DE ENERO.</strong>— 20 de Enero de 1970. Dirección:  Cantón San Laureano. Días y horas  de  reuniones: De Lunes  a Domingo de  6:00  a 8:00 p.m.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>527</span>
+                            <strong>29  DE JUNIO.</strong>— 29 de  Junio  de  1985.  Dirección:  Avenida  Paleca Colonia  Patricia, Calle Principal Nº 1048.  Días y horas  de reuniones: De  Lunes  a Domingo de  6:30  a 8:30  pm.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>528</span>
+                            <strong>ACOLHUATÁN.</strong>— 07 de  Marzo de  1965.  Dirección:  Avenida  Acolhuatán Nº 48. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>529</span>
+                            <strong>CENTRAL DELGADO.</strong>— 04 de  Mayo de  1967.  Dirección:  Calle El Calvario Nº 22. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 13 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>530</span>
+                            <strong>CENTRAL PLAN DEL PINO.</strong>—  12  de  Diciembre de  1972.  Direc- ción:  Calle  Principal,  1 Cuadra al Norte  del  punto de  microbuses Ruta N°19 Cantón Plan del Pino. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 17 Hom- bres  y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>531</span>
+                            <strong>DESPERTAR 10  DE ENERO.</strong>— 10  de  Enero  de  2013.  Dirección: Carretera Troncal del Norte  Km. 5 ½ Comunidad Monte Carlos Casa N° 9, Ciudad Delgado. Días y horas  de  reuniones: De Lunes a Sá- bado de 7:00 a 9:00 p.m.  y Domingo de 5:00 a 7:00 pm. Miembros asistentes:. 20 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>532</span>
+                            <strong>DESPERTAR 20  DE MARZO.</strong>— 20 de  Marzo  de  1985.  Dirección: Calle  Gloria Nº 25 Colonia  San Francisco  después de  línea  férrea. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:30 p.m. Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>533</span>
+                            <strong>EL ALBA.</strong>— 16 de  Diciembre de  1983.  Dirección:  Cantón La Cabaña 5 cuadras al Sur de  Escuela,  Km 14 ½, Carretera de  Oro.  Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros  asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>534</span>
+                            <strong>EL PROGRESO.</strong>— 22 de  Junio  de  1961.  Dirección:  Calle La Joya, Avenida Juan Bertis Casa Nº 19. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li> 
+                            <span>535</span>
+                            <strong>ESPERANZA.</strong>— 20 de  Diciembre de  1962.  Dirección:  1ª  Calle  La Ronda,  Nº 10 Barrio Paleca,  Nº 12. Días y horas  de  reuniones: De Lunes  a  Domingo de  7:00  a  9:00  p.m.  Miembros asistentes:  10 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>536</span>
+                            <strong>FUENTE DE  SALVACIÓN.</strong>— 30  de  Agosto de  1966.  Dirección: Cantón Calle Real, Km.9 Carretera Troncal del Norte, Calle Principal. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>537</span>
+                            <strong>LUZ DE BILL.</strong>— 06 de Agosto de 1978. Dirección:  Cantón San José Cortéz,  Caserío Flor Blanca Calle al Toríl. Días y horas  de reuniones: De Lunes a Domingo de  5:30 a 7:30 p.m.  Miembros asistentes: 16 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>538</span>
+                            <strong>NUEVO CAMINO.</strong>— 20 de Diciembre de 1969.  Dirección:  Colonia San Antonio  Km.11, Carretera Troncal  del  Norte, Avenida  La Reina Calle Principal,  Casa  N° 13. Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00 pm  y Domingo de  6:00  a 8:00  p.m.  Miem- bros  asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>539</span>
+                            <strong>NUEVO CAYALÁ.</strong>— 25 de Enero  de 1985.  Dirección:  Urbanización Nuevo  Cayalá,  Pasaje  Quinona Edificio K Apartamento N° 105 Km. 10, Carretera Troncal del Norte. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>540</span>
+                            <strong>PLAN DE LAS 24 HORAS.</strong>— 19 de Mayo de 1973.  Dirección:  Cantón  Cabaña, Caserío Bola  de  Monte de  Ciudad Delgado. Días  y horas de reuniones: De Lunes a Domingo de 6:30 a 8:00 p.m. Miem- bros  asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>541</span>
+                            <strong>RENACER 01  DE NOVIEMBRE.</strong>— 01 de  Noviembre de  1982.  Dirección:  Caserío La Ermita, Cantón La Cabaña. Días y horas  de  reuniones: De Lunes a Domingo de 5:30 a 7:00 p.m. Miembros asisten- tes: 12 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>542</span>
+                            <strong>RENACER 08  DE AGOSTO.</strong>— 08 de  Agosto de  2005.  Dirección: Ciudad Delgado. Días y horas  de reuniones: De Lunes a Sábado de 6:00 a 8:00 pm y Domingo de 5:00 a 7:00pm. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>543</span>
+                            <strong>RENACER HABITAT CONFIEN.</strong>— 22 de Marzo de 2014. Dirección: Pasaje  Nº 11 Casa Nº 7, Zona A Km. 7, Carretera Troncal del Norte. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>544</span>
+                            <strong>RENOVACIÓN.</strong>— 15 de  Marzo de  1988.  Dirección:  Barrio Paleca, Calle Las Ánimas Nº 25. Días y horas  de  reuniones: De Lunes a Do-mingo  de 7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>545</span>
+                            <strong>SAN SEBASTIÁN.</strong>— 29 de  Julio de  1965.  Dirección:  Calle Texical, Casa  Nº  57  Barrio  San  Sebastián. Días  y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 7 Hom- bres  y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>546</span>
+                            <strong>TESORO DE VIDA.</strong>— 19 de Octubre de 1975.  Dirección:  Carretera Troncal del Norte  Km. 7 ½ Urbanización Las Colinas del Norte, Polí- gono L, Pasaje  Nº 7 Casa Nº 6. Días y horas  de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 24 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>547</span>
+                            <strong>UNA LUZ EN LAS PRADERAS.</strong>— 23 de  Junio  de  1982.  Dirección: Cantón La Cabañita Praderas Nº 1. Días y horas  de  reuniones: De Lunes  a  Domingo de  6:00  a  8:00  p.m.  Miembros asistentes:  12 Hombres.
+                        </li>
+                        <li>
+                            <span>548</span>
+                            <strong>VICTORIA 06  DE FEBRERO.</strong>— 06 de  Febrero de  1971.  Dirección: 9ª Calle Oriente 412 Bis, Barrio Las Victorias Ciudad Delgado. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros  asistentes:10 Hombres.
+                        </li>
+                        <li>
+                            <span>549</span>
+                            <strong>VIDA EN A.A.</strong>—  22 de  Julio  de  1972.  Dirección:  Avenida  Paleca Nº 47 Ciudad Delgado S.S. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIOS DE EL PAISNAL</h4>
+                        <li>
+                            <span>550</span>
+                            <strong>DIVINA PROVIDENCIA.</strong>— 14 de Junio  de 1988. Dirección:  Cantón Potrero Grande, Km. 43, Carretera Troncal  del  Norte. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 15 de Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>551</span>
+                            <strong>FUENTE DE FORTALEZA.</strong>— 17 de  Abril de  1982.  Dirección:  Can- tón  San Rafael Los Turcos.  Días y horas  de  reuniones: De Lunes  a Domingo de 6:00a  8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>552</span>
+                            <strong>NACIMOS PARA TRIUNFAR.</strong>— 10  de  Mayo  de  2011.  Dirección: Lotificación El Tule 3, Polígono 5, Lote N° 4. Días y horas  de reunio- nes: De Lunes a Domingo de 6.00 a 8.00 p.m. Miembros asistentes: 30 Hombres.
+                        </li>
+                        <li>
+                            <span>553</span>
+                            <strong>NUEVA ESPERANZA.</strong>— 29 de Junio  de 1986.  Dirección:  Brisas de San  Diego  Km. 40,  Carretera Troncal  del  Norte. Días  y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>554</span>
+                            <strong>SAN LORENZO.</strong>— 20 de  Junio  de  1972.  Dirección:  Cantón La Cabaña, El Paisnal. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>555</span>
+                            <strong>UNA  LUZ DE ESPERANZA.</strong>— 18 de  Noviembre de  2008.  Dirección:  Calle  El Chagüite, Barrio El Centro, Casa  S/N.  Días  y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>556</span>
+                            <strong>VIVIR EN A.A. ES VIDA.</strong>— 28 de  Enero  de  1992.  Dirección:  Carretera Troncal del  Norte, Kilometro  45. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres y 1 Mujer.
+                        </li>
+
+                    <h4>MUNICIPIO DE GUAZAPA</h4>
+                        <li>
+                            <span>557</span>
+                            <strong>1° DE MARZO.</strong>— 01 de Marzo de 2005. Dirección:  Colonia San An- tonio Nº 1, Calle Principal Nº 36, Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 13 Hombres.
+                        </li>
+                        <li>
+                            <span>558</span>
+                            <strong>12 PASOS.</strong>— 25 de Noviembre de 2007. Dirección: Km. 30 Carretera Troncal del Norte  Lotificación El Trapiche Nº 2 lote No 21 Cantón San Gerónimo, Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>559</span>
+                            <strong>FELICIDAD 12  DE ABRIL.</strong>— 12 de  Abril de  2010.  Dirección:  Carretera Troncal  del  Norte, Km. 22 ½ frente  a Gasolinera Enmanuel, antes de  llegar  a La pasarela. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 13 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>560</span>
+                            <strong>JARDÍNES DEL  CAMPO.</strong>—  02  de  octubre de  2010.   Dirección: Colonia  Jardínes del  Campo, Calle Principal  al Cementerio Nuevo. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 14 Hombres y 1 Mujer
+                        </li>
+                        <li>
+                            <span>561</span>
+                            <strong>LIBERADOS 1º DE AGOSTO.</strong>— 01 de  Agosto de  1979.  Dirección: Calle 5 de  Noviembre. Días y horas  de  reuniones: De Lunes a Domingo  de  6:00  a 8:00  pm.  Miembros asistentes: 20  Hombres y 3 Mujeres
+                        </li>
+                        <li>
+                            <span>562</span>
+                            <strong>SAN MIGUEL.</strong>— 17 de  Mayo de  1964.  Dirección:  1ª Calle Oriente No  192,  Barrio  El Centro. Días  y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>563</span>
+                            <strong>UN MILAGRO EN EL CAMPO.</strong>— 23 de  Junio  de  1985.  Dirección: Colonia  Buena  Vista, Calle Principal  Nº 29, Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 14 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>564</span>
+                            <strong>UN MUNDO  NUEVO.</strong>— 31 de  Enero  de  1979.  Dirección:  Calle El Calvario  frente  a Renovación Carismática, Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 16 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>565</span>
+                            <strong>UN RAYO DE LUZ 31 DE MARZO.</strong>— 31 de Marzo de 1977.  Direc- ción: Barrio El Calvario Avenida  Central  No 87 Guazapa. Días y horas de  reuniones: De Lunes a Domingo de  6:30  a 8:30  pm.  Miembros asistentes: 15 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE ILOPANGO</h4>
+                        <li>
+                            <span>566</span>
+                            <strong>1º  DE JUNIO AGUILAS DE LA NOCHE.</strong>—01  de  Junio  de  2002. Dirección:  Avenida  5 de Noviembre Nº 4 Contiguo a Alcaldía Municipal de  Ilopango. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 28 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>567</span>
+                            <strong>BELLO AMANECER.</strong>— 01 de  Diciembre de  1994.  Dirección:  Cantón  Dolores, Apulo,  Calle Amatitlán,  Colonia  Bello Amanecer. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>568</span>
+                            <strong>DESPERTAR 20  DE OCTUBRE.</strong>— 20 de  Octubre de  1988.  Dirección:  Colonia  Cima  1 Boulevard Las Pavas  Block 1 Nº  13.  Días  y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>569</span>
+                            <strong>ESCOGIDOS DE DIOS 2001.</strong>— 09 de  Noviembre de  2001.  Dirección: Cantón San Bartolo,  Final Calle Meléndez Nº 10. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 9 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>570</span>
+                            <strong>FE EN MI CAMINO.</strong>— 27 de  Febrero de  1991.  Dirección:  Colonia San Rafael, N° 232,  Ilopango. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>571</span>
+                            <strong>FÉNIX.</strong>— 12  de  Junio  de  2012.  Dirección:  Entrada a  La Colonia Santa  Rosa, Calle Principal, Casa  Nº 12. A 200 metros adelante por pizza hut. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>572</span>
+                            <strong>LA GRAN FAMILIA.</strong>— 17 de  Febrero de  1982.  Dirección:  Turicentro Parque Acuático de Turismo, Cantón Dolores Apulo. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>573</span>
+                            <strong>LUZ Y VIDA.</strong>— 16 de  Octubre de  1971.  Dirección:  Boulevard San Bartolo,  costado Oriente de  Instituto  Nacional  San  Bartolo,  Calle Principal. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>574</span>
+                            <strong>NUEVO  AMANECER.</strong>— 23  de  Enero  de  1987.  Dirección:  Calle Principal  Nº  304,  Reparto Las Cañas  San  Bartolo.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes:10 Hombres y 1 mujer
+                        </li>
+                        <li>
+                            <span>575</span>
+                            <strong>PRIMERA LUZ DE MAYO.</strong>— 01 de  Mayo de  1973.  Dirección:  Colonia Santa  Lucía, Calle Principal  Nº 74. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>576</span>
+                            <strong>RECUPERACIÓN 1º  AGOSTO.</strong>—  01  de  Agosto de  1981.  Dirección: Pasaje  “C” Polígono 1, Casa N° 154 Reparto San Bartolo.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>577</span>
+                            <strong>SOBRIEDAD 20 DE JULIO.</strong>— 20 de Julio de 1983. Dirección: Colonia San Felipe,  Polígono N° 5 Casa Nº 5. Días y horas  de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>578</span>
+                            <strong>SOMOS FELICES HOY.</strong>— 18 de Agosto de 1963. Dirección: Cantón Dolores, Apulo,  Calle El Cocalito Ilopango. Días y horas  de  reunio- nes: De Lunes a Domingo de 6.00 a 8:00 p.m. Miembros asistentes: 24 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>579</span>
+                            <strong>TORRE FUERTE 03 DE MAYO.</strong>— 03 de  Mayo de  2013.  Dirección: Colonia  Jardínes de  Selsut  Carretera Panamericana Kilometro  13 Ilopango. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>580</span>
+                            <strong>UNA LUZ EN EL JARDÍN.</strong>— 09 de Septiembre de 1983. Dirección: Urbanización Jardínes de  San Bartolo,  Polígono 19 N° 8. Calle Las Flores.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00  a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>581</span>
+                            <strong>UNA  LUZ EN LA COMUNIDAD.</strong>—21  de  Noviembre de  1988.Dirección:  Comunidad Adesco Flores  Nº  68,  Sector  1,  San  Bartolo. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 13 Hombres.
+                        </li>
+                        <li>
+                            <span>582</span>
+                            <strong>UNIDOS 18 DE ABRIL.</strong>— 18 de Abril de 1992. Dirección  Km. 14 ½, Carretera a Apulo,  Colonia  Vista Hermosa. Días y horas  de  reuniones: De Lunes a Domingo 6:30 a 8.30 p.m. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>583</span>
+                            <strong>UNIDOS VENCEREMOS.</strong>— 04 de Octubre de 1973. Dirección: Km. 15 Caserío Amatitlán,  Apulo. Días y horas  de reuniones: De Lunes a Domingo de  6:30  a 8:30  p.m.  Miembros asistentes: 19 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>584</span>
+                            <strong>VOLVER A RENACER.</strong>— 18 de Octubre de 1984.  Dirección:  Carretera  Panamericana, ½ Cuadra al Oriente Desvío  de  Apulo,  Km. Nº 12. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE MEJICANOS</h4>
+                        <li>
+                            <span>585</span>
+                            <strong>06 DE AGOSTO.</strong>— 06 de  Agosto de  2010.  Dirección:  Pasaje  Pérez Romero, Colonia  San Carlos.  Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 pm. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>586</span>
+                            <strong>10  DE MARZO (INSTITUCIONAL).</strong>— 10  de  Marzo  de  2011.  Dirección:  Centro Penal  La Esperanza, San  Luis Mariona.  Miembros asistentes: 40 Hombres.
+                        </li>
+                        <li>
+                            <span>587</span>
+                            <strong>29  DE ENERO.</strong>— 29  de  Enero  de  1984.  Dirección:  Colonia  San Miguel,  Lotificación  Santa  Isabel  Pasaje  1 Casa  N° 3. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>588</span>
+                            <strong>29  DE JUNIO.</strong>—  29  de  Junio  de  1980.  Dirección:  Entrada a Colonia  El Bosque Plan  del  Pito,  Mejicanos Casa  N° 5. Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>589</span>
+                            <strong>ACCIÓN.</strong>— 05 de  Diciembre de  1974.  Dirección:  Colonia  Zacamil, entre Sector  Magisterial atrás  del Edificio 600.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 35 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>590</span>
+                            <strong>AMOR Y PAZ.</strong>— 05 de  Diciembre de  1965.  Dirección:  Avenida  28 de  Febrero Casa  No  2, San Ramón  Mejicanos. Días y horas  de  reu- niones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asisten- tes: 17 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>591</span>
+                            <strong>BENDICIÓN 07  DE NOVIEMBRE.</strong>— 07  de  Noviembre de  1982. Dirección:  Villa Mariona  1 Condominio “A” Senda 2 Casa  No  206. Días y horas  de  reuniones: De Lunes  a Domingo 7:00  a 9:00  p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>592</span>
+                            <strong>BENDITA SOBRIEDAD.</strong>— 11 de  Octubre de  1969.  Dirección:  Avenida  14 de  Diciembre N° 4. Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 26 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>593</span>
+                            <strong>CAMINO DE LA VERDAD.</strong>—21 de  Enero  de  1973.  Dirección:  San Roque  Colonia  Escalante Calle  Principal  Nº  106.  Días  y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>594</span>
+                            <strong>DECISIÓN 24 DE AGOSTO.</strong>— Dirección.  Centro Comercial Metropolis, Calle Zacamil, local B-4, 2a  Planta.  Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>595</span>
+                            <strong>DIVINA LUZ.</strong>— 07 de Junio  de 1995.  Dirección:  Ciudad Futura  Calle Principal Nº 7 Polígono 10 Pasaje  11. Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00 p.m.  y Domingo de  6.00  a 8.00 p.m.  Miembros asistentes: 8 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>596</span>
+                            <strong>EL GRAN PASO.</strong>— 06 de  Agosto de  2004.  Dirección:  5ª Calle Poniente Nº 2, frente  Ex YKK. Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00 p.m.  y Domingo de  5:00 a 7:00 p.m.  Miem- bros  asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>597</span>
+                            <strong>EXPERIENCIA Y FORTALEZA.</strong>— 14 de  Mayo de  1967.  Dirección: Colonia Delicias del Norte, entre Calle a Mariona y Calle El Progreso Casa Nº 26 Bis. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 8:30 p.m.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>598</span>
+                            <strong>FE Y ESPERANZA (INSTITUCIONAL).</strong>— Dirección:  Centro Penal Esperanza, San Luis Mariona.  Días y horas  de reuniones:, Viernes de 1:00 a 3:00 p.m.  Miembros asistentes: 45 Hombres.
+                        </li>
+                        <li>
+                            <span>599</span>
+                            <strong>HUMILDAD Y ACCIÓN.</strong>— 02 de Noviembre de 1975. Dirección: 9ª Calle Poniente y 1ª Avenida  Norte  Nº 1. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>600</span>
+                            <strong>LA NUEVA LUZ.</strong>— 03 de Junio  de 2007.  Dirección:  Calle al Volcán Quinta  Gonzales Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 6 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>601</span>
+                            <strong>LUZ DEL SIGLO XX.</strong>— 14 de  Diciembre de  1975.  Dirección:  Avenida Rengifo  Nº 20, Colonia  El Retiro, Calle a Mariona.  Días y horas de  reuniones: De Lunes a Domingo de  6.00  a 8.00  p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>602</span>
+                            <strong>LUZ Y VERDAD.</strong>— 10 de Noviembre de 1972.  Dirección:  Calle Los Ángeles N° 9. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 13 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>603</span>
+                            <strong>MONTREAL.</strong>— 01 de  Junio  de  1970.  Dirección:  Colonia  Las Delicias del Norte, Avenida  Montreal Nº 35. Días y horas  de  reuniones: De  Lunes  Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>604</span>
+                            <strong>NACER 18  DE FEBRERO.</strong>— 18  de  Febrero de  2006.  Dirección: Calle  a Mariona,  Colonia  Buena  Vista, Casa  Nº  6, Quinta  Mónica. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 8:30 p.m. Miembros asistentes: 8 Hombres y 1 mujer
+                        </li>
+                        <li>
+                            <span>605</span>
+                            <strong>NUEVO AMANECER 08 DE JUNIO.</strong>— 08 de Junio de 1989. Dirección: Lotificación Santa  María Nº 2, Polígono 21 N° 5. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 4 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>606</span>
+                            <strong>NUEVOS HORIZONTES.</strong>— 15 de  Septiembre de  1987.  Dirección: 29 Avenida  Norte, Mejicanos. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>607</span>
+                            <strong>RECUPERACIÓN OBRA DE DIOS.</strong>— 28 de  Octubre de  1991.  Di- rección:  Colonia  El Paraíso  Avenida  Argentina Casa  N° 2 San  Ra- món, Mejicanos. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>608</span>
+                            <strong>RENACER 02 DE MAYO.</strong>— 02 de Mayo de 2003.  Dirección:  Colonia Regalado y Pasaje  Regalado, Casa Nº 8. Días y horas  de reunio- nes:  De Lunes a Sábado de  6:00 a 8:00 p.m.  y Domingo de  5:00 a 7:00 p.m.  Miembros asistentes: 7 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>609</span>
+                            <strong>SALVANDO UNA  VIDA.</strong>—23 de  Septiembre de  1982.  Dirección: Colonia  Las Colinas  Block “A” 1 Casa  Nº 1. Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 15 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>610</span>
+                            <strong>SAN LUIS.</strong>— 16 de Febrero de 1965.  Dirección:  Colonia  La Paz Calle Principal Km. 11. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>611</span>
+                            <strong>SOBRIEDAD Y RECUPERACIÓN.</strong>— 16 de  Enero  de  1963.  Dirección: San Luis Mariona,  Calle a Colonia  Monte Carmelo. Contiguo a Casa Comunal. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>612</span>
+                            <strong>UNA LUZ DE ESPERANZA.</strong>— 25 de Julio de 1993. Dirección: Calle Principal  Colonia  Iberia  Nº 9. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 8:30 p.m.  Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>613</span>
+                            <strong>VIDA NUEVA.</strong>—  15  de  Septiembre de  1964.  Dirección:  5a   Calle Poniente Nº  29  Barrio El Calvario  esquina opuesta a ex Telecom. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 20 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>614</span>
+                            <strong>VIDA Y SOBRIEDAD.</strong>— 01  de  Mayo  de  1969.  Dirección:  Calle  a Mariona  N° 423,  Mejicanos. Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 30 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>615</span>
+                            <strong>VOLUNTAD Y ACCIÓN.</strong>— 01 de  Febrero de  1986.  Dirección:  Colonia Zacamil Edificio 88, Apartamento 18. Días y horas  de  reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 5 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>616</span>
+                            <strong>BENDITA SOBRIEDAD.</strong>— 11 de  Octubre de  1961.  Dirección:  Avenida  14 de  Diciembre. Días y horas  de  reuniones: De Lunes a Do- mingo  de  6:00  a 8:00  p.m.  Miembros asistentes: 28 Hombres y 2 Mujeres.
+                        </li>
+
+                    <h4>MUNICIPIO DE NEJAPA</h4>
+                        <li>
+                            <span>617</span>
+                            <strong>16  DE MAYO.</strong>—16  de  Mayo  de  1969.  Dirección:  Hacienda Tetultepeque, Calle a Tacachico. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>618</span>
+                            <strong>FLOR DE LOTO.</strong>— 04 de  Julio de  1977.  Dirección:  Colonia  Cuesta Blanca, Carretera a Quezaltepeque, Km. 18 ½, Parada El Cedral  Pa- saje Nº 4, Casa 81. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>619</span>
+                            <strong>NUEVA  LUZ DE  VIDA EN  EL SALITRE</strong>.—05 de  Diciembre de 2009.  Dirección  Cantón Aldea de Mercedes, Caserío El Salitre, Días y Horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m. Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>620</span>
+                            <strong>RESURRECCIÓN.</strong>— 11  de  Octubre de  1973.  Dirección:  Hacienda  Mapilapa Mesón  Nº 14, pieza  Nº 8, Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>621</span>
+                            <strong>SOL NACIENTE.</strong>— 27 de  Octubre de  1963.  Dirección:  5a  Calle Poniente Casa N°4 Nejapa S.S. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres 1 Mujer.
+                        </li>
+                        <li>
+                            <span>622</span>
+                            <strong>UNA LUZ EN LA ALDEA.</strong>— 18 de  Mayo de  1986.  Dirección:  Cantón Aldea de Mercedes. Días y horas  de reuniones: De Lunes a Do- mingo  de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+
+
+                    <h4>MUNICIPIO DE PANCHIMALCO</h4>
+                        <li>
+                            <span>623</span>
+                            <strong>03  DE NOVIEMBRE.</strong>— 03 de  Noviembre de  1974.  Dirección:  Pasaje  Los Laureles  Calle  Principal,  Cantón Los Palones Nº 1. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 13 Hombres.
+                        </li>
+                        <li>
+                            <span>624</span>
+                            <strong>10 DE MARZO.</strong>— 10 de Marzo de 1996.  Dirección:  Cantón El Divisadero, Calle Principal, Contiguo a Iglesia Católica. Días y horas  de reuniones: De Lunes a Sábado de  6:00  a 8:00  p.m.  y Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>625</span>
+                            <strong>16  DE SEPTIEMBRE.</strong>— 16 de  Septiembre de  1973.  Dirección:  Barrio El Centro Calle  Principal  ½ Cuadra al Oriente de  La Alcaldía Municipal. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>626</span>
+                            <strong>COROLA DE ESPERANZA.</strong>— 26 de  Junio  de  1966.  Dirección:  Barrio El Calvario  Calle  La Ronda  final 2ª  Avenida  Sur. Días  y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>627</span>
+                            <strong>EL CONSUELO.</strong>22 de  agosto de  1977.  Dirección:  Cantón Panchimalquito Calle Principal, 1 Cuadra antes de La Escuela.  Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 8:30 p.m.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>628</span>
+                            <strong>FUENTE DE SOBRIEDAD.</strong>— 03 de  Diciembre de  1984.  Dirección: Carretera a Panchimalco, Km. 13  Calle  Principal  Caserío Las Joyitas frente  a Quinta  La Joya,  Días y horas  de  reuniones: De Lunes a Viernes de 7:00 a 9:00 p.m. Sábado y Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>629</span>
+                            <strong>NUEVA VIDA 13  DE MARZO.</strong>—13 de  Marzo de  2005.  Dirección Caserío Los Guzmanes. Contiguo a Quintas Doradas. Días y horas de  reuniones:: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>630</span>
+                            <strong>PUERTA DE RECUPERACIÓN.</strong>— 20 de  Mayo de  1975.  Dirección: Cantón El Cedro, Calle Principal. Días y horas  de  reuniones: De Lu- nes a Sábado de 6:00 a 7:30 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>631</span>
+                            <strong>RENACER 29  DE AGOSTO.</strong>— 29 de  Agosto de  1999.  Dirección: Colonia  Monte Lis, Pasaje  Nº 1 Carretera a Panchimalco, Km. 111½. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p. m. Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>632</span>
+                            <strong>SOBRIEDAD 1° DE DICIEMBRE.</strong>— 01 de  Diciembre de  1974.  Di- rección:  Cantón El Guayabo, Calle Principal frente  a La Terminal del punto de  Microbuses Ruta ”12”.  Días y horas  de  reuniones: De Lu- nes  a Domingo de  7:00  a 9:00  p.m.  Miembros asistentes: 9 Hom- bres.
+                        </li>
+                        <li>
+                            <span>633</span>
+                            <strong>SOBRIEDAD 25 DE ABRIL.</strong>— 25 de  abril de  1976.  Dirección:  Cantón San Isidro. Barrio El Centro, Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>634</span>
+                            <strong>SOBRIEDAD MIL CUMBRES.</strong>— 25  de  Junio  de  1978.  Dirección: Cantón Mil Cumbres, Calle Principal al Cantón El Cedro, Días y ho- ras de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p. m. Miem- bros  asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>635</span>
+                            <strong>UNA VIRTUD EN LOS SITIOS.</strong>— 04 de  Junio  de  1983.  Dirección: Panchimalquito, Calle  al Conacaste, Panchimalco. Días y horas  de reuniones: De Lunes a Domingo 7:00 a. 9:00 pm. Miembros asisten- tes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>636</span>
+                            <strong>UNIDAD 26  DE FEBRERO.</strong>— 26 de  Febrero de  1996.  Dirección: Barrio San José, Calle La Ronda,  Nº 13, Contiguo a Juzgado de paz. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>637</span>
+                            <strong>VOLVER  A VIVIR 15  DE NOVIEMBRE.</strong>— 15  de  Noviembre de 1993.  Dirección:  Cantón Quezalapa, Caserío Nº 2. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 15 Hombres.
+                        </li>
+
+
+
+                    <h4>MUNICIPIO DE ROSARIO DE MORA</h4>
+                        <li>
+                            <span>638</span>
+                            <strong>08  DE SEPTIEMBRE.</strong>— 08 de  Septiembre de  1991.  Dirección:  Barrio Santa Lucía Calle La Ronda.  Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>639</span>
+                            <strong>27 DE JULIO.</strong>—27 de  Julio de  2007.  Dirección:  Barrio Santa  Lucía, Calle Principal. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>640</span>
+                            <strong>AL CUIDADO DE DIOS.</strong>— 20 de Abril de 1980.  Dirección:  Entrada a Barrio La Vega. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 17 Hombres.
+                        </li>
+                        <li>
+                            <span>641</span>
+                            <strong>AMATE BLANCO.</strong>— 13 de Noviembre de 1976. Dirección: Barrio El Centro, Caserío Amate  Blanco. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>642</span>
+                            <strong>LUZ Y ESPERANZA.</strong>— 30 de  Julio de  1988.  Dirección:  Cantón Las Barrosas  ½ Cuadra al Sur de  La Escuela.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 26 Hombres
+                        </li>
+
+
+                    <h4>MUNICIPIO DE SAN MARCOS</h4>
+                        <li>
+                            <span>643</span>
+                            <strong>16  DE ABRIL.</strong>— 16 de  Abril de  1988.  Dirección:  Colonia  Grimaldi Pasaje  No  1 Casa  N° 9 San Marcos,  Kilometro  6 Carretera Antigua a Zacatecoluca. Días y horas  de  reuniones: De Lunes a Viernes  de 6:30 a 8:30 p.m.  Sábado y Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 14 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>644</span>
+                            <strong>17  DE OCTUBRE.</strong>— 17  de  Octubre de  1971.  Dirección:  Colonia Santa  María, Km. 6 ½ Carretera a Santo  Tomás.  Días y horas  de reu- niones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asisten- tes: 16 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>645</span>
+                            <strong>26  DE OCTUBRE.</strong>— 26  de  Octubre de  1985.  Dirección:  Colonia Tepeyac Pasaje  Sinaloa,  Casa  Nº 7, Días y horas  de  reuniones: De Lunes a Viernes de  7:00 a 9:00 p.m.  Sábado y Domingo de  5:00 a 7:00 p.m.  Miembros asistentes: 8 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>646</span>
+                            <strong>ALEGRÍA DE VIVIR.</strong>— 07 de  Febrero de  1964.  Dirección:  Calle 25 de  Abril Poniente N° 89 San Marcos.  Días y horas  de  reuniones: De Lunes a Sábado de 6:30 a 8:30 p.m. y Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 17 Hombres.
+                        </li>
+                        <li>
+                            <span>647</span>
+                            <strong>BUENAVENTURA.</strong>— 16 de  Noviembre de  2009.  Dirección:  Colonia San Antonio  Nº 7, Calle Principal Casa  N° 5 San Marcos.  Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>648</span>
+                            <strong>DESPERTAR 10  DE ENERO.</strong>— 10  de  Enero  de  1988.  Dirección: Colonia  10 de  Octubre Polígono No  5 Calle  Principal  N° 1. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miem- bros  asistentes: 8 Hombres y 1 Mujer.</li>
+                        <li>
+                            <span>649</span>
+                            <strong>DESPERTAR 06 DE AGOSTO.</strong>— 06 de Agosto de 1982.  Dirección: Colonia  El Tránsito Nº 3, Avenida  Granada, Block “F”, Lote 19. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>650</span>
+                            <strong>EL MILAGRO.</strong>—  01de Julio de 2011. Dirección: Calle Principal Casa Nº 50 Colonia  El Milagro San Marcos.  Días y horas  de reuniones: De Lunes  a  Domingo de  7.00  a  9.00  p.  m.  Miembros asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>651</span>
+                            <strong>FALTA UNO.</strong>—  08 de  Enero  2007.  Dirección:  Terminal  del  Sur, Pegado a meta de Ruta 26. Días y horas de reuniones: De Lunes a Vier- nes de  3:00 a 5:00 p.m.  Sábado de  2:00 a 4:00 p.m.  y Domingo de 10:00 a.m. a 12:00 m.d.  Miembros asistentes: 6 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>652</span>
+                            <strong>NACE UNA ESPERANZA.</strong>— 02 de  Abril de  2009.  Dirección:  Calle Principal Los Gálvez, Pasaje  Nº 2 Casa N° 1 San Marcos. Días y horas de  reuniones: De Lunes a Sábado de  6:00  a 8:00  p.m.  y Domingo 10:00 a.m. a 12:00 m.d.  Miembros asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>653</span>
+                            <strong>NUEVO PATROCINIO.</strong>— 13 de  Octubre de  2000.  Dirección:  Calle El Diamante Casa Nº 7, Colonia Perla Escondida. Días y horas  de reuniones: De Lunes a Viernes de 6:00 a 8:00 p.m. Sábado y Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 13 Hombres.
+                        </li>
+                        <li>
+                            <span>654</span>
+                            <strong>OASIS.</strong>— 01 de  Junio  de  1988.  Dirección:  Callé 25 de  Abril Oriente,  Pasaje  San Marcos,  N° 14. Días y horas  de  reuniones: De Lunes a Domingo de 6:30 a 8:30 pm. Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>655</span>
+                            <strong>RESURRECCIÓN.</strong>— 07 de  Marzo de  1961.  Dirección:  Avenida  Padre  Mario Zanconato N° 59. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 pm.  Miembros asistentes: 15 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>656</span>
+                            <strong>SOLO POR HOY.</strong>— 02  de  Abril de  1978.  Dirección:  Colonia  San Antonio  Nº 3 Calle Principal  Nº 10. Días y horas  de  reuniones: De Lunes a Sábado de 6:30 a 8:30 p.m. y Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>657</span>
+                            <strong>TRES CAMINOS.</strong>—  06  de  Octubre de  1986.  Dirección:  Colonia Santa  Paula,  final Calle  Principal  Nº  1. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+
+
+                    <h4>MUNICIPIO DE SAN MARTÍN</h4>
+                        <li>
+                            <span>658</span>
+                            <strong>10 DE MAYO. </strong>— 10 de Mayo de 1975. Dirección: 12 Avenida Sur N° 2 frente  a Alcaldía Municipal de San Martín. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>659</span>
+                            <strong>22 DE ENERO. </strong>— 22 de  Enero  de  2012.  Dirección:  Cantón Ánimas de  San Martín Carretera a San José Guayabal Km. 6. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 16 Hombres. 
+                        </li>
+                        <li>
+                            <span>660</span>
+                            <strong>ACCIÓN 10  DE MARZO. </strong>— 10 de  Marzo de  1990.  Dirección:  Colonia Santa  María final Pasaje  Nº 16, Casa  N° 127.  Días y horas  de reuniones: de Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 7 Hombres.
+                    </li>
+                        <li>
+                            <span>661</span>
+                            <strong>CENTRAL 1º  DE NOVIEMBRE. </strong>— 01 de  Noviembre de  1984.  Di- rección:  1ª Avenida  Norte  Nº 29, Barrio Mercedes. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asis- tentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>662</span>
+                            <strong>DESPERTAR 30 DE AGOSTO. </strong>— 30 de Agosto de 1981.  Dirección: Calle  a Cantón Las Delicias  frente  a CEL San Martín.  Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 17 Hombres.
+                        </li>
+                        <li>
+                            <span>663</span>
+                            <strong>FUENTE DE SALVACIÓN. </strong>— 26 de Noviembre de 2001.  Dirección: Colonia  Santa  Gertrudis, Polígono Nº 27 Casa  N° 15. Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>664</span>
+                            <strong>LUZ Y ESPERANZA 2010. </strong>— 09 de  Enero  de  2010.  Dirección:  4a Avenida  Sur Casa  N° 10.  Días  y horas  de  reuniones: De  Lunes  a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 9 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>665</span>
+                            <strong>NUEVO DESPERTAR EN LAS DELICIAS. </strong>— 06 de  Noviembre de 1999. Dirección:  Cantón Las Delicias 50 metros Oriente a Desvío Altavista sobre Carretera a Tonacatepeque. Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>666</span>
+                            <strong>NUEVO SENDERO. </strong>— 25 de  Septiembre de  1970.  Dirección:  Carretera Panamericana Cantón La Palma  Km. 15 ½, San Martín. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>667</span>
+                            <strong>RESURRECCIÓN EN A.A. </strong>— 21 de Septiembre de 1997. Dirección: 2ª Avenida  Norte  Local Nº 9. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 12 hombre y 1 mujer</li>
+                        <li>
+                            <span>668</span>
+                            <strong>SALVANDO VIDAS. </strong>— 07 de Diciembre de 1997.  Dirección:  Avenida Monseñor Romero  Casa  N° 5, Colonia  Santa  Teresa  San Martín. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>669</span>
+                            <strong>SOMOS LIBRES EN A.A. </strong>— 28 de Marzo de 1982.  Dirección:  Colonia San Joaquín, Pasaje A Nº 53. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 19 Hombres.
+                        </li>
+                        <li>
+                            <span>670</span>
+                            <strong>UN MILAGRO EN TIERRA VIRGEN. </strong>— 23 de Noviembre de 1982. Dirección:  Calle José María, Casa Nº 7 Colonia  Tierra Virgen. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miem- bros  asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>671</span>
+                            <strong>UNIDAD EN A.A. </strong>— 18 de  Abril de  1962.  Dirección:  Avenida  Morazán  Nº  14,  local  No  3.  frente  a Súper  Selectos. Días  y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros asis- tentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>672</span>
+                            <strong>UNIDOS 18 DE MAYO. </strong>— 17 de Mayo de 1982.  Dirección:  Colonia Anémona Pasaje  Nº 2, Casa  Nº 20 Block “C”.  Días y horas  de  reu- niones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asisten- tes: 9 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN SALVADOR</h4>
+                        <li>
+                            <span>673</span>
+                            <strong>03  DE MAYO. </strong>— 15 de  Febrero de  2007.  Dirección:  Antigua  Calle del Ferrocarril  Nº 2430  Colonia  3 de  Mayo. Días y horas  de  reunio- nes: De Lunes a Domingo de 7:30 a 9:00 p.m. Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>674</span>
+                            <strong>05  DE NOVIEMBRE. </strong>— 05 de  Noviembre de  1951.  Dirección:  10a Avenida  Norte  Nº 1109.  Días y horas  de  reuniones: De Lunes a Do- mingo  de  6:00  a 8:00  p.m.  Miembros asistentes: 25 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>675</span>
+                            <strong>10  DE DICIEMBRE. </strong>—  10  de  Diciembre de  1987.  Dirección:  13ª Avenida  Sur Nº 1005,  Barrio Santa  Anita. Días y horas  de reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 15 Hombres 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>676</span>
+                            <strong>11 DE SEPTIEMBRE. </strong>— 11 de  Septiembre de  1970.  Dirección:  Comunidad Las Palmas,  Parcela  4, Pasaje  Cuscatlán, Casa  Nº 78, Km. 5 Carretera a Santa  Tecla.  Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>677</span>
+                            <strong>12 DE ABRIL. </strong>— 12 de Abril de 1976.  Dirección:  Boulevard Los Héroes  Condomino Los Héroes Nivel 2 locales  2G y 2H. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 30 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>678</span>
+                            <strong>12  DE OCTUBRE. </strong>— 12  de  Octubre de  1993.  Dirección:  Colonia Santa  Eugenia, Pasaje  Nº 1 Casa Nº 123, Barrio San Miguelito. Días y horas  de reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m. y Do- mingo  de 11:00 a.m. a 1:00 p.m.  Miembros asistentes: 28 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>679</span>
+                            <strong>17 DE DICIEMBRE. </strong>— 17 de Diciembre de 1994. Dirección: 1ª Calle Oriente, Centro Comercial Duarte  Novoa, local Nº 1. Días y horas de  reuniones: De Lunes  a Domingo de  5:00  a 7:00  p.m.Miembros asistentes: 30 Hombres y 10 Mujeres.
+                        </li>
+                        <li>
+                            <span>680</span>
+                            <strong>18 DE JULIO. </strong>— 01 de Julio de 1965.  Dirección:  Calle Las Pilas Colonia Dolores Nº 203. Días y horas  de reuniones: De Lunes a Domin- go de 7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>681</span>
+                            <strong>24 DE OCTUBRE. </strong>— 24 de Octubre de 1982. Dirección:  Final 6a  Calle Oriente Pasaje C, Casa No 65. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>682</span>
+                            <strong>24 DE SEPTIEMBRE. </strong>— 24 de  Septiembre de  1980,  Dirección:  Comunidad Cristo  Redentor, Sector  “C”  Pasaje  N° 2. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asis- tentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>683</span>
+                            <strong>25 DE MAYO. </strong>— 25 de Mayo de 1966.  Dirección:  Planes  de Renderos, Calle al Parque Balboa, Colonia  Los Ángeles frente  a Pupuseria Paty II. Días y horas  de reuniones: De Lunes a Domingo 7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>684</span>
+                            <strong>28  DE ENERO. </strong>— 28 de  Enero  de  1978  Dirección:  Colonia  1º  de Septiembre Plan Piloto Pasaje  Nº 2 Casa  Nº 26 Bis. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 17 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>685</span>
+                            <strong>29 DE AGOSTO. </strong>— 29 de Agosto de 1963.  Dirección:  Final 85 Avenida Norte, Comunidad Pedrera Nº 1, Pasaje  Principal C Nº 3. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>686</span>
+                            <strong>ALTOS DE SAN ROQUE. </strong>— 10 de  Marzo de  1997.  Dirección:  Calle México Avenida  Flor de  Loto Eje No 6 Casa Nº 151. Días y horas  de reuniones: De  Lunes  a Domingo de  8:00  a 10:00  p.m.  Miembros asistentes: 7 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>687</span>
+                            <strong>AMÉRICA. </strong>— 06 de  Agosto de  1970.  Dirección:  Colonia  América, Barrio  San  Jacinto Calle  12  de  Octubre Nº  330.  Días  y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>688</span>
+                            <strong>AMIGOS EN A.A. </strong>— 07de Enero  de 2002.  Dirección:  Barrio San Esteban 4ª Calle Oriente Nº 869 Barrio San Esteban, Teléfono: 2100 2607.  Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00 p.m.  Miembros asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>689</span>
+                            <strong>AMISTAD 24  DE AGOSTO. </strong>— 24  de  Agosto de  1981.  Dirección: Final Calle Lara, Avenida  Las Rosas Nº 38 B Colonia  Miraflores, San Jacinto. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 13 Hombres.
+                        </li>
+                        <li>
+                            <span>690</span>
+                            <strong>AMISTAD. </strong>— 18 de  Febrero de  1968.  Dirección:  Avenida  Morazán y 1ª  Calle,  Edificio Salomé  2ª  Planta,  Local Nº  8. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 pm. Miembros asis- tentes: 18 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>691</span>
+                            <strong>BUSCANDO  LA LUZ. </strong>— 21 Mayo de  2009.  Dirección:  Calle 15 de Septiembre y Calle Perú Nº 209, Barrio Candelaria. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 9 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>692</span>
+                            <strong>CALIFORNIA. </strong>—27 de  Enero  de  2009.  Dirección:  Carretera Planes de Renderos Km. 3 ½, Col California Pasaje  L Nº 17. Días y horas  de reuniones: De Lunes a Domingo 7:00 a 9:00 p.m. Miembros asisten- tes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>693</span>
+                            <strong>CATARSIS. </strong>— 30 de  Mayo de  2011.  Dirección:  5a   Calle Oriente N° 701,  Contiguo a  Unidad  de  Salud  de  La Calle  Concepción.  Días y horas  de  reuniones: De  Lunes  a Domingo de  8:00  a 10:00  p.m. Miembros asistentes: 18 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>694</span>
+                            <strong>CENTENARIO 11 DE JULIO. </strong>— 11 de Julio de 2001. Dirección:  10ª Avenida  Norte  Nº 537-B, frente  a parque Centenario. Días y horas de  reuniones: De  Lunes  a Sábado de  6:00  a 8:00  p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>695</span>
+                            <strong>CENTRAL DE EL SALVADOR. </strong>— 28 de Febrero de 1955. Dirección: 8a  Avenida  Sur, Comercial Libertad 3a  Planta,  local N° 2, atrás  de  La Iglesia El Rosario. Días y horas  de reuniones: De Lunes a Sábado de 5:00 a 7:00 p.m.  y Domingo de  3:30 a 5:30 p.m.  Miembros asistentes: 20 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>696</span>
+                            <strong>CENTROAMERICA. </strong>— 12 de  Octubre de  1960.  Dirección:  Colonia Centroamérica Avenida  Izalco, Pasaje  La Capilla  local Nº 1. Días y horas  de  reuniones: De Lunes a Domingo de  5:30 a 7:30 p.m.;  Sá- bado de  4:00  a 6:00  p.m.  y Domingo de  10:00  a.m.  a 12:00  m.d. Miembros asistentes: 30 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>697</span>
+                            <strong>CENTROAMERICANO Y PANAMÁ. </strong>—22  de  Noviembre de  1996. Dirección:  Avenida  Isidro Menéndez y 6a  Calle Poniente San Salvador. Días y horas  de reuniones: De Lunes a Domingo de 3:00 a 6:00 p.m.  Miembros asistentes: 20 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>698</span>
+                            <strong>DESPERTAR 70. </strong>—  06 de  Marzo de  1970.  Dirección:  Calle Gerardo Barrios y 17 Avenida  Sur Nº 302. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 16 Hom- bres  y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>699</span>
+                            <strong>DIGNIDAD. </strong>— 16 de  Noviembre de  1963.  Dirección:  26 Calle  Poniente Casa  No  2122  Colonia  Dina.  Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 7 Hom- bres.
+                        </li>
+                        <li>
+                            <span>700</span>
+                            <strong>DIVINA MISERICORDIA. </strong>— 21 de  Enero  de  2004.  Dirección:  Colonia América,  Avenida  Cuba. Local externo Iglesia San Antonio  de Padua Barrio San  Jacinto. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 35 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>701</span>
+                            <strong>DIVINO PODER. </strong>— 24 de  Diciembre de  2009.  Dirección:  Colonia Manzano y Calle  Vilanova Casa  Nº 13.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6.00  a 8.00  p.m.  Miembros asistentes: 7 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>702</span>
+                            <strong>EL CARMEN. </strong>— 17 de Enero de 1972. Dirección:  Final Paseo General Escalón, Calle La Ronda,  Cantón El Carmen Zona 11. Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>703</span>
+                            <strong>FE Y ACCIÓN. </strong>— 29 de Octubre de 1973. Dirección: Calle Francisco Meléndez Nº 208. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 14 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>704</span>
+                            <strong>FE Y ESPERANZA. </strong>— 07 de  Septiembre de  1988.  Dirección  Final Calle, Asilo Sara, Colonia  San Cristóbal Nº 1 Pasaje  2 S.S. Nº 4. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. Miembros asistentes: 17 Hombres.
+                        </li>
+                        <li>
+                            <span>705</span>
+                            <strong>FLOR BLANCA (MEDIODIA). </strong>— 27 de Octubre de 1998. Dirección. Alameda Juan  Pablo  II, Avenida  Bernal,  cerca  del  Colegio García Flamenco. Días y horas de reuniones: De Lunes a Domingo de 12:00 m.d.  a 2:00 p.m.  Miembros asistentes: 45 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>706</span>
+                            <strong>FLOR BLANCA (NOCHE). </strong>— 16 de  Julio  de  1984.  Dirección:  Comercial  El Rosal, Local 12 Poniente Calle El Progreso. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>707</span>
+                            <strong>FORTALEZA. </strong>— 08 de  Febrero de  1969.  Dirección:  Final Boulevard Venezuela Nº 65 Sector  Munguía  Comunidad Fortaleza. Días y ho- ras de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miem- bros  asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>708</span>
+                            <strong>GÉNESIS. </strong>— 13 de  Febrero de  2006.  Dirección:  Iglesia  Evangélica El Dios de  Israel, Barrio San Miguelito. Días y horas  de  reuniones:, Lunes,  Martes, Jueves y Domingo de  6:30  a 8:30  p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>709</span>
+                            <strong>GENTE JOVEN. </strong>—  15  de  Septiembre de  1975.  Dirección:  Boulevard Los Héroes frente  anexo Hospital  Benjamín  Bloom,  Condomi- nio Los Héroes. Días y horas  de  reuniones: De Lunes a Sábado de 6:30 a 8:30 p.m.  Miembros asistentes: 19 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>710</span>
+                            <strong>H.M.C.  26  DE OCTUBRE. </strong>— 26  de  octubre de  2009.  Dirección: Hospital  Militar. Días y horas  de reuniones: Martes  y Jueves de 1:00 a 2:00 p. m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>711</span>
+                            <strong>IBERIA 16 DE DICIEMBRE. </strong>— 16 de Diciembre de 1965. Dirección: Calle Renovación, Colonia  Iberia,  Sección  “B” Locales 1 y 2. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 12 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>712</span>
+                            <strong>IBERIA 31  DE MAYO. </strong>— 31 de  Mayo de  2003.  Dirección:  18 Calle Poniente Apartamento C-4 Condominio Iberia frente  a Cine Iberia, Barrio Santa  Anita. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 20 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>713</span>
+                            <strong>INDEPENDENCIA 10 DE SEPTIEMBRE “LOS JUZGADOS”. </strong>— 10 de Septiembre de 1991.  Dirección:  Avenida  Max, Block Nº 132, Colonia Médica  local Comisión Servicio Civil, Atrás de  Los Juzgados. Días y horas  de  reuniones: De Lunes a Viernes de  1:00 a 2:00 p.m. Miembros asistentes: 15 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>714</span>
+                            <strong>LA 75. </strong>—  10  de  Octubre de  1987.  Dirección:  75ª  Avenida  Norte, Centro Comercial Escalón Norte  2, Local Nº 2 –7 Prolongación Juan Pablo  II. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>715</span>
+                            <strong>LA ESCALÓN. </strong>—11 de  Septiembre de  1980.  Dirección:  Paseo General  Escalón,  Edificio Beethoven Local 12. Días y horas  de  reunio- nes: Lunes, Miércoles, Viernes y Sábado de 7:30 a 9:30 p.m.  Miem- bros  asistentes: 25 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>716</span>
+                            <strong>LA ESPÍGA. </strong>— 04 de Abril de 2002.  Dirección:  Colonia  Santa  Eugenia Pasaje  Nº 1, Casa  116,  Barrio San Miguelito. Teléfono: 2221— 1186.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00 p.m.  Miembros asistentes: 56 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>717</span>
+                            <strong>LA LUZ. </strong>— 18  de  Agosto de  1962.  Dirección:  20  Calle  Poniente Pasaje  2 de  Abril Nº  117  Colonia  Luz. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>718</span>
+                            <strong>LA OTRA OPCIÓN. </strong>—21  de  Septiembre de  2005.  Dirección:  Condominio Feria  Rosa,  Manuel  José Arce,  Nº  203-6  Sobre  Carretera Panamericana. Días y horas  de  reuniones:  De Lunes a Domingo de 6:30 a 8:00 p.m.  Miembros asistentes: 18 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>719</span>
+                            <strong>LA SOLUCIÓN. </strong>— 09 de  Noviembre de  1993.  Dirección  12a   Calle Poniente Nº 119  Local 4 y La esquina. Días y horas  de  reuniones: De  Lunes  a Domingo de  3:00  a 5:00  p.m.  Miembros asistentes: 8 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>720</span>
+                            <strong>LAS PALMAS. </strong>— 28 de Agosto de 1966.  Dirección:  Comunidad Las Palmas,  Calle Padre Fermín  Sainz Parcela  Nº 15 Casa  Nº 25. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>721</span>
+                            <strong>LOS PRÓCERES. </strong>— 04  de  Abril de  2003.  Dirección:  Local Nº  12, 2ª Planta,  Edificio Delca  adyacente a Boulevard Los Próceres. Días y horas  de  reuniones: De  Lunes  a Sábado de  7:00  a 9:00  p.m.  y Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 24 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>722</span>
+                            <strong>LOURDES. </strong>— 05 de Enero de 1961.  Dirección:  Centro Urbano  Lourdes Edificio Comercial Local Nº 4. Días y horas  de reuniones: De Lu- nes  a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 10 Hom- bres.
+                        </li>
+                        <li>
+                            <span>723</span>
+                            <strong>LUZ DE BILL. </strong>— 02 de  Julio de  1972.  Dirección:  Calle a San Antonio Abad  Pasaje  Melara  Nº 2 Casa  No 6. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>724</span>
+                            <strong>MEXICO. </strong>— 05 de  Septiembre de  1971.  Dirección:  Carretera a Los Planes  de Renderos Km. 4 ½, Lote Nº 1, Colonia  México, San Salvador. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>725</span>
+                            <strong>MILAGRO DE DIOS. </strong>— 22 de  Enero  de  1999.  Dirección:  Avenida Irazú y Calle Punta  Arenas N° 218 Colonia  Costa  Rica, San Salvador. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 10 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>726</span>
+                            <strong>MIRAFLORES. </strong>— 03 de  Mayo de  1972  Dirección:  Colonia  Miraflores, Calle Poniente Nº 6, Barrio San Jacinto. Días y horas  de reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>727</span>
+                            <strong>MIRALVALLE. </strong>— 01 de Julio de 1970. Dirección:  Colonia  Miralvalle, Avenida  Los Bambúes Pasaje  Nerio  Nº 10. Días y horas  de  reunio- nes: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>728</span>
+                            <strong>NACE UNA NUEVA ESPERANZA. </strong>— 22 de  Junio  de  2011.  Dirección: Calle México N° 817, entre Avenida  Cuba  y Avenida  El Cocal. Barrio San Jacinto San Salvador. Días y horas  de  reuniones: Lunes, Sábado y Domingo de  6:00  a  8:00  p.m.  Miembros asistentes: 8 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>729</span>
+                            <strong>NOS DECIDIMOS. </strong>— 22 de Junio  de 1972.  Dirección:  Final 21ª Calle Poniente Costado Norte  de Los Juzgados Condominio Saavedra Edificio B 2-1. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 20 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>730</span>
+                            <strong>NUESTRA BUSQUEDA. </strong>—  10 Junio  2012.  Dirección:  Edificios Clínicos Médicos, Poniente. Local N° 203 y 25 Avenida  Norte, Pasaje San Fernando S.S. Días y horas de reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m.  Miembros asistentes: 12 Hombres y 2 Mujer.
+                        </li>
+                        <li>
+                            <span>731</span>
+                            <strong>NUESTRO BIENESTAR. </strong>— 14  de  Noviembre de  1966.  Dirección: Final Alameda Juan  Pablo  II y 75 Avenida  Norte; entre Despensa de Don Juan  y Pasaje  San José, Casa  Nº 4. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>732</span>
+                            <strong>NUESTRO HOGAR. </strong>— 18 de  Octubre de  1981  Dirección:  Colonia Santa  Eugenia 2a   Avenida  Norte  Local B Casa  C. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>733</span>
+                            <strong>NUEVA VIDA 02  DE ENERO. </strong>— 02 de  Enero  de  1979.  Dirección Colonia Brisas de Candelaria N° 26 Calle Principal y Pasaje  Nº 4, S.S. Días horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. Miembros asistentes: 9 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>734</span>
+                            <strong>NUEVA VIDA 03. </strong>—  26 de  Mayo  de  2005.  Dirección:  18 Avenida Norte, Pasaje  San Pedro Nº 574. Días y horas  de  reuniones: De Lunes  a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hom- bres  y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>735</span>
+                            <strong>NUEVO 06  DE MARZO. </strong>— 06 de  Marzo de  2004.  Dirección:  Calle Principal Colonia  Los Arcos Nº 1300 Barrio Santa Anita. Días y horas de reuniones: De Lunes a Domingo (Mediodía)  de 12.30 a 2.30 p.m. (Noche)  de  7:00  a 9:00  p.m.  Miembros asistentes: 21  Hombres 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>736</span>
+                            <strong>NUEVO CENTRAL 94. </strong>—  05 de  Octubre de  1994.  Dirección:  Avenida España Nº 432. Días y horas  de reuniones: De Lunes a Sábado de 5:00 a7:00  pm. Miembros asistentes: 10 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>737</span>
+                            <strong>NUEVO DESPERTAR. </strong>— 05 de  Octubre de  1980.  Dirección:  Carretera  a Panchimalco Km. 10 ½ Planes  de  Renderos. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>738</span>
+                            <strong>NUEVO  MILENIO. </strong>— 22  de  Mayo  de  1998.  Dirección:  10ª  Calle Oriente Nº  1222,  Barrio  San  Jacinto. Días  y horas  de  reuniones: De Lunes a Domingo de  4:00 a 6:00 p.m.  Miembros asistentes: 18 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>739</span>
+                            <strong>NUEVO RENACER 1999 (TABERNACULO DE ISRAEL). </strong>— 22 de Junio  de  1999.  Dirección:  Iglesia  del  Tabernáculo Bíblico Bautista Amigos de Israel, Colonia Escalón.  Días y horas  de reuniones: Lunes y Martes  de  6:00 a 8:00 p.m.  y Sábado de  3:00 a 5:00 p.m.  Miem- bros  asistentes: 15 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>740</span>
+                            <strong>PANORAMICO 10  DE OCTUBRE. </strong>— 10 de  Octubre de  1982.  Dirección: Reparto Santa  Marta  Nº  2 Pasaje  4 Nº  115  Block C San Jacinto. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 24 hombre y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>741</span>
+                            <strong>PLAZUELA AYALA. </strong>— 04 de  Agosto de  1962.  Dirección:  Calle Tamarindo final 24ª Avenida  Norte  Nº 223. Días y horas  de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>742</span>
+                            <strong>PURA VIDA. </strong>— 28 de  Febrero de  1986.  Dirección:  Colonia  Lencas, Pasaje  Tolteca, Calle  Turrialba  Nº  127.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:30  a 8:30  p.m.  Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>743</span>
+                            <strong>QUINTO CAPÍTULO. </strong>— 19 de Septiembre de 2005. Dirección: Final Calle Lara, Pasaje  Las Chulas Nº 58 Colonia Miraflores Barrio San Jacinto. Días horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>744</span>
+                            <strong>REFLEXIONES. </strong>— 01 de Octubre de 2003. Dirección:  Colonia Miramonte Avenida  Sierra Nevada Condominio CC Local 2. Días y horas de  reuniones: De  Lunes  a Viernes  de  6:00  a 8:00  p.m.  Sábado y Domingo de  3:00  a 4:00  p.m.  Miembros asistentes: 20 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>745</span>
+                            <strong>RENACER 04  DE SEPTIEMBRE. </strong>— 04 de  Septiembre 1995.  Dirección: 12 Avenida  Norte  y 33 Calle Poniente Nº 1724, esquina opuesta a La Parroquia Fátima,  Colonia  La Rábida.  Días y horas  de reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 17 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>746</span>
+                            <strong>RENACER 13  DE ABRIL. </strong>— 13 de  Abril de  1989.  Dirección:  Calle Concepción Pasaje  Merazo  Nº 5 Barrio Cisneros, La Garita  San Salvador.  Días y horas  de  reuniones: De Lunes  a Domingo de  5:30  a 7:30 p.m.  Miembros asistentes: 21 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>747</span>
+                            <strong>RENACER 14 DE ENERO. </strong>—14 de Enero  de 2012.  Dirección:  Calle 15 de  septiembre y Calle Perú,  N° 209.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>748</span>
+                            <strong>RENACER 18 DE ABRIL. </strong>— 18 de Abril de 1979. Dirección:  4a  Calle Oriente Nº 935. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>749</span>
+                            <strong>RENACER 20  DE MAYO. </strong>— 20 de  Mayo de  2001.  Dirección:  Boulevard  Venezuela y 29 de  Agosto Condominio Plaza Barrios L-33-A. Días y horas  de reuniones: De Lunes a Domingo de 1:00 a 3:00 p.m. Miembros asistentes: 15 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>750</span>
+                            <strong>RENACER 21  DE AGOSTO (MOP). </strong>— 21 de  Agosto de  2006.  Dirección:  Km. 5 ½ Carretera a Santa  Tecla, Plantel La Lechuza local al Sur del Despacho Magisterial, Contiguo a Feria Internacional. Días y horas  de reuniones: De Lunes a Viernes de 12:40 a 1:30 p.m. Miem- bros  asistentes: 20 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>751</span>
+                            <strong>RENACER 27  DE MARZO (BERMEJA). </strong>— 27 de  Marzo  de  2008. Dirección:  Boulevard Venezuela entre 29 y 31 Avenida  Sur Nº 1617 frente  a Baterías  Rayo. Días y horas  de  reuniones: De Lunes a Viernes de 12:15 a 1:30 p.m.  Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>752</span>
+                            <strong>RENACER ISTMANIA. </strong>— 04 de  Noviembre 2009.  Dirección:  Final 71  Avenida  Norte  Pasaje  Nº  6 Lote  1 Comunidad Istmania.  Días y horas  de  reuniones: De  Lunes  a Sábado de  06.00  a 08.00  p.m. Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>753</span>
+                            <strong>RENACER LA BASÍLICA. </strong>—03 de  Noviembre de  1988.  Dirección: Boulevard Venezuela Nº 618  “A”, Colonia  Ferrocarril.  Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>754</span>
+                            <strong>RESTAURACIÓN 13  DE ENERO. </strong>— 13 de  Enero  de  1997.  Dirección: Alameda Juan  Pablo II y 18ª Avenida  Norte  Nº 435, contiguo a Clínica Mateo Llort. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 50 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>755</span>
+                            <strong>SALVANDO UNA VIDA (ALBERGUE). </strong>— 29 de  Mayo de  2007.Dirección:  Colonia  Centroamérica. Días y horas  de  reuniones: De Lu- nes  a Domingo de  5:00 a 7:00 p.m.  Miembros asistentes: 15 Hom- bres.
+                        </li>
+                        <li>
+                            <span>756</span>
+                            <strong>SAN  ESTEBAN. </strong>— 19 de  Noviembre de  1963.  Dirección:  4ª Calle Oriente Nº 821 esquina Opuesta de Escuela  Francisco  Campos, Ba- rrio San Esteban. Días y horas  de  reuniones: De Lunes a Sábado de 7:00 a 9:00 p.m.  y Domingo de  5:00 a 7:00 p.m.  Miembros asistentes: 12 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>757</span>
+                            <strong>SAN FRANCISCO. </strong>— 14 de  Julio de  1961.  Dirección:  10ª  Avenida Norte  No  810.  Días y horas  de  reuniones: De Lunes a Domingo de 5:30 a 7:30 pm. Miembros asistentes: 14 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>758</span>
+                            <strong>SAN JACINTO. </strong>— 05 de  Septiembre de  1964.  Dirección:  Avenida Cuba  y Calle Las Mercedes, Barrio San Jacinto. Días y horas  de reu- niones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asisten- tes: 9 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>759</span>
+                            <strong>SAN LORENZO. </strong>— 26 de abril de 1964.  Dirección:  25 Avenida  Norte Pasaje  San Lorenzo,  Comunidad Tutunichapa Nº 1. Días y horas de  reuniones: De Lunes a Domingo de  7:30 a 9:30 p.m.  Miembros asistentes: 13 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>760</span>
+                            <strong>SANTA ANITA. </strong>— 02 de Diciembre de 1962.  Dirección:  15 Avenida Sur, Casa  Nº  1218  Barrio Santa  Anita.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>761</span>
+                            <strong>SOBRIEDAD 10  DE JULIO. </strong>— 10 de  Julio de  1976.  Dirección:  Carretera Planes  de  Renderos Km. 8. Villa San Francisco  Local 1. Días y horas  de  reuniones: De Lunes a Domingo 6:00 a 8:00 p.m.  Miem- bros  asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>762</span>
+                            <strong>SOBRIEDAD 26 DE JUNIO. </strong>— 26 de  Junio  de  1983.  Dirección:  Urbanización Concepción Final Calle  Principal  Nº 2 Pasaje  E lote  39 (Bis.) Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes:18 Hombres.
+                        </li>
+                        <li>
+                            <span>763</span>
+                            <strong>SOBRIEDAD. </strong>— 23 de Marzo de 2008.  Dirección:  Colonia  San Juan de  Dios. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>764</span>
+                            <strong>TIERRA SANTA. </strong>— 09 de  Noviembre de  1966.  Dirección:  1ª Calle Poniente y Avenida  Morazán. Edificio Salomé  135,  2o   Nivel. Días y horas  de  reuniones: De Lunes a Sábado de  6:00 a 8:00 p.m.  Miem- bros  asistentes: 33 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>765</span>
+                            <strong>TRANSMÍTELO. </strong>— 15  de  Septiembre 2008.  Dirección:  Calle  José Martí Nº 15-A Colonia  Escalón.  Días y horas  de reuniones: De Lunes a Domingo de  6.00  a 8.00.  p.m.  Miembros asistentes: 12 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>766</span>
+                            <strong>TRES LEGADOS. </strong>— 21 de  Agosto de  1965.  Dirección:  4a   Avenida Norte  Nº 424,  Edificio Melara  2a  Planta.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>767</span>
+                            <strong>UN MILAGRO DE A.A. </strong>— 27 de Enero de 1964.  Dirección:  Calle La Granjita,  frente  a Vivero Los Pinos, San Antonio  Abad.  Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>768</span>
+                            <strong>UN MILAGRO EN EL HOGAR. </strong>— 25 de  Julio de  1968.  Dirección: Final Colonia  Escalón,  Calle El Carmen Caserío Lajas Poniente. Días y horas de reuniones: De Lunes a Sábado de 7:00 a 9:00 p.m. Miem- bros  asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>769</span>
+                            <strong>UN MILAGRO EN LA ZONA. </strong>— 03 de  Diciembre de  2001.  Dirección: 4ª Calle Poniente y 17 Avenida Sur Nº 1015, Zona Metropolitana de ANDA. Días y horas  de reuniones: De Lunes a Viernes de 4:00 a 6:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>770</span>
+                            <strong>UN MILAGRO EN SAN  PATRICIO. </strong>— 08 de  Noviembre de  2005. Dirección:  Colonia  San Patricio, Calle Principal y Pasaje  8, 2a  Etapa. Nº 50-A. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>771</span>
+                            <strong>UNA LUZ EN EL ROBLE. </strong>— 25 de  Abril de  1996.  Dirección:  Calle El Roble  Pasaje  García  Nº 255,  San Antonio  Abad.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asis- tentes: 19 Hombres.
+                        </li>
+                        <li>
+                            <span>772</span>
+                            <strong>UNA LUZ EN LA FLORIDA. </strong>— 07 de Julio de 1981. Dirección: Calle y Colonia  Florida  Nº 111,  Pasaje  EL Pozo San Jacinto. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>773</span>
+                            <strong>UNA LUZ EN LA TIENDONA. </strong>— 19 de Septiembre de 2005. Dirección: Edificio Nº 5, local ex-clínica La Tiendona. Días y horas  de  reuniones: De Lunes a Domingo de 12:00 m.d.  a 2:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>774</span>
+                            <strong>UNA LUZ EN LAS NEBLINAS. </strong>— 29 de  Marzo de  1981.  Dirección: Final Parque Balboa  Colonia  Monterrey, frente  a redondel Los Próceres  Planes  de  Renderos. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>775</span>
+                            <strong>UNIDAD. </strong>— 16 de Junio de 1973. Dirección: Avenida Cuba  Nº 1314 Barrio San Jacinto frente  a Servicentro San Jacinto. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 24 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>776</span>
+                            <strong>UNIVERSAL. </strong>— 22 de Diciembre de 1972. Dirección: 9ª Calle Oriente y Avenida  Monseñor Oscar  Arnulfo Romero, Edificio Centro Comercial San Francisco  Local 216, 2ª Planta,  frente  a Alcaldía Municipal. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:00 p.m.  Miembros asistentes: 40 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>777</span>
+                            <strong>UNIVERSIDAD DE EL SALVADOR. </strong>— 26 de  Abril de  2010.  Dirección: Final Avenida  Héroes 30 de  Julio,  Ciudad Universitaria.  Local SETUES (mantenimiento). Días  y horas  de  reuniones: De  Lunes  a Viernes de 12:30 m.d.a 2:00 p.m. Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>778</span>
+                            <strong>VERDAD Y LIBERTAD. </strong>— 15 de  Noviembre 2010.  Dirección:  entre 1ª Avenida  Norte  N° 114,  2o   Nivel. Días y horas  de  reuniones: De Lunes a Sábado de  5:00 a 7:00 p.m.  Miembros asistentes: 9 Hom- bres  y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>779</span>
+                            <strong>VETERANOS EN ACCIÓN SOLO POR HOY. </strong>— 27 de  Noviembre de 2011.  Dirección:  11ª Calle Oriente Colonia  Las Mercedes Nº 705 Teléfono: 2271—4150. Días y horas  de  reuniones: De Lunes a Domingo  de  6:00  a 8:00  p.m.  Miembros asistentes: 18 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>780</span>
+                            <strong>VIDA NUEVA 01. </strong>—  15 de  Agosto de  1985.  Dirección:  Calle Concepción Nº 522, 2a  Planta  Edificio Ibarra,  frente  a Gasolinera Puma. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 12 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>781</span>
+                            <strong>VIDA NUEVA 02. </strong>—  06 de  Noviembre de  2004.  Dirección:  18 Avenida  Norte, Pasaje  San  Pedro Nº  574.  Días y horas  de  reuniones: De Lunes a Domingo de  3:00 a 5:00 p.m.  Miembros asistentes: 25 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>782</span>
+                            <strong>VIRTUD 06  DE JULIO. </strong>— 06 de  Julio  de  1965.  Dirección:  Calle El Progreso Nº 226,  Barrio Santa  Lucía, Colonia  Miramonte, Avenida Bernal. Días y horas de reuniones: Miércoles  y Jueves de 7:00 a 9:00 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>783</span>
+                            <strong>VISIÓN 3000. </strong>— 01 de  Junio  de  1999.  Dirección:  Edificio América Nº 302-A, Urbanización La Esperanza, Boulevard Tutunichapa y Avenida  Las Américas.  Días y horas  de  reuniones: De Lunes a Sábado 6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>784</span>
+                            <strong>VOLUNTAD 08  DE ENERO. </strong>— 08  de  Enero  de  1971.  Dirección: 10ª  Avenida  Norte  y Calle  Delgado Nº 222  Edificio Éxito, 2ª plan- ta, costado Oriente Mercado Ex-cuartel.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres y 5 Mujeres.
+                        </li>
+
+                    <h4>MUNICIPIO DE SANTIAGO TEXACUANGOS</h4>
+                        <li>
+                            <span>785</span>
+                            <strong>26  DE ENERO. </strong>— 26 de  Enero  de  1985.  Dirección:  Km. 16 ½ Cantón El Morro, Colonia El Sauce.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>786</span>
+                            <strong>27  DE ENERO. </strong>— 27 de  Enero  de  1979.  Dirección:  Colonia  Santa Isabel 1, Casa Nº 7. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>787</span>
+                            <strong>CAMINO DE LA RECUPERACIÓN. </strong>— 04  de  Marzo  de  1965.  Di- rección:  Carretera antigua a Zacatecoluca Km. 15 ½. Lotificación La Ilusión N°10.  Días y horas  de  reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 3 Hombres.
+                        </li>
+                        <li>
+                            <span>788</span>
+                            <strong>ILUMINACIÓN EN A.A. </strong>— 13 de  Marzo de  1990.  Dirección:  Barrio San José, Calle Guatemala, Casa  Nº 6. Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>789</span>
+                            <strong>NUEVO AMANECER. </strong>— 29 de Agosto de 1999.  Dirección:  Cantón Shaltipa, contiguo a mi Tiendita. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 6 Hom- bres.
+                        </li>
+                        <li>
+                            <span>790</span>
+                            <strong>SENDERO DEL BIEN. </strong>— 28 de Abril de 1963. Dirección: Barrio Concepción Calle 25 de  Julio Contiguo a caja de  crédito. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>791</span>
+                            <strong>TRABAJANDO CON OTROS. </strong>— 27 de  Enero  de  1998.  Dirección: Colonia  Dalmacia  Nº 2 conocido como  Zona baja,  Calle panorámi- ca, Abajo del salón  del reino  Casa  N° 3. Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+
+
+                    <h4>MUNICIPIO DE SANTO TOMÁS</h4>
+                        <li>
+                            <span>792</span>
+                            <strong>07 DE NOVIEMBRE. </strong>— 07 de Noviembre de 1964.  Dirección:  Calle San Agustín  Campos Nº 15. Días y horas  de  reuniones: De Lunes a Domingo de  7:00  a 9:00  p.m.  Miembros asistentes: 7 Hombres 1 Mujer.
+                        </li>
+                        <li>
+                            <span>793</span>
+                            <strong>REDENCIÓN. </strong>— 26  de  Agosto de  1962.  Dirección:  Calle  Alberto Masferrer  final Pasaje  Palomo, Barrio  Las Mercedes. Días  y horas de  reuniones: De Lunes  a Viernes  de  7:00   a 9:00  p.m.   Sábado y Domingo 5:00 p.m.  a 7:00 p.m.  Miembros asistentes: 30 Hombres.
+                        </li>
+                        <li>
+                            <span>794</span>
+                            <strong>RENACER 08  DE AGOSTO. </strong>— 08 de  Agosto de  2013.  Dirección: Cantón El Guaje  Nº 2 sector La manzana Santo  Tomás.  Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+
+                    <H4>MUNICIPIO DE SOYAPANGO</H4>
+                        <li>
+                            <span>795</span>
+                            <strong>04  DE ENERO. </strong>— 04 de  Enero  de  1962.  Dirección:  Pasaje  ADOC, Nº 17, Días y horas  de  reuniones: De Lunes  a Domingo de  7:00  a 9:00 p.m.  Miembros asistentes: 6 Hombres y 1 Mujer.G
+                        </li>
+                        <li>
+                            <span>796</span>
+                            <strong>05 DE SEPTIEMBRE. </strong>— 05 de  Septiembre de  1976.  Dirección:  Colonia  El Pepeto, Pasaje  “E 1”,  Polígono 1“F”,  Nº 20.  Días y horas de  reuniones: De Lunes a Domingo de  7:00  a 9:00  pm.  Miembros asistentes: 9 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>797</span>
+                            <strong>20 DE ABRIL. </strong>— 20 de Abril de 1967.  Dirección:  Boulevard del Ejercito  Calle  al rastro  costado Oriente a  cigarrería Morazán  Nº  129, Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 16 Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>798</span>
+                            <strong>A.A ES LA SOLUCIÓN. </strong>— 19 de Mayo de 2013.  Dirección:  Colonia Amiquino Nº 1 Pasaje  Los Alas Casa Nº 18 ex local del grupo una luz en El pino.  Días y horas  de reuniones: De Lunes a Viernes de 6:30 a 8:30 pm. Miembros asistentes: 6 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>799</span>
+                            <strong>ACCIÓN. </strong>— 13 de Junio  de 1981.  Dirección:  Colonia  Los Santos  Nº 1 Pasaje  San Gregorio Nº 125,  Block “C”  Soyapango. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 22 Hombres.
+                        </li>
+                        <li>
+                            <span>800</span>
+                            <strong>DECISIÓN 01  DE AGOSTO. </strong>— 01 de  Agosto de  1982.  Dirección: Colonia  Monte Blanco,  Calle Principal  Pasaje  15-B Casa  96. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miem- bros  asistentes: 8 Hombres.
+                        </li>
+                        <li>
+                            <span>801</span>
+                            <strong>DECISIÓN 14 DE JUNIO. </strong>— 14 de Junio  de 1975.  Dirección:  Colonia El Guaje  Quinta  Juanita, Cantón El Matazano No  1 Soyapango. Días y horas  de reuniones: De Lunes a Domingo de 7:30 a 9:30 pm. Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>802</span>
+                            <strong>DESPERTAR 27 DE MAYO. </strong>— 27 de  Mayo de  1982.  Dirección:  Brisas de Cuscatlán Nº 38 Block “K” Reparto Los Santos  2, Soyapango. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>803</span>
+                            <strong>DESPERTAR 82. </strong>— 05 de Abril de 1982 Dirección: Colonia San José 2 Calle Principal, Pasaje  23, Casa N° 36, Soyapango. Días y horas de reuniones: De Lunes a Viernes de 7:00 a 9:00 p.m. Sábado y Domin- go de 6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>804</span>
+                            <strong>DESPERTAR SAN  RAFAEL. </strong>— 25  de  Agosto de  1985.  Dirección: Calle  El Guaje  Block “B”  Casa  Nº  2.  Días  y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>805</span>
+                            <strong>EL RETIRO. </strong>—  23 de  Noviembre de  1966.  Dirección:  Colonia  Santa Isabel, Calle Principal, Pasaje  Nº 1 Casa Nº 3. Días y horas de reunio- nes: De Lunes a Domingo de  7:00 a 9:00 pm. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>806</span>
+                            <strong>EL ROSARIO. </strong>— 06 de  Julio  de  1966.  Dirección:  Cantón Plan del Pino,  Colonia  Quinta  Linda Nº  25.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 pm. Miembros asistentes: 16 Hom- bres  y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>807</span>
+                            <strong>EL ÚLTIMO PELDAÑO. </strong>—17  de  Mayo de  1982.  Dirección:  Calle y Colonia  Castillo,  Casa  Nº  4, Calle  a Tonacatepeque.  Días y horas de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m.  Miembros asistentes: 12 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>808</span>
+                            <strong>FE Y ESPERANZA. </strong>— 21 de Abril de 1985.  Dirección:  Urbanización Montes de  San Bartolo  Nº 3 Pasaje  6, Casa  Nº 2. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>809</span>
+                            <strong>FELICIDAD EN MONTE BLANCO. </strong>— 15 de Marzo de 1981.  Dirección:  Pasaje  Huizucar,  Casa  N° 7 – 2 “B”, Urbanización Guayacán, Soyapango. Días  y horas  de  reuniones: De  Lunes  a  Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>810</span>
+                            <strong>FUENTE DE VIDA. </strong>— 26  de  Julio  de  1987.  Dirección:  Pasaje  El Mango Nº 1, Cantón El Limón, Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 14 Hombres.
+                        </li>
+                        <li>
+                            <span>811</span>
+                            <strong>LA UNIDAD HACE LA FUERZA. </strong>— 23 de  Noviembre de  1993.  Dirección:  Colonia  Las Carolinas  Pasaje  Gavidia  Nº 56, Ruta de  Buses 3 A. Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00 p.m.  y Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 12 Hom- bres.
+                        </li>
+                        <li>
+                            <span>812</span>
+                            <strong>LIBERADOS 85. </strong>— 14 de Febrero de 1985.  Dirección:  Calle a Tona-catepeque Colonia  Villa Alegre  Avenida  Las Rosas  Nº 134  Cantón El Limón. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>813</span>
+                            <strong>LOMAS DEL RÍO. </strong>— 04 de  Junio  de  1979.  Dirección:  Colonia  Los Alpes, Pasaje  3, Casa  Nº 73. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>814</span>
+                            <strong>LUZ EN LA CONFUSIÓN. </strong>—16  de Mayo de 1992.  Dirección:  Urbanización Montes de San Bartolo  3. Calle La Fuente, Polígono 46, Nº 3 Días y horas  de  reuniones: De Lunes  a Domingo de  7:30  a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>815</span>
+                            <strong>MENTE SANA (INSTITUCIONAL). </strong>—24 de Agosto de 2010.  Dirección: Hospital  Psiquiatrico Nacional, Soyapango. Miembros asisten- tes: 30 Hombres.
+                        </li>
+                        <li>
+                            <span>816</span>
+                            <strong>NUESTRO BIENESTAR. </strong>—12 de Marzo de 1984.  Dirección:  Colonia Monte Carmelo Nº 2, Avenida  Las Palmas Casa No 205, Soyapango. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>817</span>
+                            <strong>NUEVA VIDA EN VENECIA. </strong>— 26 de Octubre de 1985.  Dirección: Urbanización Prados de Venecia III Polígono 111, Pasaje  34 Casa N° 6, Soyapango. Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>818</span>
+                            <strong>PRIMERO DE DICIEMBRE. </strong>— 01 de Diciembre de 1973.  Dirección: Colonia  Florencia, Calle Principal  Nº 20-A. Días y horas  de  reunio- nes: De Lunes a Domingo de  7:00 a 9:00 pm. Miembros asistentes: 4 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>819</span>
+                            <strong>QUINTA TRADICIÓN. </strong>— 27 de  Enero  de  1975.  Dirección:  Colonia San Luis, Cantón El Limón, Soyapango. Días y horas  de  reuniones: De Lunes a Domingo de  6:30  a 8:30  pm.  Miembros asistentes: 13 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>820</span>
+                            <strong>RENACER EN EL BOSQUE. </strong>—  12  de  Diciembre de  1982.  Dirección: Colonia Bosques del Río. 3ª Etapa, Pasaje  21, Casa N° 6 Grupo 31, Nº 3. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.B
+                        </li>
+                        <li>
+                            <span>821</span>
+                            <strong>RENACER EN  EL VALLE. </strong>— 28  de  Febrero de  1980.  Dirección: Avenida  El Olmo  N° 351.  Días y horas  de  reuniones: De  Lunes  a Domingo de 7:30 a 9:30 pm. Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>822</span>
+                            <strong>RENACER EN LAS CAMPANERAS. </strong>— 19 de  Febrero de  2012.  Dirección  Colonia  Las Campaneras, Calle Principal Polígono 17, Casa N° 1. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 10 Hombres y 4 Mujeres.
+                        </li>
+                        <li>
+                            <span>823</span>
+                            <strong>RENACER EN PRUSIA 18  DE ENERO. </strong>— 18  de  Enero  de  1992. Dirección:  Avenida  La Fuente, block 40, N° 19, Bosques de  Prusia. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 pm. Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>824</span>
+                            <strong>RENACER  ESTRELLA DE SALVACIÓN. </strong>— 13 de Julio de 2007.  Dirección:  Colonia  Amatepec, 3ª Etapa, Entrada de  Calle Unidad  de Salud “Amatepec”. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 10 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>825</span>
+                            <strong>RENACER LAS MARGARITAS. </strong>— 14  de  Febrero de  1993.  Dirección: Urbanización Las Margaritas No 3, Avenida  Prusia Nº 229, sector conocido como El Triangulo. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 18 Hombres.
+                        </li>
+                        <li>
+                            <span>826</span>
+                            <strong>SER MUJER (INSTITUCIONAL). </strong>—24 de  Agosto de  2011.  Dirección: Hospital  Psiquiatrico Nacional, Soyapango. Miembros asisten- tes: 10 Mujeres.
+                        </li>
+                        <li>
+                            <span>827</span>
+                            <strong>SERENIDAD. </strong>— 29 de  Agosto de  1971.  Dirección:  Colonia  22 de Abril Zona Nº 2, Pasaje  Carballo, Casa Nº 10. Días y horas de reunio- nes: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>828</span>
+                            <strong>TRIUNFO DE MI HOGAR. </strong>— 01 de Julio de 1990.  Dirección:  Urbanización Montes de San Bartolo  Nº 4, Pasaje17, Polígono Nº 26, Nº 49. Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>829</span>
+                            <strong>UN MILAGRO DE DIOS. </strong>— 07 de Junio  de 1966.  Dirección:  Comunidad María De Los Ángeles Hacienda Prusia,  Calle  Panamericana Km 7 ½. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>830</span>
+                            <strong>UN  MILAGRO EN  VENECIA. </strong>— 16  de  Julio  de  1983.  Dirección: Colonia Prados de Venecia I Grupo 2, Pasaje  N° 12 Soyapango. Días y horas  de  reuniones: De  Lunes  a  Domingo de  7:00  a  9:00  p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>831</span>
+                            <strong>UNA  LUZ EN EL PINO. </strong>— 04 de  Noviembre de  1990.  Dirección: Cantón Plan del Pino, Calle Principal No  225, Ex instituto Galdámez. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m. Miembros asistentes: 18 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>832</span>
+                            <strong>UNA LUZ EN LA CORUÑA. </strong>—27 de Marzo de 1983. Dirección:  Colonia  Coruña  1, Pasaje  1, Block “G”,  Casa  Nº 16.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>833</span>
+                            <strong>UNA LUZ EN LA SIERRA. </strong>—11 de Octubre de 1987. Dirección:  Colonia Sierra  Morena 1ª etapa, Avenida  Cerro  Verde  Nº 341.  Días y horas  de  reuniones: De Lunes a Sábado de  7:00 a 9:00 p.m.  y Do- mingo  de  5:00  a 7:00  p.m.  Miembros asistentes: 23 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>834</span>
+                            <strong>VENECIA. </strong>— 05 de Noviembre de 1966.  Dirección:  Parcelación Cabrera  y Pasaje  Cabrera Nº 4, Calle a La Ciudadela Don Bosco. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:30 pm. Miem- bros  asistentes: 16 Hombres.
+                        </li>
+                        <li>
+                            <span>835</span>
+                            <strong>YUNQUE DEL 80. </strong>—  14 de  Mayo de  1980.  Dirección:  Colonia  San José 2,  Calle  Principal,  Casa  Nº  35,  Soyapango. Días  y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 18 Hombres.
+                        </li>
+
+                    <H4>MUNICIPIO DE TONACATEPEQUE</H4>
+                        <li>
+                            <span>836</span>
+                            <strong>25  DE JUNIO. </strong>— 25 de  Junio  de  1963.  Dirección:  1ª Calle  Oriente  y 3ª  Avenida  Sur Barrio El Calvario.  Días y horas  de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 21 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>837</span>
+                            <strong>30 DE ENERO. </strong>— 30 de Enero de 1982. Dirección: Cantón Las Flores ½ Cuadra de Parada La tienda. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>838</span>
+                            <strong>BUSCANDO  LA FELICIDAD. </strong>— 12 de  Septiembre de  1998.  Dirección: Avenida  Chamulapa, Block “B” Nº 4 Colonia Nueva  Jerusalén, contiguo a  Distrito  Italia.  Días  y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m.  Miembros asistentes: 12 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>839</span>
+                            <strong>DIVINA PROVIDENCIA. </strong>— 07 de Mayo de 1972. Dirección: Cantón Rosario Km. 12. Días y horas  de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>840</span>
+                            <strong>GÉNESIS. </strong>— 26 Febrero de  2007.  Dirección:  Urbanización Cimas 2, San Bartolo,  Pasaje  N° 22 Polígono N° 21 Sur N° 23. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>841</span>
+                            <strong>GRACIAS A DIOS. </strong>— 15 de  Junio  de  1975.  Dirección:  Cantón Malacoff,  Caserío Los Parada. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>842</span>
+                            <strong>JÓVENES EN A.A. </strong>— 09 de  Mayo de  1990.  Dirección:  Final Calle El Gólgota, costado Norte  de  Iglesia  El Calvario.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asis- tentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>843</span>
+                            <strong>LA FE QUE OBRA. </strong>— 12 de  Enero  de  2011.  Dirección:  Residencial Libertad Poligono D, Pasaje  16, N° 174. Días y horas  de  reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m. y Domingo de 10:00 a 12:00 m.d.  Miembros asistentes: 11 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>844</span>
+                            <strong>LUZ QUE VUELVE. </strong>— 02 de Octubre de 1973. Dirección: Cantón La Fuente. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 pm. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>845</span>
+                            <strong>NUEVA LUZ. </strong>— 10 de  Diciembre de  1992.  Dirección:  Caserío Los Henríquez, Cantón Malacoff.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>846</span>
+                            <strong>RENACER 1º DE FEBRERO. </strong>— 01 De Febrero de  2005.  Dirección: Colonia  Altavista,  Calle Flor de  Fuego, Condominio Nº 2 Polígono 17 Pasaje  41 Nº 121 Edificio “E”. Días y horas  de reuniones: De Lu- nes  a Domingo de  7:00 a 9:00 p.m.  Miembros asistentes: 14 Hom- bres.
+                        </li>
+                        <li>
+                            <span>847</span>
+                            <strong>RENACER 06 DE JULIO. </strong>— 06 de Julio de 1998. Dirección:  Caserío El Rincón, Cantón Veracruz,  Zona  Nº 1. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 11 Hombres.
+                        </li>
+                        <li>
+                            <span>848</span>
+                            <strong>SIEMPRE FELICES. </strong>— 10 de  Enero  de  1980.  Dirección:  Caserío Zacamil, Cantón La Fuente Tonacatepeque. Días y horas  de reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 8 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>849</span>
+                            <strong>TRABAJANDO CON OTROS. </strong>— 25 de Septiembre de 1982.  Dirección: Colonia San José Las Flores, Calle Los Crotos, Pasaje  39, Block 42, Casa  Nº 21. Días y horas  de  reuniones: De Lunes a Viernes de 6:30 a 8:30 p.m.  Sábado y Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>850</span>
+                            <strong>UN RESCATE DE DIOS. </strong>— 21 de  Mayo de  1991.  Dirección:  Colonia 10  de  Octubre Polígono “B” Nº 12, San José Las Flores.  Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miem- bros  asistentes: 12 Hombres y 6 Mujeres.
+                        </li>
+                        <li>
+                            <span>851</span>
+                            <strong>UNA BENDICIÓN DE DIOS. </strong>— 10 de  Julio de  1999.  Dirección:  2ª Calle Oriente y Avenida  15 de  Septiembre, Barrio Concepción To- nacatepeque. Días y horas  de  reuniones: De Lunes a Domingo de 7:30 a 9:30 p.m.  Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>852</span>
+                            <strong>UNA LUZ EN ALTAVISTA. </strong>—14 de  Enero  de  2007.  Dirección:  Residencia Altavista, Block “J”  Norte, Pasaje  11 Nº 97. Días y horas  de reuniones: De Lunes a Domingo 7:00 a 9:00 p.m. Miembros asisten- tes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>853</span>
+                            <strong>UNA  LUZ EN VERACRUZ. </strong>— 15  de  Febrero de  1975.  Dirección: Cantón Veracruz  Jurisdicción de  Tonacatepeque. Días  y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. Miembros asis- tentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>854</span>
+                            <strong>UNIDOS 24  DE OCTUBRE. </strong>— 24 de  Octubre de  1991.  Dirección: Cantón La Fuente Caserío Zacamil. 1 ½ Cuadra de  La entrada. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:30  a  8:30  p.m. Miembros asistentes: 21 Hombres.
+                        </li>
+                        <li>
+                            <span>855</span>
+                            <strong>XOCHILT 04  DE JUNIO. </strong>— 04 de  Junio  de  1995.  Dirección:  Distrito Italia, C Manzana  26, Pasaje  Volcán de  Santa  Ana, Casa  N° 29 . Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 11 Hombres y 1 Mujer.
+                        </li>
+
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/San_Salvador.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

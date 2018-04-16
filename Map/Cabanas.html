@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                 
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. CABAÑAS</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    
+                    <ul>
+                        <h4>MUNICIPIO DE CINQUERA GRUPOS REPORTADOS—01</h4>
+
+
+                        <li><span>957</span><strong>A.A.   FLORECE.</strong> — Julio   de   2014.   Dirección:   Calle   al  estadio Cinquera. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE CIUDAD DOLORES GRUPOS REPORTADOS—01</h4>
+
+
+                        <li><span>958</span><strong>17 DE JULIO.</strong> — 17 de Julio de 1976. Dirección: Calle Miguel Torres, Barrio San Antonio  Ciudad Dolores. Días y horas  de  reuniones: De Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+
+                        <h4>MUNICIPIO DE CIUDAD VICTORIA GRUPOS REPORTADOS—06</h4>
+
+
+                        <li><span>959</span><strong>24  HORAS EN SOBRIEDAD.</strong> — 24 de  Marzo  de  2010.  Dirección: Barrio El Centro salida  hacia  Santa  Marta  Victoria. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>960</span><strong>LAGRIMAS DE  UNA   MADRE.</strong> —  28  de   Noviembre  de   1998. Dirección:  Cantón El Caracol  Victoria.  Días  y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  Miembros asistentes: 7</li>
+                        <li><span>961</span><strong>LAS VICTORIAS.</strong> —  24  de  Agosto de  2014.  Dirección:  Entrada a Ciudad Victoria. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+                        <li><span>962</span><strong>NUEVO  DESPERTA SANTA  MARTA.</strong> — 20  de  Febrero de  2007. Dirección:  Colonia 10 de Octubre Cantón Santa Marta Victoria. Días y horas  de  reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. </li>
+                        <li><span>963</span><strong>RENACER BUSCANDO A DIOS.</strong> — 01 de Junio de 2012. Dirección: Cantón Rojitas Caserío San Juan  de  Dios, Victoria. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>964</span><strong>UNA LUZ EN LAS DANTAS.</strong> — 19 de Noviembre de 2013. Dirección: San Pedro Caserío Las Dantas Municipio  de  Victoria. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE GUACOTECTI GRUPOS REPORTADOS—01</h4>
+
+
+
+                        <li><span>965</span><strong>DESPERTAR 2000.</strong> — 24  de  Agosto de  2000.  Dirección:  Km. 68 Desvío  San Fidel a 2 Cuadras de  La Carretera a San Salvador. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.</li>
+
+                        <h4>MUNICIPIO DE ILOBASCO GRUPOS REPORTADOS—35</h4>
+
+
+
+                        <li><span>966</span><strong>02  DE  AGOSTO.</strong> —  02  de  Agosto de  1975.   Dirección:   Colonia Jardínes de  Los Ángeles polígono H Casa  Nº  26  Ilobasco.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>967</span><strong>03  DE  ABRIL EN  ACCIÓN.</strong> —  03  de  Abril  de  1982.   Dirección: Cantón Agua  Zarca  Caserío San  Antonio,   Ilobasco. Días  y horas de  reuniones: De Lunes a Domingo de  4:30 a 6:30 p.m.</li>
+                        <li><span>968</span><strong>06 DE OCTUBRE DESPERTAR UN NUEVO DÍA.</strong> — 06 de Octubre de  2004.  Dirección:  Cantón Oratorio Caserío El Tránsito  Ilobasco. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>969</span><strong>08  DE AGOSTO.</strong> — 08 de  Agosto de  1986.  Dirección:  Cantón Los Hoyos Caserío Nuevo  Porvenir,  Ilobasco. Días y horas  de reuniones: De  Lunes  a Sábado de  6:00  a 8:00  p.m.  </li>
+                        <li><span>970</span><strong>12  DE OCTUBRE.</strong> — 12  de  Octubre de  2003.  Dirección:  Cantón Llanitos  Centro Ilobasco. Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:30 a 8:30 p.m.  </li>
+                        <li><span>971</span><strong>16   DE  MAYO.</strong> —  16  de   Mayo  de1995.  Dirección:   Caserío  Los Duranes Cantón Maquilishuat, Ilobasco. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+                        <li><span>972</span><strong>19  DE AGOSTO.</strong> — 19 de  Agosto de  1962.  Dirección:  8ª Avenida Norte  Barrio San Miguel Nº 27, Ilobasco. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>973</span><strong>26 DE JULIO.</strong> — 26 de Julio de 1983.  Dirección:  Cantón Los Hoyos, Caserío Menjivar,  Ilobasco. Días y horas  de  reuniones: De Lunes  a Domingo de 5:30 a 7:30 p.m. </li>
+                        <li><span>974</span><strong>AMPARADOS  A  DIOS.</strong> —  04  de  Diciembre de  1973.  Dirección: 8ª  Avenida   Norte, Barrio  San  Miguel  Ilobasco. Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>975</span><strong>AMPARADOS  A  LA FE.</strong> —  13  de   Febrero de   1982.   Dirección: Cantón Llanitos Centro, Calle Principal  a La Ermita Nueva  Casa  de Teodoro Ilobasco. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+                        <li><span>976</span><strong>DE LAS TINIEBLAS A LA LUZ.</strong> — 04 de  Julio de  2010.  Dirección: Caserío Los Reyes, Cantón Huertas Ilobasco. Días y horas  de reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m. </li>
+                        <li><span>977</span><strong>DESPERTAR 2006.</strong> — 09  de   Enero   de   2006.   Dirección:   Cantón Agua  Zarca  Caserío San  Antonio  Km. 50,  Ilobasco. Días  y horas de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.</li>
+                        <li><span>978</span><strong>DESPERTAR 25  DE ENERO.</strong> — 25  de  Enero  de  2010.  Dirección: Cantón Cerro Colorado El Limite, Ilobasco. Días y horas de reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+                        <li><span>979</span><strong>DESPERTAR 85.</strong> —  02 de  Marzo de  1985.  Dirección:  Cantón Agua Zarca  Caserío Los Arteaga, Ilobasco. Días  y horas  de  reuniones: De Lunes a Domingo de  4:00 a 6:00 p.m. </li>
+                        <li><span>980</span><strong>DESPERTAR 93.</strong> — 13 de Agosto de 1993.  Dirección:  Cantón Cerro Colorado Carretera a Ilobasco Km. 48 ½ Ilobasco. Días y horas  de reuniones: De  Lunes  a  Domingo de  5:00  a  7:00  p.m.  </li>
+                        <li><span>981</span><strong>DESPERTAR DEL HOMBRE.</strong> — 09 de  Octubre de  1990.  Dirección: Caserío Santa Lucía Cantón Maquilishuat, Carretera a Sensuntepeque Km. 64. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>982</span><strong>DIOS CAMBIO MI VIDA.</strong> — 17 de Enero  de 2014.  Dirección:  Barrio La Cruz 2 Cuadra Abajo de  La Escuela  El Barrial, frente  al talpetate. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>983</span><strong>DOS  DE  SEPTIEMBRE.</strong> —  02  de  Septiembre de1991. Dirección: Cantón San Francisco  Iraheta Ilobasco. Días y horas  de  reuniones: De Lunes a Domingo de  4:00 a 6:00 p.m.  </li>
+                        <li><span>984</span><strong>EL SIETE.</strong> —  26 de Abril de 1988.  Dirección:  Pasaje  Hernández Nº 2 Colonia El Siete final Pasaje Nº 3 Ilobasco. Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>985</span><strong>MI ÚLTIMA ESPERANZA.</strong> — 22 de  Agosto del 2000.  Dirección:  4ª Calle  Oriente Colonia  El Carmen Barrio  Los Desamparados.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.</li>
+                        <li><span>986</span><strong>NUEVA VIDA (INSTITUCIONAL).</strong> — 17 de Abril de 2013. Dirección: Centro de  Reclusión  Senderos de  Libertad, Ilobasco. Días y horas de reuniones: Martes  y Jueves de 3:00 a 4:30 p.m. y Sábado de 9:00 a 10:30 a.m. </li>
+                        <li><span>987</span><strong>NUEVO  DESPERTAR EN  AZACUALPA.</strong> — 21  de  Septiembre de 2013. Dirección:  Cantón Azacualpa frente  a La Ermita Ilobasco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  5:30  a  7:30  p.m.</li>
+                        <li><span>988</span><strong>NUEVO  RENACER DESPERTAR CAMPESINO.</strong> — 16 de  Octubre de  2006.  Dirección:  Cantón San Francisco  Iraheta Caserío Potrerío Ilobasco. Días y horas  de  reuniones: De Lunes a Sábado de  4:00 a 6:00 p.m.  y Domingo de  2:00 a 4:00 p.m.</li>
+                        <li><span>989</span><strong>POR AMOR A MI VIDA.</strong> — 18 de  Enero  de  2011.  Dirección:  Barrio El Calvario Calle al Cementerio de  Los Ricos, Ilobasco. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>990</span><strong>RAYO DE LUZ.</strong> — 21 de Marzo de 1996.  Dirección:  Cantón Huertas Caserío Arenera, Ilobasco. Días y horas  de  reuniones: De  Lunes  a Domingo de  5:00 a 7:00 p.m. </li>
+                        <li><span>991</span><strong>RENACE UNA  LUZ EN MI CAMINO.</strong> — 27 de  Febrero de  2012. Dirección:   Cantón  Llanitos   Caserío  Concepción   Ilobasco.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>992</span><strong>RENACER 07  DE  SEPTIEMBRE.</strong> —  07  de  Septiembre de  2005. Dirección:  Cantón San  José, Ilobasco. Días y horas  de  reuniones: De  Lunes  a Domingo de  4:30  a 6:30  p.m.  </li>
+                        <li><span>993</span><strong>RENACER 27   DE  JUNIO.</strong> —  27  de   Junio   de   2014.   Dirección: Cantón Anastepeque 2 Cuadras al Norte  de  La Ermita,  Ilobasco. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+                        <li><span>994</span><strong>SALVANDO UNA VIDA.</strong> — 12 de Agosto de 2006. Dirección: 4ª Calle Poniente y 7ª Avenida  Norte, Ilobasco. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>995</span><strong>SOY UN MILAGRO.</strong> — 15 de  Agosto de  2012.  Dirección:  Avenida Carlos   Bonilla,  frente   a  Súper   Sicle,  Ilobasco.  Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>996</span><strong>UN MILAGRO DEL 2003.</strong> — 13 de Abril de 2003. Dirección: Cantón San Antonio La Labor, Ilobasco. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>997</span><strong>UN NUEVO AMANECER EN LA HELEN.</strong> — 24 de  Mayo de  2013. Dirección: Colonia Helen Nº 2 contiguo a Las canchas Ilobasco. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>998</span><strong>UN  NUEVO  HOMBRE 27  DE  MAYO.</strong> —  27  de  Mayo  de  2013. Dirección:  Calle  hacia  San  Salvador  final Colonia  Tepeyac Km. 53 (Relleno) Ilobasco. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+                        <li><span>999</span><strong>UN NUEVO PORVENIR.</strong> — 24 de  Enero  de  2009.  Dirección:  Final 10ª Avenida  Norte  y Calle Menjivar frente  al tanque de ANDA. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.</li>
+                        <li><span>1000</span><strong>VOLUNTAD  28   DE  ABRIL.</strong> — 28  de   Abril  de   1977.   Dirección: Caserío Rancho Quemado Cantón Maquilishuat Km. 60 ½ Carretera a Sensuntepeque,  Ilobasco. Días y horas  de  reuniones: De  Lunes a  Sábado de  5:00  a  7:00  p.m.  y Domingo de  9:00  a  11:00  a.m.</li>
+
+                        <h4>MUNICIPIO DE JUTIAPA GRUPOS REPORTADOS—03</h4>
+
+
+
+                        <li><span>1001</span><strong>NUEVA VIDA.</strong> — 12 de Octubre de 2013. Dirección: Barrio El Centro Jutiapa. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+                        <li><span>1002</span><strong>RENACER LLANO LARGO.</strong> — 21  de  Enero  de  1992.  Dirección: Cantón Llano  Largo  Centro Jutiapa. Días  y horas   de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1003</span><strong>24 HORAS DE SOBRIEDAD.</strong> — 18 de Diciembre de 2013. Dirección: Caserío  Cerrón   Grande  Municipio   de   Jutiapa. Días  y  horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+
+                        <h4>MUNICIPIO DE SAN ISIDRO GRUPOS REPORTADOS—05</h4>
+
+
+
+
+
+                        <li><span>1004</span><strong>CAMINO  HACIA LA LUZ.</strong> — 06  de   Enero   de   2010.   Dirección: Cantón El Amate  San Isidro. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1005</span><strong>NUEVO HOMBRE.</strong> — 02 de  Julio  de  2006.  Dirección:  Cantón Los Jobos Caserío Los Jobitos San  Isidro.  Días  y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1006</span><strong>RUEGOS DE UNA MADRE.</strong> — 16 de Septiembre de 2002. Dirección: Cantón Llano La Hacienda San  Isidro.  Días  y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1007</span><strong>TRES LEGADOS.</strong> —  01  de   Mayo  de   2011.   Dirección:   3ª  Calle Poniente Barrio El Calvario,  San Isidro.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+                        <li><span>1008</span><strong>UNIDOS A DIOS.</strong> — 17 de Julio de 1997. Dirección: 3ª Calle Poniente San Isidro. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+                        <h4>MUNICIPIO DE SENSUNTEPEQUE GRUPOS REPORTADOS—11</h4>
+
+
+                        <li><span>1009</span><strong>21  DE ENERO (INSTITUCIONAL).</strong> — 21 de  Enero  de  2004.  Dirección: Penal  de Sensuntepeque. </li>
+                        <li><span>1010</span><strong>ALFA Y OMEGA.</strong> — 22 de Abril de 1983.  Dirección:  8ª Avenida  Sur Nº  1 y Calle  Doroteo Basconcelos, Sensuntepeque.  Días  y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+                        <li><span>1011</span><strong>CAMINO DE FE Y ESPERANZA.</strong> — 16 de  Febrero de  2002. Dirección:   Cantón La Esperanza Calle  Santa   Isabel  Barrio  Santa Bárbara   Sensuntepeque. Días  y horas  de  reuniones: De  Lunes  a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1012</span><strong>DESPERTAR 12  DE JUNIO.</strong> — 12  de  Junio  de  2OO5. Dirección: 3ª  Avenida  Norte  Barrio El Calvario  Sensuntepeque. Días y horas de  reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m. </li>
+                        <li><span>1013</span><strong>FE 09  DE AGOSTO.</strong> — 09 de  Agosto de  2010.  Dirección:  Cantón Chunte Caserío La Esperanza Días y horas  de  reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+                        <li><span>1014</span><strong>NAVIDAD 78.</strong> —  19 de  Diciembre de  1978.  Dirección:  3ª Avenida Sur, Barrio El Calvario  Sensuntepeque. Días y horas  de  reuniones: De  Lunes  a Domingo de  7:00  a 9:00  p.m. </li>
+                        <li><span>1015</span><strong>RENACER 02  DE  ENERO.</strong> —  02  de  Enero   de  2012.   Dirección: Cantón Tronalagua, Sensuntepeque.  Días  y  horas   de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+                        <li><span>1016</span><strong>RENACER 02  DE FEBRERO.</strong> — 15 de  Agosto de  2009.  Dirección: Cantón Rojas  Caserío La Perla  Sensuntepeque. Días  y horas   de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>1017</span><strong>RENACER  05   DE  DICIEMBRE.</strong> — 05   de   Diciembre  de   2008. Dirección:  Cantón Rio Grande Caserío San  José Km. 7 Carretera a Ciudad Dolores Sensuntepeque.  Días y horas  de  reuniones: De Lunes a Viernes de 6:00 a 8:00 p.m.</li>
+                        <li><span>1018</span><strong>UNA  LUZ EN  MI CAMINO.</strong> — 17  de  Junio  de  1990.  Dirección: Cantón Río Grande Puesuelo Abajo  Sensuntepeque. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+                        <li><span>1019</span><strong>UNA  NUEVA  VIDA.</strong> — 02  de  Enero  de  1983.  Dirección:  Cantón Rojas Caserío El Gavilán Sensuntepeque. Días y horas  de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+                        <h4>MUNICIPIO DE TEJUTEPEQUE GRUPOS REPORTADOS—06</h4>
+
+
+                        <li><span>1020</span><strong>30 DE ENERO UN NUEVO AMANECER.</strong> — 30 de Enero  de 2002. Dirección:   Cantón  San   Francisco   Echeverría  Tejutepeque.   Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+                        <li><span>1021</span><strong>DIOS ME ILUMINÓ.</strong> — 14  de  Marzo  de  2011.  Dirección:  Cantón Concepción Caserío Trilladera  Tejutepeque. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>1022</span><strong>DIOS Y A.A.</strong> — 07 de Enero de 2011. Dirección: Cantón Concepción Caserío Quezalapa, Carretera a Tejutepeque. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+                        <li><span>1023</span><strong>FE  EN   DIOS  24   DE  NOVIEMBRE.</strong> —  24   de   Noviembre  de 2008.  Dirección:  Cantón San  Francisco  Echeverría Calle  Principal Tejutepeque. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1024</span><strong>GRACIAS A DIOS.</strong> — 09  de  Diciembre de  1975.  Dirección:  Calle Hermanos Rivas y 1ª Avenida  Norte, Barrio El Centro Tejutepeque. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+                        <li><span>1025</span><strong>NUEVO   MILENIO.</strong> —  26   de   Junio   de   1999.   Dirección:   Calle Delfina  Escalante Nº 6 Barrio El Centro Tejutepeque. Días y horas de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Cabanas.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

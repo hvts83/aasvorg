@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es"><!-- InstanceBegin template="/Templates/aaTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Alcoholicos Anonimos</title>
+<!-- InstanceEndEditable -->
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<!-- Custom styles for this template -->
+<link href="css/AA-styles.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/AA-styles-pages.css" rel="stylesheet">
+<!-- Animate CSS  -->
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container"> <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.gif"/></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">INICIO</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> QUIEN&Eacute;S SOMOS </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="quienes-somos.html">Conocenos</a> <a class="dropdown-item" href="historia.html">Historia</a> <a class="dropdown-item" href="reglamentos.html">Reglamentos</a> <a class="dropdown-item" href="comunidad.html">Comunidad</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="literatura.html">Literatura</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="contacto.html">CONTACTOS</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="maincontent" -->
+<div id="main-container"> 
+  <!-- Page Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="col-lg-8 offset-lg-2">
+        <h1 class="text-center">D&eacute;janos un mensaje</h1>
+        <p class="text-center">Por favor, llena el siguiente formulario para ponernos en contacto contigo rápidamente</p>
+        <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+        <div class="form-group">
+          <div class="controls">
+            <input type="text" id="name" class="form-control" placeholder="Nombre" required data-error="Ingrese nombre">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+            <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Ingrese Correo Electronico">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+            <input type="text" id="msg_subject" class="form-control" placeholder="Motivo" required data-error="Ingrese Motivo">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+            <textarea id="message" rows="7" placeholder="Mensaje" class="form-control" required data-error="Ingrese Mensaje"></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <button type="submit" id="submit" class="btn btn-success"></i> Enviar Mensaje</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <p class="text-center">Dirección: 25 Calle oriente y 16 Avenida Norte No. 10 Colonia Magaña barrio san miguelito, San Salvador.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1136.041449702698!2d-89.18354102040298!3d13.709908777132535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQyJzM3LjEiTiA4OcKwMTAnNTkuMiJX!5e1!3m2!1ses-419!2ssv!4v1521324304016" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="col-lg-12">
+        <h2 class="text-center">Divisi&oacute;n geogr&aacute;fica de los distintos grupos de A.A. <br> distribuidos en la Rep&uacute;blica de El Salvador</h2>
+        <h1 id="region-name" class="text-center"></h1>
+        <div id="map" class="united-kingdom" align="center"> 
+          <!-- Raphaël JS Map Here --> 
+        </div>
+        <h3 id="region-name"></h3>
+        <h2 align="center" > "SI LA DIRECCIÓN DE TU GRUPO DE A.A. ESTA INCORRECTA O TIENE UN NUEVO DOMICILIO, ESCRÍBENOS O LLÁMANOS" </h2>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>O b&uacute;scanos en nuestras redes sociales</h2>
+      <div class="col-lg-6 social-media offset-lg-3 py-5">
+        <p><a href="https://www.facebook.com/Alcoh%C3%B3licos-An%C3%B3nimos-El-Salvador-167003920091866/" target="_blank"><i class="fa fa-facebook fa-5x"></i></a> <a href="https://twitter.com/aa_sv1968" target="_blank"><i class="fa fa-twitter fa-5x"></i></a> <a href="https://www.instagram.com/alcoholicosanonimossv/" target="_blank"><i class="fa fa-instagram fa-5x"></i></a> <a href="https://www.youtube.com/channel/UCOmk9yxTzgpz0ZgGAoaB7aQ" target="_blank"><i class="fa fa-youtube-play fa-5x"></i></a></p>
+      </div>
+    </div>
+  </section>
+  <section id="contact-back" class="py-5">
+    <div class="row">
+      <div class="container text-center">
+        <div class="col-md-4 py-5 offset-md-2">
+          <h2>Dale la</h2>
+          <h3>bienvenida</h3>
+          <h2>&middot; a tu nueva &middot;<br>
+            <span class="sedwick">y mejor vida</span></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script type="text/javascript" src="assets/js/jquery-min.js"></script> 
+<script type="text/javascript" src="assets/js/form-validator.min.js"></script> 
+<script type="text/javascript" src="assets/js/contact-form-script.js"></script> 
+<!-- InstanceEndEditable --><!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row py-5">
+      <div class="row">
+        <div class="col-sm">
+          <h5>QUI&Eacute;NES SOMOS</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Introduccion</a> </li>
+            <li><a href="historia.html">Historia</a> </li>
+            <li><a href="reglamentos.html">Reglamentos</a> </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h5>CONTACTOS</h5>
+          <ul class="list-unstyled">
+            <li><a href="contacto.html#region-name">Directorio de Grupos</a> </li>
+            <li><a href="comunidad.html">Comunidad A.A</a> </li>
+            <li><a href="organismos-de-servicio.html">Organismos de Servicio</a> </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h5>LITERATURA</h5>
+          <ul class="list-unstyled">
+            <li><a href="libros.html">Libros</a> </li>
+            <li><a href="folletos.html">Folletos</a> </li>
+			<li><a href="manuales.html">Manuales</a> </li>
+            <li><a href="panfletos.html">Panfletos</a> </li>
+			<li><a href="https://drive.google.com/drive/folders/0B-aNSLMThddaOW9qMGo1S2R4N3M">Archivos Historicos</a></li>
+            <li><a href="#">Servicios Online</a> </li>			
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h5>OTROS</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://drive.google.com/drive/folders/0B-aNSLMThddaUVZEQkJGSXY4bDg" target="_blank">Revistas</a> </li>
+            <li><a href="https://drive.google.com/drive/folders/0B-aNSLMThddaUUp5NTNRSTJVd0E" target="_blank">Eventos</a> </li>
+            <li><a href="https://drive.google.com/drive/folders/0B-aNSLMThddaLXVKTm1rV0FWeDA" target="_blank">Boletines</a> </li>
+            <li><a href="https://drive.google.com/drive/folders/0B-aNSLMThddaRC1nYUJra21QRDg" target="_blank">Calendario</a> </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h5>ENCU&Eacute;NTRANOS EN</h5>
+          <p class="py-3 text-white" >Dirección: 25 Calle Oriente y 16 Avenida Norte No. 10 Colonia Magaña, San Salvador<br>
+            +(503) 2225-1430 / 2225-9526<br>
+            <a href="mailto:osgelsalvador@hotmail.com">osgdeelsalvador@hotmail.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="row  text-white">
+      <div class="col-lg-8">
+        <p>San Salvador, El Salvador  |  +503 7985 5982  |  karen.ledesigner9@gmail.com</p>
+      </div>
+      <div class="col-lg-4 text-white">
+        <p class="pull-right"> <a href="https://www.facebook.com/Alcoh%C3%B3licos-An%C3%B3nimos-El-Salvador-167003920091866/" target="_blank" class="btn azm-social azm-size-48 azm-r-square azm-android"><i class="fa fa-facebook"></i> </a> <a href="https://twitter.com/aa_sv1968" target="_blank" class="btn azm-social azm-size-48 azm-r-square azm-android"><i class="fa fa-twitter "></i></a> <a href="https://www.instagram.com/alcoholicosanonimossv/" target="_blank" class="btn azm-social azm-size-48 azm-r-square azm-android"><i class="fa fa-instagram"></i></a> <a href="https://www.youtube.com/channel/UCOmk9yxTzgpz0ZgGAoaB7aQ" target="_blank" class="btn azm-social azm-size-48 azm-r-square azm-android"><i class="fa fa-youtube"></i></a> </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/popper/popper.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
+<script src="vendor/bootstrap/js/fx.js"></script> 
+<script src="assets/js/raphael-min.js"></script> 
+<script src="assets/js/map.js"></script>
+</body>
+<!-- InstanceEnd --></html>

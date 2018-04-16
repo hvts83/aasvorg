@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                 
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. LA UNIÓN</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                  
+                    <ul>
+                       <h4>MUNICIPIO DE ANAMORÓS GRUPOS REPORTADOS—05</h4>
+							<li>
+                                <span>1521</span>
+                                <strong>FE Y ESPERANZA.</strong> — 12  de  Febrero de  2009.  Dirección:  Cantón Mojones. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a8:00 p.m.
+                            </li>
+							<li>
+                                <span>1522</span>
+                                <strong>HORIZONTES DE REDENCIÓN.</strong> — 15 de Septiembre de 1966.  Di- rección:  Barrio El Centro salida a Lislique. Días y horas de reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  
+                            </li>
+							<li>
+                                <span>1523</span>
+                                <strong>MI ÚLTIMA COPA.</strong> — 04 de  Julio de  1976.  Dirección:  Caserío Invi- tas,  Cantón Huertas Viejas. Días y horas  de  reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. 
+                            </li>
+							<li>
+                                <span>1524</span>
+                                <strong>NUEVO AMANECER.</strong> — 12 de  Mayo de  1996.  Dirección:  Colonia Nueva.  Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. 
+                            </li>
+							<li>
+                                <span>1525</span>
+                                <strong>FELIZ AMANECER 04  DE MAYO.</strong> — 04 de  Mayo de  2013.  Direc- ción:  Cantón Agua  Blanca,  Caserío Los Romero. Días  y horas  de reuniones: Lunes, Martes, Jueves, Viernes y Domingo de 5:00 a 7:00 p.m.  
+                            </li>
+
+							<h4>MUNICIPIO DE BOLÍVAR GRUPOS REPORTADOS—01</h4>
+
+
+
+							<li><span>1526</span><strong>QUERER ES PODER.</strong> — 07 de Abril de 1964. Dirección:  Barrio Concepción. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+							<h4>MUNICIPIO DE CONCHAGUA GRUPOS REPORTADOS—10</h4>
+
+
+
+							<li><span>1527</span><strong>06 DE AGOSTO.</strong> — 06 de  Agosto de  1981.  Dirección:  Playa El Ma- culiz. Días y horas de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.  </li>
+							<li><span>1528</span><strong>24 HORAS FUENTE DE VIDA.</strong> — 14 de Septiembre de 2011. Direc- ción: Playa El Flor, Cantón Playas Negras. Días y horas de reuniones: De Lunes a Domingo de  4:00 a 6:00 p.m.  </li>
+							<li><span>1529</span><strong>ESCUELA DE LA VIDA.</strong> — 11 de  Abril de  2005.  Dirección:  Colonia Nattuz,  Playas Negras. Días y horas  de  reuniones: De Lunes a Do- mingo  de 4:00 a 6:00 p.m.  </li>
+							<li><span>1530</span><strong>FUENTE DE VIDA.</strong> — 05 de Mayo de 2005.  Dirección:  Playa Torola. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+							<li><span>1531</span><strong>UN MILAGRO EN LAS TUNAS.</strong> — 04 de Mayo de 1977.  Dirección: Playa Las Tunas. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+							<li><span>1532</span><strong>UNA ESPERANZA EN LAS TUNAS.</strong> — 18 de Septiembre de 2013. Dirección:  Playa Las Tunas, 1 Cuadra después de pista de baile (Bri- sas  del  mar). Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.</li>
+							<li><span>1533</span><strong>UNA LUZ EN EL CANTADO.</strong> — 13 de  Agosto de  1976.  Dirección: Cantón Llanos Los Patos.  Días y horas  de reuniones: De Lunes a Do- mingo  de 6:00 a 8:00 p.m.  </li>
+							<li><span>1534</span><strong>UNA LUZ EN TU CAMINO.</strong> — 01 de Abril de 2008. Dirección: Playa El Tamarindo. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+							<li><span>1535</span><strong>UNIDOS DE CORAZÓN.</strong> — 16 de Abril de 1974.  Dirección:  Cantón El Juaguey. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+							<li><span>1536</span><strong>VIVIR EN SOBRIEDAD.</strong> — 22 de  Junio  de  2004.  Dirección:  Cantón Loma  Larga.  Días y horas  de  reuniones: De  Lunes  a Domingo de 5:00 a 7:00 p.m.</li>
+
+							<h4>MUNICIPIO DE EL CARMEN GRUPOS REPORTADOS—04</h4>
+
+
+
+							<li><span>1537</span><strong>12 DE ABRIL.</strong> — 12 de Abril de 2006.  Dirección:  Carretera Paname- ricana  1 Cuadra antes de  llegar  al puente de  San Antonio  Silva, El Caulotillo, El Carmen. Días y horas de reuniones: De Lunes a Domin- go de 6:00 a 8:00 p.m.  </li>
+							<li><span>1538</span><strong>POR AMOR A DIOS.</strong> — 07  de  Diciembre de  1975.  Dirección:  3ª Calle Poniente contiguo a estación Fenadesal Barrio El Centro Olo- mega. Días y horas  de  reuniones: De Lunes  a Domingo de  5:00  a 7:00 p.m. </li>
+							<li><span>1539</span><strong>RECUPERACIÓN DE VIDA.</strong> — 26 de  Julio de  2007.  Dirección:  Ba- rrio El Centro entrada al Barrio Nuevo, El Carmen. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1540</span><strong>UN  MENSAJE DE A.A EL GUAYABITO.</strong> — 01  de  Noviembre de 2009.  Dirección:  Calle al Cementerio, Caserío El Guayabito. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+
+							<h4>MUNICIPIO DE INTIPUCÁ GRUPOS REPORTADOS—02</h4>
+
+
+
+							<li><span>1541</span><strong>30  DE NOVIEMBRE.</strong> — 30 de  Noviembre de  1975.  Dirección:  Mu- nicipio de Intipucá.  Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+							<li><span>1542</span><strong>NUEVO DESPERTAR.</strong> — 13 de Septiembre de 2010. Dirección: Mu- nicipio de Intipucá.  Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.  </li>
+
+							<h4>MUNICIPIO DE LA UNIÓN GRUPOS REPORTADOS—20</h4>
+
+
+
+							<li><span>1543</span><strong>21  DE JULIO.</strong> — 21  de  Julio  de  2010.  Dirección:  Cantón El Pilón Conchagua. Días  y horas  de  reuniones: De  Lunes  a  Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1544</span><strong>ÁRBOL DE LA ESPERANZA (INSTITUCIONAL).</strong> — 28 de  Julio de 1990.  Dirección:  Centro Penal  La Unión.  Días  y horas  de  reuniones: Jueves y Viernes de 1:30 a 3:30 p.m. </li>
+							<li><span>1545</span><strong>BASE Y FORTALEZA.</strong> — 25 de  Mayo de  2012.  Dirección:  Base Naval de  La Unión.  Días y horas  de  reuniones: Lunes  y Miércoles  de 6:00  a 8:00  p.m.  Charlas:  Lunes  y Miércoles  de  9:00  a 10:00  a.m.</li>
+							<li><span>1546</span><strong>ESTACIÓN LA ESPERANZA.</strong> — 04 de  Abril de  2011.  Dirección:  2 Cuadras Arriba  de  La Terminal  de  buses, Barrio Honduras. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+							<li><span>1547</span><strong>JÓVENES EN ACCIÓN.</strong> — 25 de Junio  de 2014.  Dirección:  Cantón Pavana  La Unión. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+							<li><span>1548</span><strong>LA NUEVA ARCA, LA UNIÓN.</strong> —  10 de  Febrero de  2001.  Direc- ción: Barrio Concepción, Circunvalación. Días y horas  de reuniones: De Lunes a Domingo de  7:00 a 9:00 p.m.  </li>
+							<li><span>1549</span><strong>LA NUEVA  DIMENSIÓN.</strong> — 06  de  Enero  de  1995.  Dirección:  8ª Avenida  Norte  Barrio San Carlos.  Días y horas  de reuniones: De Lu- nes  a Domingo de  7:00 a 9:00 p.m.  </li>
+							<li><span>1550</span><strong>LA UNIÓN HACE LA FUERZA.</strong> — 28 de Enero  de 1962.  Dirección: Meléndez 9ª Avenida Sur final Calle Villalta, Barrio San Carlos. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+							<li><span>1551</span><strong>MI FORTALEZA.</strong> — 15 de Febrero de 1991.  Dirección:  Caserío Pun- ta El Jocote, Cantón Güisquil.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1552</span><strong>MI ÚNICO CAMINO.</strong> — 12 de  Septiembre de  1983.  Dirección:  Ca- lle Villalta Barrio San Carlos.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+							<li><span>1553</span><strong>NUEVO SENDERO EN LA BELÉN.</strong> — 24 de  Agosto de  1998.  Di- rección:  Calle  Principal  Colonia  Belén.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.</li>
+							<li><span>1554</span><strong>REGRESO DE UN ABÍSMO.</strong> — 25 de  Febrero de  1979.  Dirección: Calle  Principal  Cantón Conchagüita. Días  y horas   de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+							<li><span>1555</span><strong>SALVADOR DEL MUNDO.</strong> —  15 de  Abril de  1967.  Dirección:  Ciu- dad  de  Conchagua, Barrio Guadalupe. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+							<li><span>1556</span><strong>TREINTA DE MARZO.</strong> — 30 de  Marzo de  1969.  Dirección:  Cantón Güisquil,  Calle  Principal  al Norte  de  Escuela  Profesor  Raúl Flores Moreno. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1557</span><strong>TRIUNFO DE MI HOGAR.</strong> — 13 de Septiembre de 1973. Dirección: 7ª Avenida  Sur Barrio Concepción. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1558</span><strong>UN REGALO DE DIOS.</strong> — 06 de  Junio  de  1994.  Dirección:  2ª Ave- nida Sur Pasaje  San Pedro Barrio Las Flores. Días y horas  de reunio- nes:  De Lunes a Sábado de  7:00 a 9:00 p.m.  y Domingo de  5:00 a 7:00 p.m.  </li>
+							<li><span>1559</span><strong>UNA LUZ EN EL GOLFO.</strong> — 08 de Agosto de 1967.  Dirección:  Ca- lle San Carlos, 8ª Avenida  Norte  San Carlos. Días y horas  de reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1560</span><strong>UNA  LUZ EN LA ALCALDÍA.</strong> — 16 de  Enero  de  2013.  Dirección: Alcaldía de La Unión. Días y horas  de reuniones: Lunes, Miércoles  y Viernes de 1:00 a 3:00 p.m.  </li>
+							<li><span>1561</span><strong>UNA LUZ EN LA CAÑADA.</strong> — 01 de  Mayo de  1992.  Dirección:  La Cañada Cantón Piedras  Blancas.  Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:00 a 8:00 p.m. </li>
+							<li><span>1562</span><strong>UNA LUZ EN LA FUENTE.</strong> — 25 de Octubre de 2002.  Dirección:  El Cacao, La Unión. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+
+							<h4>MUNICIPIO DE LISLIQUE GRUPOS REPORTADOS—02</h4>
+
+
+
+							<li><span>1563</span><strong>NUEVO DESPERTAR.</strong> — 26 de  Septiembre de  2007.  Dirección:  El Portillo  Blanco,  Cantón Derrumbado. Días  y horas  de  reuniones: De Lunes a Domingo de  5:30 a 7:30 p.m.  </li>
+							<li><span>1564</span><strong>UNA LUZ EN MI CAMINO LISLIQUE.</strong> — 13 de  Octubre de  1972. Dirección:  Salida a Anamorós. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+							<h4>MUNICIPIO DE NUEVA ESPARTA GRUPOS REPORTADOS—02</h4>
+
+
+
+							<li><span>1565</span><strong>SENDERO DE NUEVA VIDA.</strong> — 20 de  Mayo  de  1966.  Dirección: Barrio El Centro Nueva Esparta. Días y horas de reuniones: De Lunes a Domingo de 6:30 a 8:30 p.m.  </li>
+							<li><span>1566</span><strong>UNA LUZ EN MONTECA.</strong> — 06 de Marzo de 1998. Dirección: Mon- teca.  Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+							<h4>MUNICIPIO DE PASAQUINA GRUPOS REPORTADOS—04</h4>
+
+
+
+							<li><span>1567</span><strong>PRIMERO DE JULIO.</strong> — 01 de  Julio  de  1987.  Dirección:  Barrio El Calvario Plaza Nueva.  Días y horas de reuniones: De Lunes a Domin- go de 5:00 a 7:00 p.m. </li>
+							<li><span>1568</span><strong>SUEÑOS DE MI VIDA.</strong> — 07 de  Febrero de  1990.  Dirección:  Caserío Santa Clarita. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+							<li><span>1569</span><strong>UN  MILAGRO DE DIOS.</strong> — 15 de  Diciembre de  1992.  Dirección: Cantón Santa  Clara. Días y horas  de  reuniones: De Lunes a Domin- go de 5:00 a 7:00 p.m. </li>
+							<li><span>1570</span><strong>UN DESPERTAR EN SAN CARLOS.</strong> — 09 de  Noviembre de  2008. Dirección:  Caserío San  Carlos,  Pasaquina. Días y horas  de  reunio- nes: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+
+
+							<h4>MUNICIPIO DE SAN ALEJO GRUPOS REPORTADOS—11</h4>
+
+
+
+							<li><span>1571</span><strong>1º  DE JULIO.</strong> — 01 de  Julio  de  2001.  Dirección:  Barrio El Gaspar. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+							<li><span>1572</span><strong>10  DE JULIO.</strong> — 10 de  Julio de  2000.  Dirección:  Agua  Fría, Barrio La Cruz. Días y horas  de  reuniones: De Lunes a Domingo de  5:30 a 7:30 p.m. </li>
+							<li><span>1573</span><strong>18 DE SEPTIEMBRE.</strong> — 18 de Septiembre de 1984. Dirección:  Cantón  Trinchera.  Días y horas  de  reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.  </li>
+							<li><span>1574</span><strong>AMOR Y COMPRENSIÓN.</strong> — 22 de  Abril de  1972.  Cantón El Tizatillo San Alejo. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+							<li><span>1575</span><strong>DIOS NOS SALVARÁ.</strong> — 02 de Septiembre de 1978.  Dirección:  Ba- rrio Gaspar. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+							<li><span>1576</span><strong>NADA  PODEMOS  SOLOS.</strong> — 14  de  Septiembre de  2007.  Direc- ción: Caserío Santa  Crucita.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00  p.m.  </li>
+							<li><span>1577</span><strong>UN  MILAGRO EN EL CALVARIO.</strong> — 28 de  Septiembre de  1979. Dirección:  Barrio El Calvario Cantón Agua Fría. Días y horas  de reuniones: De Lunes a Domingo de 5:30 a 7:30 p.m. </li>
+							<li><span>1578</span><strong>UN OASIS EN EL DESIERTO.</strong> —  02 de Febrero de 1975.  Dirección: Cantón Las Huertas. Días y horas  de  reuniones: De Lunes a Domin- go de 5:00 a 7:00 p.m.  </li>
+							<li><span>1579</span><strong>UNIDAD Y COMPRENSIÓN.</strong> — 14 de Abril de 1978. Dirección:  Barrio El Calvario. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. </li>
+							<li><span>1580</span><strong>UNIDOS VENCEREMOS.</strong> — 13 de Octubre de 1973. Dirección: Ca- serío  El Crusillal,  Cantón Copalio. Días  y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1581</span><strong>VUELTA A LA VIDA.</strong> — 19 de  Abril de  1975.  Dirección:  Barrio La Cruz. Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+
+							<h4>MUNICIPIO DE SANTA ROSA DE LIMA GRUPOS REPORTADOS—13</h4>
+
+
+							<li><span>1582</span><strong>20  DE ENERO.</strong> — 07 de  Febrero de  1988.  Dirección:  Cantón San Sebastián. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1583</span><strong>23 DE ENERO.</strong> — 23 de Enero  de 1987.  Dirección:  Colonia  Ventura Perla.  Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00 p.m.</li>
+							<li><span>1584</span><strong>30  DE AGOSTO.</strong> — 28 de  Octubre de  1970.  Dirección:  Calle Ruta militar, Boulevard Enmanuel Barrio El Calvario. Días y horas  de  reu- niones: De Lunes a Domingo de 6:30 a 8:30 p.m. </li>
+							<li><span>1585</span><strong>AMOR Y PAZ.</strong> — 01 de Mazo de 1972. Dirección: Barrio Las Delicias ½ Cuadra al Norte  de  gasolinera puma. Días y horas  de  reuniones: De Lunes a Domingo de  6:30 a 8:30 p.m. </li>
+							<li><span>1586</span><strong>FUENTE DE VIDA.</strong> — 04 de Diciembre de 2010.  Dirección:  Cantón El Algodón. Días  y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+							<li><span>1587</span><strong>NUEVA ESPERANZA.</strong> — 05 de Noviembre de 2014.  Dirección:  Ba- rrio La Esperanza. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1588</span><strong>NUEVA ESPERANZA EL SAUCE.</strong> — 20 de  Agosto de  2009.  Direc- ción: Barrio El Centro El Sauce.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+							<li><span>1589</span><strong>NUEVO MUNDO.</strong> —  21 de Septiembre de 1974.  Dirección:  Final 4a Avenida  Sur, Barrio El Convento. Días y horas  de  reuniones: De Lu- nes  a Domingo de  6:00 a 8:00 p.m.  </li>
+							<li><span>1590</span><strong>UN MILAGRO EN LAS DELÍCIAS.</strong> — 17 de  Junio  de  1998.  Direc- ción: Barrio Las Delicias. Días y horas  de reuniones: De Lunes a Do- mingo  de 6:00 a 8:00 p.m.  </li>
+							<li><span>1591</span><strong>UNA  ESPERANZA EN LA UMAÑA.</strong> —  25 de  Mayo  de  2014.  Di- rección:  Calle Principal  Colonia  Umaña.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+							<li><span>1592</span><strong>UNA  LUZ EN ORIENTE.</strong> — 30 de  Mayo de  2002.  Dirección:  Con- cepción de  Oriente. Días y horas  de  reuniones: De Lunes a Domin- go de 7:00 a 9:00 p.m.  </li>
+							<li><span>1593</span><strong>UNA LUZ EN EL RODEO.</strong> — 02 de  Diciembre de  2008.  Dirección: Cantón Pasaquinita, Caserío El Rodeo. Días y horas  de  reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m. </li>
+							<li><span>1594</span><strong>UNA LUZ EN LA SABÁNA.</strong> — 02 de Diciembre de 2001. Dirección: Calle Salida a Pasaquina. Días y horas  de reuniones: De Lunes a Do- mingo  de 6:00 a 8:00 p.m. </li>
+
+							<h4>MUNICIPIO DE YAYANTÍQUE GRUPOS REPORTADOS—02</h4>
+
+
+
+							<li><span>1595</span><strong>VIDA NUEVA YAYANTÍQUE.</strong> — 28 de  Agosto de  2014.  Dirección: Barrio San Jacinto, 2 Cuadras Abajo  de  La Iglesia  Católica. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+							<li><span>1596</span><strong>FE Y VOLUNTAD.</strong> — 06 de  Septiembre de  2014.  Dirección:  Barrio, El Calvario Yayantíque, una Cuadra Arriba del Juzgado de Paz. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.</li>
+
+							<h4>MUNICIPIO DE YUCUAIQUÍN GRUPOS REPORTADOS—08</h4>
+
+
+
+							<li><span>1597</span><strong>CAMINO POR LA PAZ.</strong> — 09 de Marzo de 1992. Dirección:  Caserío Palo Galán. Días y horas de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m.  </li>
+							<li><span>1598</span><strong>DIOS ES LIBERTAD.</strong> — 18 de  Junio  de  1988.  Dirección:  Yucuaquín. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+							<li><span>1599</span><strong>MILAGRO DE SAN FRANCISCO YUCUAIQUÍN.</strong> — 28 de  Febrero de  1965.  Dirección:  San Francisco  Yucuaiquín. Días y horas  de  reu- niones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+							<li><span>1600</span><strong>NADA PODEMOS SOLOS.</strong> — 01 de Mayo de 2012. Dirección: Can- tón  Las Cabañas. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+							<li><span>1601</span><strong>NUEVO DESPERTAR.</strong> — 07 de  Diciembre de  1989.  Dirección:  Ca- serío  El Zapotal Las Cruces  Yucuaiquín. Días y horas  de  reuniones: De  Lunes  a Domingo de  5:00  a 7:00  p.m.  </li>
+							<li><span>1602</span><strong>NUEVO RENACER.</strong> — 16 de  Diciembre de  2005.  Dirección:  Barrio El Centro Yucuaiquín. Días y horas  de reuniones: De Lunes a Domin- go de 5:30 a 7:30 p.m. </li>
+							<li><span>1603</span><strong>QUINCE DE AGOSTO.</strong> — 15 de Agosto de 1992. Dirección: Cantón Las Cruces. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+							<li><span>1604</span><strong>VALE LA PENA VIVIR.</strong> — 13 de Agosto de 1971. Dirección:  Cantón Las Hojas, Calle Principal que  conduce de San Miguel a Yucuaiquín. Días y horas de reuniones: Lunes, Miércoles  y Sábado de 4:30 a 6:30 p.m.  </li>
+
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/launion.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

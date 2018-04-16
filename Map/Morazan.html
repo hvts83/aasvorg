@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+                
+                 
+                <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. MORAZÁN</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                    
+                    <h4>MUNICIPIO DE ARAMBALA</h4>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <strong>PURA VIDA.</strong>— 14 de Enero de 2014. Dirección: Barrio El Centro
+                            salida a Joateca. Días y horas de reuniones: De Lunes a Domingo de
+                            5:00 a 7:00 p.m. Miembros asistentes: 7 Hombres.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE CACAOPERA</h4>
+                        <li>
+                            <span>2</span>
+                            <strong>ALEGRÍA DE VIVIR.</strong>— 17 de Junio de 1978. Dirección: Caserío
+                            Estancia, Cantón Tierra Blanca. Días y horas de reuniones: Domingo,
+                            Martes, Jueves y Sábado de 4:00 a 6:00 p.m. Miembros asistentes: 
+                            5 Hombres.
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <strong>CAMBIO DE VIDA.</strong>— 19 de Septiembre de 2002. Dirección: Caserío
+                            Llana El Nance, Cantón Sunzulaca. Días y horas de reuniones: De
+                            Lunes a Sábado de 3:00 a 5:00 p.m. Miembros asistentes: 2 Hombres.
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <strong>FE Y ESPERANZA.</strong>— 03 de Diciembre de 2005. Dirección: Cantón
+                            Agua Blanca, Caserío La Hacienda. Días y horas de reuniones: De
+                            Lunes a Sábado de 3:00 a 5:00 p.m. Miembros asistentes: 7 Hombres 
+                            y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <strong>NUEVA LUZ EN MI CAMINO.</strong>— 04 de Mayo de 2000. Dirección:
+                            Cantón Estancia, Caserío La Presa. Días y horas de reuniones:
+                            Lunes, Jueves y Sábado de 4:00 a 6:00 p.m. Miembros asistentes: 3
+                            Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <strong>NUEVOS HORIZONTES.</strong>— 14 de Septiembre de 1997. Dirección:
+                            Caserío Albania, Cantón Ocotío. Días y horas de reuniones: Martes,
+                            Jueves y Sábado de 3:00 a 5:00 p.m. Miembros asistentes: 9
+                            Hombres y 3 Mujeres.
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <strong>UN RAYO DE LUZ.</strong>— 10 de Junio de 1972. Dirección: Barrio El
+                            Centro a ½ Cuadra de Iglesia Católica. Días y horas de reuniones:
+                            De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 30
+                            Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <strong>REGALO DE DIOS.</strong>— 01 de Agosto de 2006. Dirección: Cantón
+                            Calavera, Caserío Matapalo. Días y horas de reuniones: Lunes,
+                            Miércoles y Sábado de 4:00 a 6:00 p.m. Miembros asistentes: 6 
+                            Hombres y 5 Mujeres
+                        </li>
+                        <li>
+                            <span>9</span></li>
+                            <strong>UN MILAGRO EN SAN MIGUEL ARCÁNGEL.</strong>— 26 de Enero de
+                            2012. Dirección: Cantón Guachipilín, Caserío San Miguelito. Días
+                            y horas de reuniones: De Lunes a Sábado de 3:00 a 5:00 p.m.
+                            Miembros asistentes: 12 Hombres.
+                        <li>
+                            <span>10</span>
+                            <strong>UNA ESTRELLA EN A.A.</strong>— 11 de Julio de 2013. Dirección: Cantón
+                            Junquillo Caserío El Campo. Días y horas de reuniones: de Lunes a
+                            Sábado de 4:00 a 6:00 p.m. Miembros asistentes: 10 Hombres y 7 
+                            Mujeres.
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <strong>UNA LUZ EN LAS VEGAS DE MASCULÍ</strong>— 27 de Agosto de
+                            1999. Dirección: Cantón Estancia, Caserío Masculí. Días y horas
+                            de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros
+                            asistentes: 10 Hombres y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <strong>VIVE Y DEJA VIVIR.</strong>— 01 de Mayo de 2010. Dirección: Caserío
+                            La Crucita, Cantón Estancia. Días y horas de reuniones: De Lunes a
+                            Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 10 Hombres y
+                            2 Mujeres.
+                        </li>
+
+                    <h4>MUNICIPIO DE CORINTO</h4>
+                        <li>
+                            <span>13</span>
+                            <strong>FELICES PASCUAS.</strong>— 23 de Diciembre de 1978. Dirección: Cantón
+                            Corralito, Caserío Llano Grande, 3 Cuadras al Norte del Desvío El
+                            Naipe. Días y horas de reuniones: De Lunes a Domingo de 4:00 a
+                            6:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <strong>NUEVO DESPERTAR 04 DE JUNIO.</strong>— 04 de Junio de 1972.
+                            Dirección: Cantón La Laguna, La Ermita, 3 Cuadras al Oriente del
+                            Complejo Educativo. Días y horas de reuniones: De Lunes a Domingo
+                            de 4:00 a 6:00 p.m. Miembros asistentes: 9 Hombres y 1 Mujer
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <strong>RECUPERACIÓN 04 DE DICIEMBRE.</strong>— 04 de Diciembre de 1971.
+                            Dirección: Barrio Las Delicias, Casa 81, 2ª Planta. Días y horas de
+                            reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros
+                            asistentes: 7 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>16</span>
+                            <strong>RECUPERACIÓN 21 DE MAYO.</strong>— 21 de Mayo de 2011. Dirección:
+                            Cantón Hondable, Caserío Altillo. Días y horas de reuniones: De
+                            Lunes a Viernes de 4:00 a 6:00 p.m. Miembros asistentes: 6 Hombres.
+                        </li>
+                        <li>
+                            <span>17</span>
+                            <strong>SENDERO DE PAZ.</strong>— 01 de Octubre de 1978. Dirección: Barrio El
+                            Calvario. Días y horas de reuniones: De Lunes a Domingo de 5:00 a
+                            7:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>18</span>
+                            <strong>TERCERA TRADICIÓN.</strong>— 24 de Julio de 2006. Dirección: Cantón
+                            San Felipe, Caserío Babilonia. Días y horas de reuniones: De Lunes
+                            a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 10 Hombres
+                            y 5 Mujeres.
+                        </li>
+                        <li>
+                            <span>19</span>
+                            <strong>UN MILAGRO EN MI CAMINO.</strong>— 14 de Octubre del 2000.
+                            Dirección: Cantón Hondable, Caserío Piedra Parada, Casa de Elario
+                            Álvarez Umaña. Días y horas de reuniones: Lunes, Miércoles y
+                            Viernes de 3:00 a 5:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>20</span>
+                            <strong>UN MILAGRO EN ROPILLA.</strong>— 26 de Agosto de 2008. Dirección:
+                            Caserío Ropilla, Cantón San Felipe. Días y horas de reuniones:
+                            Martes, Jueves y Sábado de 4:00 a 6:00 p.m. Miembros asistentes:
+                            6 Hombres.
+                        </li>
+                        <li>
+                            <span>21</span>
+                            <strong>UNA LUZ EN LLANO VERDE.</strong>— 02 de Julio de 1988. Dirección: 
+                            Cantón Hondable, Llano Verde. Días y horas de reuniones: Lunes,
+                            Miércoles, Jueves y Sábado de 4:00 a 6:00 p.m. Miembros asistentes:
+                            11 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE CHILANGA</h4>
+                        <li>
+                            <span>22</span>
+                            <strong>AQUÍ SOY FELIZ.</strong>— 16 de Octubre de 1983. Dirección: Barrio El
+                            Calvario, salida a Lajitas Abajo. Días y horas de reuniones: De Lunes
+                            a Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 32 Hombres.
+                        </li>
+                        <li>
+                            <span>23</span>
+                            <strong>UNA LUZ EN MI CAMINO.</strong>— 20 de Septiembre de 2008. Dirección:
+                            Cantón Piedra Parada, Caserío Los Sánchez. Días y horas de
+                            reuniones: Lunes, Miércoles y Viernes de 3:00 a 5:00 p.m. Miembros
+                            asistentes: 7 Hombres.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE DELICIAS DE CONCEPCIÓN</h4>
+                        <li>
+                            <span>24</span>
+                            <strong>DÍAS FELICES.</strong>— 21 de Agosto de 1972 Dirección: Caserío Agua
+                            Fría, Cantón La Cuchilla. Días y horas de reuniones: Lunes, Miércoles
+                            y Viernes de 3:00 a 5:00 p.m. Miembros asistentes: 9 Hombres.
+                        </li>
+                        <li>
+                            <span>25</span>
+                            <strong>FELIZ NAVIDAD.</strong>— 25 de Diciembre de 1991. Dirección: Caserío 
+                            Agua Fría, Cantón La Cuchilla. Días y horas de reuniones: De Lunes
+                            a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 5 Hombres.
+                        </li>
+                        <li>
+                            <span>26</span>
+                            <strong>RETORNO A MI NUEVA VIDA.</strong>— 25 de Agosto de 2012. Dirección: 
+                            Caserío Agua Fría, Cantón La Cuchilla. Días y horas de reuniones:
+                            De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 8
+                            Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE EL DIVISADERO</h4>
+                        <li>
+                            <span>27</span>
+                            <strong>LUZ Y VERDAD.</strong>— 11 de Mayo de 1986. Dirección: Cantón Llano
+                            de Santiago. Días y horas de reuniones: De Lunes a Domingo de
+                            6:00 a 8:00 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE GUALOCOCTI</h4>
+                        <li>
+                            <span>28</span>
+                            <strong>FUENTE DE RECUPERACIÓN.</strong>— 11 de Agosto de 2012. Dirección:
+                            San Lucas. Días y horas de reuniones: De Lunes a Domingo de 4:00
+                            a 6:00 p.m. Miembros asistentes: 15 Hombres.
+                        </li>
+                        <li>
+                            <span>29</span>
+                            <strong>UN FUTURO MEJOR.</strong>
+                            — 15 de Enero de 2011. Dirección: Barrio
+                            El Centro. Días y horas de reuniones: De Lunes a Sábado de 4:00 a
+                            6:00 p.m. Miembros asistentes: 9 Hombres. 
+                        </li>
+
+                    <h4>MUNICIPIO DE GUATAJIAGUA</h4>
+                        <li>
+                            <span>30</span>
+                            <strong>SAN SEBASTIÁN.</strong>— 16 de Diciembre de 1968. Dirección: Barrio El
+                            Centro. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>31</span>
+                            <strong>UNA LUZ EN MI BARRIO.</strong>— 04 de Mayo de 1995. Dirección: Barrio 
+                            Arriba, Cantón Meanguera. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 16 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE JOATECA</h4>
+                        <li>
+                            <span>32</span>
+                            <strong>NUEVO DESPERTAR.</strong>— 30 de Noviembre de 1986. Dirección:
+                            Joateca. Días y horas de reuniones: De Lunes a Domingo de 5:00 a
+                            7:00 p.m. Miembros asistentes: 17 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>33</span>
+                            <strong>PAZ Y SOBRIEDAD.</strong>— 26 de Febrero de 2011. Dirección: Cantón
+                            Volcancillo, Caserío Masalá. Días y horas de reuniones: De Lunes a
+                            Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 10 Hombres.
+                        </li>
+                        <li>
+                            <span>34</span>
+                            <strong>VOLVER A VIVIR EN A.A.</strong>— 19 de Octubre de 2001. Dirección:
+                            Cantón Paturla, Caserío La Laguna. Días y horas de reuniones:
+                            Martes, Jueves y Sábado de 4:00 a 6:00 p.m. Miembros asistentes:
+                            16 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE JOCOAITIQUE</h4>
+                        <li>
+                            <span>35</span>
+                            <strong>AMOR POR TU VIDA.</strong>— 22 de Febrero de 2006. Dirección: Cantón
+                            El Rodeo, Caserío Los Quebrachos. Días y horas de reuniones: De
+                            Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 13
+                            Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>36</span>
+                            <strong>CAMBIO DE VIDA.</strong>— 16 de Marzo de 2005. Dirección: Barrio Las
+                            Vegas. Días y horas de reuniones: De Lunes a Domingo de 6:00 a
+                            8:00 p.m. Miembros asistentes: 6 Hombres
+                        </li>
+
+                    <h4>MUNICIPIO DE JOCORO</h4>
+                        <li>
+                            <span>37</span>
+                            <strong>EL CALVARIO.</strong>— 07 de Noviembre de 1976. Dirección: 4ª Calle
+                            Poniente, Barrio Nuevo. Días y horas de reuniones: De Lunes a 
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 20 Hombres.
+                        </li>
+                        <li>
+                            <span>38</span>
+                            <strong>SAN ANTONIO.</strong>— 11 de Julio de 1962. Dirección: Barrio San
+                            Sebastián, 4ª Avenida Sur, Jocoro. Días y horas de reuniones: De
+                            Lunes a Domingo de 5:30 a 7:30 p.m. Miembros asistentes: 13
+                            Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>39</span>
+                            <strong>SAN JUAN BAUTISTA.</strong>— 27 de Diciembre de 1973. Dirección: 
+                            Cantón San Juan. Días y horas de reuniones: De Lunes a Sábado de
+                            4:00 a 6:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>40</span>
+                            <strong>SEGUIMOS EL CAMINO DE DIOS.</strong>— 07 de Octubre de 1977.
+                            Dirección: Cantón Laguneta, Caserío Los Santos. Días y horas de
+                            reuniones: Martes, Viernes y Domingo de 4:00 a 6:00 p.m. Miembros
+                            asistentes: 4 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>41</span>
+                            <strong>UNA LUZ EN LA COLONIA.</strong>— 03 de Mayo de 1992. Dirección:
+                            Calle Principal, Colonia Nuevo Jocoro. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 15
+                            Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE LOLOTIQUILLO</h4>
+                        <li>
+                            <span>42</span>
+                            <strong>SUPERACIÓN Y FE.</strong> — 16 de Junio de 1979. Dirección: Barrio El
+                            Centro. Días y horas de reuniones: De Lunes a Domingo de 4:00 a
+                            6:00 p.m. Miembros asistentes: 13 Hombres y 2 Mujeres.
+                        </li>
+                        <li>
+                            <span>43</span>
+                            <strong>VIVIR EN A.A.</strong>— 01 de Noviembre de 1997. Dirección: Barrio La
+                            Cruz Cantón El Norte, Calle al parque. Días y horas de reuniones:
+                            De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros asistentes: 13
+                            Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE MEANGUERA</h4>
+                        <li>
+                            <span>44</span>
+                            <strong>20 DE JUNIO.</strong>— 20 de Junio de 2014. Dirección: Colonia San Luis
+                            2, 1 Cuadra Arriba de La gasolinera a mano izquierda. Días y horas
+                            de reuniones: De Lunes a Domingo de 6:00 a 8:00 pm. Miembros
+                            asistentes: 7 Hombres.   
+                        </li>
+                        <li>
+                            <span>45</span>
+                            <strong>CAMINO DE VIDA.</strong>— 23 de Marzo de 2008. Dirección: Cantón 
+                            Cerro Pando, Caserío El Barrial. Días y horas de reuniones: De Lunes
+                            a Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 8 Hombres.
+                            
+                        </li>
+                        <li>
+                            <span>46</span>
+                            <strong>NUEVO DESPERTAR.</strong>— 11 de Enero de 2014. Dirección: Cantón
+                            La Joya, Caserío Hatos 2: Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 17 Hombres y
+                            1 Mujer.
+                        </li>    
+                        <li>
+                            <span>47</span>
+                            <strong>PARE DE SUFRIR.</strong>— 29 de Noviembre de 2002. Dirección: Colonia
+                            18 de Noviembre, entrada a Radio Segundo Monte, Cantón La Joya,
+                            Caserío San Luis. Días y horas de reuniones: De Lunes a Domingo
+                            de 5:00 a 7:00 p.m. Miembros asistentes: 24 Hombres.
+                        </li>
+                        
+                    <h4>MUNICIPIO DE OSICALA</h4>       
+                        <li>
+                            <span>48</span>
+                            <strong>BUENA VISTA.</strong>— 08 de Noviembre de 1998. Dirección: Cantón
+                            Agua Zarca, 2 Cuadras antes del Desvío La Alejandría. Días y horas
+                            de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. Miembros
+                            asistentes: 14 Hombres.      
+                        </li>
+                        <li>
+                            <span>49</span>
+                            <strong>LAS 24 HORAS.</strong>— 25 de Junio de 1977. Dirección: Calle Principal,
+                            Natividad Majano. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 29 Hombres y 2 Mujeres.  
+                        </li>
+                        <li>
+                            <span>50</span>
+                            <strong>LUCHEMOS COMPAÑEROS.</strong>— 06 de Octubre de 1973. Dirección:
+                            Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de
+                            4:00 a 6:00 p.m. Miembros asistentes: 15 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE PERQUÍN</h4>
+                        <li>
+                            <span>51</span>
+                            <strong>NUEVA VIDA.</strong>— 10 de Enero de 1990. Dirección: Cantón Casa
+                            Blanca, Caserío La Tejera. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 9 Hombres.                
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN CARLOS</h4>
+                        <li>
+                            <span>52</span>
+                            <strong>11 DE SEPTIEMBRE.</strong>— 11 de Septiembre de 1977. Dirección:
+                            Barrio El Centro, Avenida Morazán, contiguo a Juzgado de Paz. Días
+                            y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.
+                            Miembros asistentes: 5 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE SAN FRANCISCO GOTERA</h4>
+                        <li>
+                            <span>53</span>
+                            <strong>11 DE ENERO LUZ Y ESPERANZA.</strong>— 11 de Enero de 1994.
+                            Dirección: Colonia Las Flores. Días y horas de reuniones: De Lunes
+                            a Domingo de 5:00 a 7:00 p.m. Miembros asistentes: 10 Hombres
+                            y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>54</span>
+                            <strong>12 DE MAYO.</strong>— 12 de Mayo de 1994. Dirección: Barrio La Cruz.
+                            Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.
+                            Miembros asistentes: 25 Hombres.
+                        </li>
+                        <li>
+                            <span>55</span>
+                            <strong>20 DE JULIO FE Y ESPERANZA.</strong>— 20 de Julio de 1984. Dirección: 
+                            6ª Calle Oriente, Polígono D, Casa Nº 28 Colonia Los Almendros.
+                            Días y horas de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.
+                            Miembros asistentes: 19 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>56</span>
+                            <strong>26 DE JULIO UNIDOS EN ACCIÓN.</strong>— 26 de Julio de 2010.
+                            Dirección: Final Calle Oriente B, La Cruz. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 15
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>57</span>
+                            <strong>FE Y ACCIÓN.</strong>— 01 de Agosto de 1998. Dirección: Colonia San 
+                            José, Pasaje 1. Días y horas de reuniones: De Lunes a Domingo de
+                            6:00 a 8:00 p.m. Miembros asistentes: 8 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>58</span>
+                            <strong>FELIZ AMANECER.</strong>— 13 de Octubre 2011. Dirección: Colonia
+                            Nuevo Amanecer, Cantón San José. Días y horas de reuniones:
+                            De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 22
+                            Hombres.
+                        </li>
+                        <li>
+                            <span>59</span>
+                            <strong>
+                            LA MEDITACIÓN.</strong>— 23 de Diciembre de 2012. Dirección: Avenida
+                            Morazán B, San Martín. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 7 Hombres.
+                        </li>
+                        <li>
+                            <span>60</span>
+                            <strong>PRIMERO DE FEBRERO NADA PODEMOS SOLOS.</strong>— 01 de
+                            Febrero de 2014. Dirección: Colonia Morazán, 1 Pasaje al final. Días
+                            y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.
+                            Miembros asistentes: 10 Hombres y 1 Mujer.
+                        </li>
+                        <li>
+                            <span>61</span>
+                            <strong>PRIMERO DE NOVIEMBRE FE Y RECUPERACIÓN.</strong>— 01 de
+                            Noviembre de 2006. Dirección: Barrio Las Flores, lado Poniente a La
+                            Alcaldía Municipal. Días y horas de reuniones: De Lunes a Domingo
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 8 Hombres.
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SAN ISIDRO</h4>
+                        <li>
+                            <span>62</span>
+                            <strong>13 DE ENERO.</strong>— 13 de Enero de 1994. Dirección: Barrio El Calvario.
+                            Días y horas de reuniones: De Lunes a Sábado de 6:00 a 8:00 p.m.
+                            Miembros asistentes: 15 Hombres.
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SAN SIMÓN</h4>
+                        <li>
+                            <span>63</span>
+                            <strong>AMANECER FELIZ.</strong>— 25 de Mayo de 2007. Dirección: Cantón
+                            Potrero, Caserío Centro. Días y horas de reuniones: De Lunes a
+                            Sábado de 4:00 a 6:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>64</span>
+                            <strong>EL MILAGRO.</strong>— 11 de Septiembre de 1974. Dirección: Barrio El
+                            Calvario. Días y horas de reuniones: De Lunes a Domingo de 4:00 a
+                            6:00 p.m. Miembros asistentes: 12 Hombres.
+                        </li>
+                        <li>
+                            <span>65</span>
+                            <strong>NADA PODEMOS SOLOS.</strong>— 21 de Junio de 2007. Dirección:
+                            Cantón San Francisco, Caserío Sequía de Agua. Días y horas de
+                            reuniones: De Lunes a Sábado de 4:00 a 6:00 p.m. Miembros
+                            asistentes: 11 Hombres.
+                        </li>
+                    
+                    <h4>MUNICIPIO DE SOCIEDAD</h4>
+                        <li>
+                            <span>66</span>
+                            <strong>NUEVO RENACER 06 DE AGOSTO.</strong>— 06 de Agosto de 2014
+                            Dirección: Barrio El Centro. Días y horas de reuniones: De Lunes a
+                            Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 4 Hombres.
+                        </li>
+                        <li>
+                            <span>67</span>
+                            <strong>NUEVO RENACIMIENTO.</strong>— 21 de Enero de 2009. Dirección:
+                            Cantón El Tablón, Caserío Tepemechín. Días y horas de reuniones:
+                            Lunes, Jueves y Sábado de 3:00 a 5:00 p.m. Miembros asistentes:
+                            10 Hombres y 4 Mujeres.
+                        </li>
+
+                    <h4>MUNICIPIO DE TOROLA</h4>
+                        <li>
+                            <span>68</span>
+                            <strong>NUEVO RENACIMIENTO.</strong>— 24 de Enero de 1994. Dirección:
+                            Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo 
+                            de 6:00 a 8:00 p.m. Miembros asistentes: 5 Hombres.
+                        </li>
+
+                    <h4>MUNICIPIO DE VILLA EL ROSARIO</h4>    
+                        <li>
+                            <span>69</span>
+                            <strong>ARAUTE PARE DE SUFRIR.</strong>— 17 de Enero 2014. Dirección: Barrio
+                            El Centro. Días y horas de reuniones: De Lunes a Domingo de 6:00
+                            a 8:00 p.m. Miembros asistentes: 10 Hombres.
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Morazan.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>

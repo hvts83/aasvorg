@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>Alcoholicos Anonimos,Directorio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/whhg.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]> <script src="../../assets/js/html5shiv.js"></script> <script src="../../assets/js/respond.min.js"></script> <![endif]-->
+</head>
+<body onload="initialize()">
+    <!--autorization modal-->
+    <a href="#" class="btn btn-danger btn-sm btm-zindex none" id="Show_cont">Show content</a>
+    <div class="modal fade" id="autorization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Autorization</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Sign in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Create account</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--map-->
+    <div id="map_canvas" class="map"></div>
+    <!--/map-->
+    <div class="row site">
+        <div class="col-md-1 general_menu inner" id="glavmen">
+           
+
+            <ul>
+               <li>
+                    <a href="Ahuachapan.html" class="gradientmenu" title="Ahuachapan"><img src="img/Ahuachapan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Sonsonate.html" class="gradientmenu"  title="Sonsonate"><img src="img/Sonsonate.png"></img></a>
+                </li>
+                <li>
+                    <a href="SantaAna.html" class="gradientmenu"  title="Santa Ana"><img src="img/Santa Ana.png"></img></a>
+                </li>
+                <li>
+                    <a href="Chalatenango.html" class="gradientmenu"  title="Chalatenango"><img src="img/Chalatenango.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanSalvador.html" class="gradientmenu"  title="San Salvador"><img src="img/San Salvador.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaLibertad.html" class="gradientmenu"  title="La Libertad"><img src="img/La Libertad.png"></img></a>
+                </li>
+                <li>
+                    <a href="Cuscatlan.html" class="gradientmenu"  title="Cuscatlan"><img src="img/Cuscatlan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Lapaz.html" class="gradientmenu"  title="La Paz"><img src="img/La Paz.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Cabanas.html" class="gradientmenu"  title="Cabañas"><img src="img/Cabanas.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanVicente.html" class="gradientmenu"  title="San Vicente"><img src="img/San Vicente.png"></img></a>
+                </li>
+                 <li>
+                    <a href="Usulutan.html" class="gradientmenu"  title="Usulután"><img src="img/Usulutan.png"></img></a>
+                </li>
+                <li>
+                    <a href="Morazan.html" class="gradientmenu"  title="Morazan"><img src="img/Morazan.png"></img></a>
+                </li>
+                <li>
+                    <a href="LaUnion.html" class="gradientmenu"  title="La union"><img src="img/La Union.png"></img></a>
+                </li>
+                <li>
+                    <a href="SanMiguel.html" class="gradientmenu"  title="San Miguel"><img src="img/San Miguel.png"></img></a>
+                </li>
+               
+            </ul>
+        </div>
+        
+            
+            
+                   
+      
+        <!--Content-->
+        <div class="col-md-11 side-bar" id="cont">
+            <!--header-->
+            <div class="row">
+                <div class="col-md-12 header">
+                    <div class="logo">
+                        <a href="../Mapa.html">
+                            <img src="img/logo.png" alt="..."/></a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+             <!--Map open (for adaptive)-->
+            <div class="row map_open">
+                <div class="col-md-12">
+                    <a href="#" id="map_open">Show map</a>
+                </div>
+            </div>
+              <!--/Map open (for adaptive)-->
+            <!--tooltip-->
+            <div class="jumbotron innerpage">
+                <div class="container">
+                    <h5 align="center" >Si desea realizar una busqueda de un grupo presionar las teclas CTRL + F</h5>
+                    <br/>
+                    <h2>DEPTO. CHALATENANGO</h2>
+
+                </div>
+            </div>
+            <!--/tooltip-->
+            <!--you can-->
+            <div class="row">
+                <div class="col-md-12 youcan">
+                   
+                    <ul>
+                      
+
+
+						<h4>MUNICIPIO DE ARCATAO GRUPOS REPORTADOS—02</h4>
+
+
+						<li><span>856</span><strong>DESPERTAR DE NUEVO  EN  ARCATAO.</strong> — 21  de  Febrero.  Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m. </li>
+						<li><span>857</span><strong>LA ALEGRÍA DE VIVIR EN ARCATAO.</strong> — 07 Septiembre de  2013. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE AZACUALPA GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>858</span><strong>UNA LUZ EN MI CAMINO.</strong> — 05 de Julio de 2004. Dirección: Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE CANCASQUE GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>859</span><strong>CONCEPCIÓN   NUEVA   VIDA.</strong> —  18   de   Diciembre  de   2004. Dirección:  Caserío Concepción Cantón Guillenes. Días y horas  de reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.  </li>
+
+
+						<h4>MUNICIPIO DE CITALÁ GRUPOS REPORTADOS—03</h4>
+
+
+
+						<li><span>860</span><strong>NUEVO  AMANECER.</strong> — 10  de  Abril de  2006.  Dirección:   Barrio Concepción. Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>861</span><strong>SOBRIEDAD EN LA FRONTERA.</strong> — 05 de Mayo de 1982. Dirección: Barrio San Francisco. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 15 Hombres.</li>
+						<li><span>862</span><strong>UN MILAGRO DE DIOS.</strong> — 17 de Junio de 2003. Dirección: Frontera El Poy. Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00 p.m. </li>
+
+
+						<h4>MUNICIPIO DE COMALAPA GRUPOS REPORTADOS—07</h4>
+
+
+
+						<li><span>863</span><strong>03  DE  SEPTIEMBRE.</strong> — 03  de  Septiembre de  2000.   Dirección: Cantón Guachipilín.  Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>864</span><strong>DEL PANTANO  UNA  FLOR.</strong> — 23  de  Abril de  1974.  Dirección: Barrio El Centro. Días y horas  de  reuniones: De Lunes  a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>865</span><strong>HISTORIA DE MI VIDA.</strong> — 03 de Mayo de 1975.  Dirección:  Cantón El Morro. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>866</span><strong>LIBERTAD.</strong> — 08   de   Septiembre  de   2013.   Dirección:   Cantón Candelaria. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>867</span><strong>LLAVE DE  LA BUENA  VOLUNTAD.</strong> —  18  de   Enero   de   1976. Dirección:   La  Cuchilla.  Días  y  horas   de   reuniones:  De  Lunes  a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>868</span><strong>UNA  FE EN DIOS.</strong> — 01 de  Enero  de  2011.  Dirección:  Cantón El Morro.  Días y horas  de  reuniones: De Lunes a Domingo de  5:00  a 7:00 p.m. </li>
+						<li><span>869</span><strong>UNA LUZ EN LA FRONTERA.</strong> — 25 de Febrero de 1975. Dirección: Cantón Guachipilín.  Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE CONCEPCIÓN QUEZALTEPEQUE GRUPOS REPORTADOS—06</h4>
+
+
+
+						<li><span>870</span><strong>06 DE MAYO.</strong> — 06 de Mayo de 1985. Dirección: Barrio San Antonio. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>871</span><strong>ESTRELLITA  DEL NORTE.</strong> —  05  de   Enero   de   2014.   Dirección: Cantón El Llano  Grande. Días  y horas  de  reuniones: De  Lunes  a Domingo de 4:00 a 6:00 p.m.  </li>
+						<li><span>872</span><strong>INMACULADA CONCEPCIÓN.</strong> — 08 de Diciembre de 1970. Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  4:00  a 6:00  p.m.  </li>
+						<li><span>873</span><strong>PUNTO  SIN  RETORNO.</strong> —  06  de   Agosto  de   1972.   Dirección: Cantón Monte Redondo. Días  y horas  de  reuniones: De  Lunes  a Domingo de 4:00 a 6:00 p.m.  </li>
+						<li><span>874</span><strong>RENACER  26   DE  DICIEMBRE.</strong> — 04   de   Diciembre  de   2004. Dirección:  Cantón El Pepeto. Días y horas  de  reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 5 Hombres.</li>
+						<li><span>875</span><strong>TRES LEGADOS.</strong> —  08  de   Mayo  de   1995.   Dirección:   Barrio  El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE CHALATENANGO GRUPOS REPORTADOS—11</h4>
+
+
+
+						<li><span>876</span><strong>2000</strong> — 08  de  Abril de  2000.  Dirección:  Cantón El Chuptal. Días y horas  de  reuniones: De  Lunes  a  Domingo de  6:00  a  8:00  p.m.</li>
+						<li><span>877</span><strong>CRECER, CONFIAR Y OBEDECER.</strong> — 11 de  Noviembre de  1975. Dirección:  Barrio La Sierpe. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>878</span><strong>CHALATECO.</strong> — 14  de  Noviembre de  1975.  Dirección:  Barrio  El Calvario. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>879</span><strong>LUZ Y VIDA.</strong> — 20 de Junio  de 2010. Dirección:  Barrio San Antonio. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+						<li><span>880</span><strong>MORIR PARA VIVIR.</strong> — 01 de Diciembre de 1961.  Dirección:  Barrio San José Avenida  Fajardo. Días y horas  de  reuniones: De Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+						<li><span>881</span><strong>NUEVO  FE Y DECISIÓN.</strong> — 31  de  Octubre de  1999.  Dirección: Barrio San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>882</span><strong>RENACER 01 DE ABRIL.</strong> — 01 de Abril de 2004.  Dirección:  Cantón San José. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+						<li><span>883</span><strong>RENACER EN TEPEYAC.</strong> — 14 de Abril de 2002. Dirección: Caserío Las Delicias.  Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.</li>
+						<li><span>884</span><strong>RENACER EN VERACRUZ.</strong> — 08  de  Agosto de  1995.  Dirección: Colonia  Veracruz.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 18 Hombres.</li>
+						<li><span>885</span><strong>UNA LUZ EN EL CALVARIO.</strong> — 01 de Diciembre de 2013. Dirección: Barrio El Calvario. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 14 Hombres.</li>
+						<li><span>886</span><strong>UNA LUZ EN GUARGILA.</strong> — 14 de Abril de 2012. Dirección: Cantón Guargila. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE DULCE NOMBRE DE MARÍA GRUPOS REPORTADOS—07</h4>
+
+
+
+						<li><span>887</span><strong>AMANECER  FELIZ.</strong> — 26 de Noviembre de 2004. Dirección: Cantón Gutiérrez. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.</li>
+						<li><span>888</span><strong>BIENVENIDOS.</strong> —  06  de  Marzo  de  1983.   Dirección:   Caserío La Cumbre. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>889</span><strong>BUSCANDO LIBERACIÓN.</strong> — 01 de Julio de 2004. Dirección: Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 20 Hombres.</li>
+						<li><span>890</span><strong>EL DULCE  NOMBRE</strong> .— 20 de  Marzo de  1964.  Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m. </li>
+						<li><span>891</span><strong>RECUPERACIÓN Y VIDA.</strong> — 09 de Junio de 1996. Dirección: Cantón Sitios Arriba. Días y horas  de  reuniones: De  Lunes  a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>892</span><strong>RENACER 25 DE ABRIL.</strong> — 25 de Abril de 1995.  Dirección:  Cantón Los Achiotes. Días y horas  de  reuniones: De Lunes  a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>893</span><strong>SIEMPRE UNIDOS.</strong> — 01 de Noviembre de 1980. Dirección: Cantón Los Sitios Abajo. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+
+						<h4>MUNICIPIO DE EL CARRIZAL GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>894</span><strong>DIOS ES AMOR.</strong> — 30 de Julio de 2002. Dirección: Barrio El Centro. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. Miembros asistentes: 7 Hombres.</li>
+
+						<h4>MUNICIPIO DE EL PARAÍSO GRUPOS REPORTADOS—04</h4>
+
+
+
+						<li><span>895</span><strong>DESPERTAR EN  EL PARAÍSO.</strong> —  16  de   Noviembre  de   1972. Dirección:  Barrio La Vega.  Días y horas  de  reuniones: De  Lunes  a Domingo de  5:00  a 7:00  p.m.  Miembros asistentes: 20 Hombres y</li>
+						<li><span>896</span><strong>HAY UNA SOLUCIÓN.</strong> — 27 de Octubre de 1985. Dirección:  Barrio El Calvario. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  Miembros asistentes: 30 Hombres y 2 Mujeres.</li>
+						<li><span>897</span><strong>LUCHAR POR  MI RECUPERACIÓN.</strong> — 22  de   Marzo  de   2007. Dirección:  Colonia  Santa  Fe. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  Miembros asistentes: 3 Hombres y 2</li>
+						<li><span>898</span><strong>UN NUEVO MODO DE VIVIR.</strong> — 22 de Febrero de 1993. Dirección: Calle  Nueva.  Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m. </li>
+
+
+						<h4>MUNICIPIO DE LA LAGUNA GRUPOS REPORTADOS—08</h4>
+
+
+
+						<li><span>899</span><strong>DIOS  CON  NOSOTROS.</strong> —  13  de  Octubre de  1966.   Dirección: Cantón Los Guevara. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 5 Hombres y 2 Mujeres.</li>
+						<li><span>900</span><strong>LÁGRIMAS DE UNA  MADRE.</strong> — 14 de  Abril de  1974.  Dirección: Cantón Pacayas. Días y horas de reuniones: De Lunes a Domingo de 4:30 a 6:30 p.m.</li>
+						<li><span>901</span><strong>LAGUNA DE SOBRIEDAD.</strong> — 25 de Diciembre de 1975.  Dirección: Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>902</span><strong>NACER A UNA NUEVA VIDA.</strong> — 30 de  Enero  de  2012.  Dirección: Cantón Pacayas. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>903</span><strong>RAYO DE LUZ.</strong> — 15  de  Agosto de  1976.  Dirección:  Cantón San José. Días y horas  de  reuniones: De  Lunes  a Domingo de  4:30  a 6:30 p.m.  </li>
+						<li><span>904</span><strong>RENACER 05 DE MAYO.</strong> — 05 de Mayo de 1992.  Dirección:  Barrio El Calvario. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>905</span><strong>RENACER FELIZ.</strong> — 15 de  Agosto de  1975.  Dirección:  Cantón Los Prados. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.</li>
+						<li><span>906</span><strong>VIVIENDO EN SOBRIEDAD.</strong> — 25 de  Agosto de  2007.  Dirección: Caserío La Aldea.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE LA PALMA GRUPOS REPORTADOS—04</h4>
+
+
+
+						<li><span>907</span><strong>10 DE MAYO.</strong> — 10 de Mayo de 2012.  Dirección:  Barrio El Tránsito. Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m. Miembros asistentes: 15 Hombres.</li>
+						<li><span>908</span><strong>APOCALÍPSIS.</strong> — 16  de  Septiembre de  2009.  Dirección:  Cantón Los Planes.  Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  Miembros asistentes: 8 Hombres.</li>
+						<li><span>909</span><strong>EL MILAGRO.</strong> — 17 de  Noviembre de  1971.  Dirección:  Barrio San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 7:00 a 9:00 p.m.  </li>
+						<li><span>910</span><strong>NUEVO RENACER 05  DE NOVIEMBRE.</strong> — 05 de  Noviembre de 1991. Dirección: Cantón San José Sacáre. Días y horas de reuniones: De  Lunes  a Domingo de  6:00  a 8:00  p.m.  </li>
+
+
+						<h4>MUNICIPIO DE LA REYNA GRUPOS REPORTADOS—08</h4>
+
+
+
+						<li><span>911</span><strong>NACIO UNA ESPERANZA.</strong> — 27 de Septiembre de 1991. Dirección: Cantón El Tigre. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+						<li><span>912</span><strong>NACIO UNA LUZ EN TILAPA.</strong> — 22 de  Enero  de  2011.  Dirección: Cantón Tilapa. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+						<li><span>913</span><strong>NUEVO RENACER.</strong> — 26 de Agosto de 2010.  Dirección:  Cantón El Barrancón. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>914</span><strong>REGALITO DE DIOS.</strong> — 19 de Octubre de 1999.  Dirección:  Cantón Montañita. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>915</span><strong>RENACER EN LA REYNA.</strong> — 13  de  Octubre de  2006.  Dirección: Barrio San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>916</span><strong>RENACER.</strong> — 01  de  Diciembre  de  2011.   Dirección:   Cantón Las Peñas. Días y horas  de  reuniones: De Lunes  a Domingo de  6:00  a 8:00 p.m. </li>
+						<li><span>917</span><strong>RUEGOS DE UNA MADRE.</strong> — 13 de  Octubre de  1982.  Dirección: Cantón Las Peñas. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>918</span><strong>UNA LUZ EN PRIMAVERA.</strong> — 09 de Septiembre de 1987. Dirección: Barrio La Primavera. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE NUEVA CONCEPCIÓN GRUPOS REPORTADOS—03</h4>
+
+
+
+						<li><span>919</span><strong>LIBERACIÓN.</strong> — 28 de  Abril de  2011.  Dirección:  Barrio El Rosario. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>920</span><strong>REDENCIÓN.</strong> — 20 de Febrero de1964. Dirección: Barrio El Rosario. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>921</span><strong>UNA LUZ EN EL CAMINO DE BILL.</strong> — 07 de  Diciembre de  1978. Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE OJOS DE AGUA GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>922</span><strong>UN  MILAGRO EN  EL ZAPOTAL.</strong> — 29  de   Octubre  de   2011. Dirección:  Cantón El Zapotal. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE SAN ANTONIO LOS RANCHOS GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>923</span><strong>UNA  LUZ EN  LOS  RANCHOS.</strong> —  29  de   Noviembre  de   2013. Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE SAN FERNANDO GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>924</span><strong>DIOS NOS ACOMPAÑA.</strong> — 04 de Julio de 2007. Dirección: Cantón San Juan  La Cruz. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+
+						<h4>MUNICIPIO DE SAN FRANCISCO LEMPA GRUPOS REPORTADOS—01</h4>
+
+
+
+						<li><span>925</span><strong>UN PODER SUPERIOR.</strong> — 02 de Julio de 1985.  Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+
+						<h4>MUNICIPIO DE SAN FRANCISCO MORAZÁN GRUPOS REPORTADOS—03</h4>
+
+
+
+						<li><span>926</span><strong>06  DE  AGOSTO.</strong> —  06  de   Agosto de   2011.   Dirección:   Cantón Temendal. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>927</span><strong>DIOS ES AMOR.</strong> — 06 de  Febrero de  2010.  Dirección:  Cantón Los Naranjos. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.  </li>
+						<li><span>928</span><strong>MI NUEVO MUNDO</strong> .—  11 de  Agosto de  2004.  Dirección:  Barrio  San Antonio.  Días y horas  de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m.</li>
+
+
+						<h4>MUNICIPIO DE SAN IGNACIO GRUPOS REPORTADOS—07</h4>
+
+
+
+						<li><span>929</span><strong>04 DE SEPTIEMBRE.</strong> — 04 de Septiembre de 1983. Dirección: Barrio El Calvario Calle a Las Pilas. Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00  p.m.  </li>
+						<li><span>930</span><strong>AMOR DE MADRE.</strong> — 22 de  Marzo de  1980.  Dirección:  Cantón El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+						<li><span>931</span><strong>BROTE DE ESPERANZA.</strong> — 11 de  Septiembre de  2010.  Dirección: Cantón Las  Granadillas. Días  y horas   de  reuniones: De  Lunes  a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>932</span><strong>HÉROES EN SOBRIEDAD.</strong> — 05 de Septiembre de 1974. Dirección: Cantón El Rosario. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>933</span><strong>LO MEJOR DE MI VIDA.</strong> — 20 de Marzo de 2013. Dirección: Caserío Las Aradas  Cantón Las Piñas. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>934</span><strong>REGALO A  LAS MADRES.</strong> —  11  de  Mayo  de  2009.   Dirección: Cantón Río Chiquito. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>935</span><strong>UNA LUZ EN LA FRONTERA.</strong> — 21 de  Enero  de  1976.  Dirección: Cantón El Centro Las Pilas. Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+						<h4>MUNICIPIO DE SAN MIGUEL DE MERCEDES GRUPOS REPORTADOS—02</h4>
+
+
+
+						<li><span>936</span><strong>SAN  MIGUEL.</strong> — 28  de  Diciembre de  1969.  Dirección:  Barrio  El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  6:00 a 8:00 p.m.</li>
+						<li><span>937</span><strong>UNA  LUZ EN  EL MATAZANO.</strong> —  23  de   Septiembre de   2001. Dirección: Cantón El Matazano. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+
+
+						<h4>MUNICIPIO DE SAN RAFAEL GRUPOS REPORTADOS—04</h4>
+
+
+
+						<li><span>938</span><strong>MI ESPERANZA.</strong> — 19  de  Abril de  1975.  Dirección:  Cantón Ojos de Agua. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.  </li>
+						<li><span>939</span><strong>MI SALVACIÓN 07 DE MARZO.</strong> — 07 de Marzo de 2007. Dirección: Barrio El Centro. Días y horas de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>940</span><strong>NUEVA VIDA.</strong> — 28 de Noviembre de 2011.  Dirección:  Cantón Los Sitios. Días y horas  de  reuniones: De Lunes  a Domingo de  6:00  a 8:00 p.m.  </li>
+						<li><span>941</span><strong>RENACER EN BUENA VISTA.</strong> — 20 de Agosto de 2011.  Dirección: Cantón Buena Vista. Días y horas de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+						<h4>MUNICIPIO DE SANTA RITA GRUPOS REPORTADOS—04</h4>
+
+
+
+						<li><span>942</span><strong>EL REMEDIO.</strong> — 19 de  Marzo de  1974.  Dirección:  Cantón Piedras Gordas. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+						<li><span>943</span><strong>GRITO DE LIBERTAD.</strong> — 14 de  Mayo de  1966.  Dirección:  Barrio El Centro. Días y horas  de  reuniones: De Lunes a Domingo de  5:00 a 7:00 p.m.  </li>
+						<li><span>944</span><strong>LUZ EN MI CAMINO.</strong> — 14 de Octubre de 2005. Dirección: Colonia El Sol. Días y horas  de  reuniones: De Lunes  a Domingo de  5:00  a 7:00 p.m.  </li>
+						<li><span>945</span><strong>SAN  MIGUEL.</strong> — 04  de   Mayo  de   2001.   Dirección:   Cantón  San Miguel  Tobías.  Días y horas  de  reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+
+
+						<h4>MUNICIPIO DE TEJUTLA GRUPOS REPORTADOS—11</h4>
+
+
+
+						<li><span>946</span><strong>03  DE MARZO.</strong> — 03 de  Marzo de  1984.  Dirección:  Hacienda San Juan  Colima.  Días y horas  de  reuniones: De Lunes  a Domingo de 5:00 a 7:00 p.m.  </li>
+						<li><span>947</span><strong>06  DE ENERO.</strong> — 06  de  Enero  de  1972.  Dirección:  Caserío Valle Nuevo, Cantón Aguaje  Escondido. Días y horas  de  reuniones: De Lunes  a  Domingo de  5:00  a  7:00  p.m.  </li>
+						<li><span>948</span><strong>20 DE MAYO.</strong> — 20 de Mayo de 1982. Dirección: Barrio Concepción. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+						<li><span>949</span><strong>25 DE MARZO.</strong> — 25 de Marzo de 2012. Dirección: Cantón Aldeíta. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m.</li>
+						<li><span>950</span><strong>AMOR SIN PRECIO.</strong> — 01 de  Junio  de  1999.  Dirección:  Barrio San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>951</span><strong>AMOR Y PAZ.</strong> — 12 de  Febrero de  2001.  Dirección:  Río Matayate. Días y horas  de reuniones: De Lunes a Domingo de 5:00 a 7:00 p.m. </li>
+						<li><span>952</span><strong>LA GRACIA DE DIOS.</strong> — 28 de Abril de 1982.  Dirección:  Cantón El Coyolito.  Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>953</span><strong>SAN  ANTONIO.</strong> —  31 de  Octubre de  1987.  Dirección:  Cantón El Salítre.  Días y horas  de  reuniones: De Lunes a Domingo de  6:00  a 8:00 p.m. </li>
+						<li><span>954</span><strong>SANTO  TOMÁS.</strong> —  03  de  Enero  de  1971.  Dirección:  Barrio  San Antonio.  Días y horas  de reuniones: De Lunes a Domingo de 4:30 a 6:30 p.m.</li>
+						<li><span>955</span><strong>UNA VISIÓN PARA TÍ.</strong> — 11 de  Marzo de  2001.  Dirección:  Desvío Cantón Amayo. Días y horas  de reuniones: De Lunes a Domingo de 6:00 a 8:00 p.m. </li>
+						<li><span>956</span><strong>VIDA Y ACCIÓN.</strong> — 01 de Julio de 1974. Dirección: Barrio El Centro. Días y horas  de reuniones: De Lunes a Domingo de 4:00 a 6:00 p.m. </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--/you can-->
+            <!--where are you-->
+            <div class="row">
+                
+            </div>
+            <!--/where are you-->
+           
+        </div>
+        <!--/Content-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Google maps API linl-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsbzuJDUEOoq-jS1HO-LUXW4qo0gW9FNs&sensor=false"></script>
+    <!--Your map settings script-->
+    <script type="text/javascript" src="js/Chalate.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jQueryv2.0.3.js"></script>
+    <script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+    <!--Script for worked profile page-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                        "use strict";
+            $('#link_open').on('click', function () {
+                if ($('#link_open').hasClass("clooses")) {
+                    $("#open_span").removeClass("close_span").addClass("open_span");
+                    $("#profile").removeClass("profile_closed");
+                    $("#link_open").removeClass("clooses");
+                    $("#cont").addClass("none");
+                }
+                else {
+                    $("#open_span").addClass("close_span").removeClass("open_span");
+                    $("#profile").addClass("profile_closed");
+                    $("#link_open").addClass("clooses");
+                    $("#cont").removeClass("none");
+                }
+            })
+              $('#map_open').on('click', function () {
+                            "use strict";
+            $("#cont").addClass("none");
+            $("#Show_cont").removeClass("none");
+        })
+        $('#Show_cont').on('click', function () {
+        "use strict";
+        $("#cont").removeClass("none");
+        })
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $("#owl-demo, #myguest").owlCarousel({
+                items: 6,
+                itemsDesktop: [1000, 5],
+                itemsDesktopSmall: [900, 6],
+                itemsTablet: [600, 2],
+                itemsMobile: false
+            });
+        });
+    </script>
+    <!--/Script for worked profile page-->
+    
+</body>
+</html>
